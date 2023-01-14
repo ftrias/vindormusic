@@ -1,0 +1,2752 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/Users/ftrias/Documents/Source/Vindor/vindor/hardware/pcb/layout/R60/Vindor.sch</source>
+    <date>Wednesday, April 14, 2021 at 05:56:11 PM</date>
+    <tool>Eeschema (5.1.4-0-10_14)</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>Vindor.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="2" name="/Battery/" tstamps="/5D9ECADF/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>Battery.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="3" name="/Audio Subsystem/" tstamps="/5D8A51A4/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>Audio-subsystem.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="4" name="/Sensors/" tstamps="/5D8ED0D4/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>Sensors.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="SW1">
+      <value>MF-SW-TACT-4.2MM</value>
+      <footprint>PTS810_SJM_250_SMTR_LFS:SW_PTS810_SJM_250_SMTR_LFS</footprint>
+      <fields>
+        <field name="Field4">None</field>
+        <field name="Field5">Unavailable</field>
+        <field name="Field6">DO-201 C&amp;amp;K Components</field>
+        <field name="Field7">C&amp;K</field>
+        <field name="Field8">Switch Tactile Spst-No 0.05a 16v</field>
+        <field name="MPN">MF-SW-TACT-4.2MM</field>
+      </fields>
+      <libsource lib="PTS810_SJM_250_SMTR_LFS" part="PTS810_SJM_250_SMTR_LFS" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D36194A</tstamp>
+    </comp>
+    <comp ref="FB1">
+      <value>BLM21AG601SN1D</value>
+      <footprint>Inductor_SMD:L_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">742792040</field>
+      </fields>
+      <libsource lib="Device" part="Ferrite_Bead" description="Ferrite bead"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D36E1B3</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>10 uf</value>
+      <footprint>MF_Passives:MF_Passives-C1206</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">MF-CAP-1206-10uF</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D36F51E</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>1 uf</value>
+      <footprint>MF_Passives:MF_Passives-C0603</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">MF-CAP-0603-1uF</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D3701A9</tstamp>
+    </comp>
+    <comp ref="S2">
+      <value>TL3301EF100QG</value>
+      <footprint>TL3301EF100QG:SOIC450P1000X730-4N</footprint>
+      <datasheet>TL3301EF100QG</datasheet>
+      <fields>
+        <field name="Field4">Unavailable</field>
+        <field name="Field5">E-Switch</field>
+        <field name="Field6">None</field>
+        <field name="Field7">TL3301 Series SPST 1 N Standard Gull Wing Surface Mount Tactile Switch</field>
+        <field name="Field8">None</field>
+        <field name="MPN">TL3301SPF160QG</field>
+      </fields>
+      <libsource lib="TL3301EF100QG" part="TL3301EF100QG" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D8623E7</tstamp>
+    </comp>
+    <comp ref="S1">
+      <value>TL3301EF100QG</value>
+      <footprint>TL3301EF100QG:SOIC450P1000X730-4N</footprint>
+      <datasheet>TL3301EF100QG</datasheet>
+      <fields>
+        <field name="Field4">Unavailable</field>
+        <field name="Field5">E-Switch</field>
+        <field name="Field6">None</field>
+        <field name="Field7">TL3301 Series SPST 1 N Standard Gull Wing Surface Mount Tactile Switch</field>
+        <field name="Field8">None</field>
+        <field name="MPN">TL3301SPF160QG</field>
+      </fields>
+      <libsource lib="TL3301EF100QG" part="TL3301EF100QG" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D8631A6</tstamp>
+    </comp>
+    <comp ref="U2">
+      <value>TLV70233_SOT23-5</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23-5</footprint>
+      <datasheet>http://www.ti.com/lit/ds/symlink/tlv702.pdf</datasheet>
+      <fields>
+        <field name="MPN">MF-REG-SOT235-3.3V-300mA</field>
+      </fields>
+      <libsource lib="Regulator_Linear" part="TLV70233_SOT23-5" description="300mA Low Dropout Voltage Regulator, Fixed Output 3.3V, SOT-23-5"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D9A2372</tstamp>
+    </comp>
+    <comp ref="C4">
+      <value>0.1 uf</value>
+      <footprint>MF_Passives:MF_Passives-C0603</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">MF-CAP-0603-0.1uF</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DB02057</tstamp>
+    </comp>
+    <comp ref="FB2">
+      <value>BLM21AG601SN1D</value>
+      <footprint>Inductor_SMD:L_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">742792040</field>
+      </fields>
+      <libsource lib="Device" part="Ferrite_Bead" description="Ferrite bead"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DB0DA67</tstamp>
+    </comp>
+    <comp ref="R4">
+      <value>470 ohm</value>
+      <footprint>MF_Passives:MF_Passives-L0603</footprint>
+      <fields>
+        <field name="MPN">MF-RES-0603-470</field>
+      </fields>
+      <libsource lib="Vindor-rescue" part="RESISTOR_0603-MF_Passives" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DB75FB6</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value>470 ohm</value>
+      <footprint>MF_Passives:MF_Passives-R0603</footprint>
+      <fields>
+        <field name="MPN">MF-RES-0603-470</field>
+      </fields>
+      <libsource lib="Vindor-rescue" part="RESISTOR_0603-MF_Passives" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DB77291</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>27 ohm</value>
+      <footprint>MF_Passives:MF_Passives-R0603</footprint>
+      <fields>
+        <field name="MPN">MF-RES-0603-27</field>
+      </fields>
+      <libsource lib="Vindor-rescue" part="RESISTOR_0603-MF_Passives" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DB8915D</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>27 ohm</value>
+      <footprint>MF_Passives:MF_Passives-R0603</footprint>
+      <fields>
+        <field name="MPN">MF-RES-0603-27</field>
+      </fields>
+      <libsource lib="Vindor-rescue" part="RESISTOR_0603-MF_Passives" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DB89AED</tstamp>
+    </comp>
+    <comp ref="TP1">
+      <value>TOUCHPAD</value>
+      <footprint>Vindor:Vindor_Touchpad</footprint>
+      <fields>
+        <field name="DNP">1</field>
+      </fields>
+      <libsource lib="Vindor" part="TOUCHPAD" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DBB7A00</tstamp>
+    </comp>
+    <comp ref="TP2">
+      <value>TOUCHPAD</value>
+      <footprint>Vindor:Vindor_Touchpad</footprint>
+      <fields>
+        <field name="DNP">1</field>
+      </fields>
+      <libsource lib="Vindor" part="TOUCHPAD" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DBEF542</tstamp>
+    </comp>
+    <comp ref="TP3">
+      <value>TOUCHPAD</value>
+      <footprint>Vindor:Vindor_Touchpad</footprint>
+      <fields>
+        <field name="DNP">1</field>
+      </fields>
+      <libsource lib="Vindor" part="TOUCHPAD" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DC11393</tstamp>
+    </comp>
+    <comp ref="TP4">
+      <value>TOUCHPAD</value>
+      <footprint>Vindor:Vindor_Touchpad</footprint>
+      <fields>
+        <field name="DNP">1</field>
+      </fields>
+      <libsource lib="Vindor" part="TOUCHPAD" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DC16F4D</tstamp>
+    </comp>
+    <comp ref="TP5">
+      <value>TOUCHPAD</value>
+      <footprint>Vindor:Vindor_Touchpad</footprint>
+      <fields>
+        <field name="DNP">1</field>
+      </fields>
+      <libsource lib="Vindor" part="TOUCHPAD" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DC17E79</tstamp>
+    </comp>
+    <comp ref="TP6">
+      <value>TOUCHPAD</value>
+      <footprint>Vindor:Vindor_Touchpad</footprint>
+      <fields>
+        <field name="DNP">1</field>
+      </fields>
+      <libsource lib="Vindor" part="TOUCHPAD" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DC18835</tstamp>
+    </comp>
+    <comp ref="TP7">
+      <value>TOUCHPAD</value>
+      <footprint>Vindor:Vindor_Touchpad</footprint>
+      <fields>
+        <field name="DNP">1</field>
+      </fields>
+      <libsource lib="Vindor" part="TOUCHPAD" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DC193ED</tstamp>
+    </comp>
+    <comp ref="TP8">
+      <value>TOUCHPAD</value>
+      <footprint>Vindor:Vindor_Touchpad</footprint>
+      <fields>
+        <field name="DNP">1</field>
+      </fields>
+      <libsource lib="Vindor" part="TOUCHPAD" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DC1A04B</tstamp>
+    </comp>
+    <comp ref="TP9">
+      <value>TOUCHPAD</value>
+      <footprint>Vindor:Vindor_Touchpad</footprint>
+      <fields>
+        <field name="DNP">1</field>
+      </fields>
+      <libsource lib="Vindor" part="TOUCHPAD" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DC1AD03</tstamp>
+    </comp>
+    <comp ref="TP10">
+      <value>TOUCHPAD</value>
+      <footprint>Vindor:Vindor_Touchpad</footprint>
+      <fields>
+        <field name="DNP">1</field>
+      </fields>
+      <libsource lib="Vindor" part="TOUCHPAD" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DC1C29A</tstamp>
+    </comp>
+    <comp ref="TP11">
+      <value>TOUCHPAD</value>
+      <footprint>Vindor:Vindor_Touchpad</footprint>
+      <fields>
+        <field name="DNP">1</field>
+      </fields>
+      <libsource lib="Vindor" part="TOUCHPAD" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DC1CE16</tstamp>
+    </comp>
+    <comp ref="JX1">
+      <value>S9111-45R</value>
+      <footprint>Vindor:HARWIN_S9111_45R</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">S9111-45R</field>
+      </fields>
+      <libsource lib="Vindor" part="HARWIN_S9111-45R" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DC53790</tstamp>
+    </comp>
+    <comp ref="D3">
+      <value>LED_RGB_CA_PLCC4</value>
+      <footprint>MF_LEDs:MF_LEDs-PLCC4</footprint>
+      <fields>
+        <field name="MPN">MF-LED-ASMB-RGB</field>
+      </fields>
+      <libsource lib="Vindor-rescue" part="LED_RGB_CA_PLCC4-MF_LEDs" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DC5B1F4</tstamp>
+    </comp>
+    <comp ref="R13">
+      <value>100 ohm</value>
+      <footprint>MF_Passives:MF_Passives-R0603</footprint>
+      <fields>
+        <field name="MPN">MF-RES-0603-100</field>
+      </fields>
+      <libsource lib="Vindor-rescue" part="RESISTOR_0603-MF_Passives" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DD33853</tstamp>
+    </comp>
+    <comp ref="R14">
+      <value>100 ohm</value>
+      <footprint>MF_Passives:MF_Passives-R0603</footprint>
+      <fields>
+        <field name="MPN">MF-RES-0603-100</field>
+      </fields>
+      <libsource lib="Vindor-rescue" part="RESISTOR_0603-MF_Passives" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DD3A8D5</tstamp>
+    </comp>
+    <comp ref="R15">
+      <value>100 ohm</value>
+      <footprint>MF_Passives:MF_Passives-R0603</footprint>
+      <fields>
+        <field name="MPN">MF-RES-0603-100</field>
+      </fields>
+      <libsource lib="Vindor-rescue" part="RESISTOR_0603-MF_Passives" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DD3AED7</tstamp>
+    </comp>
+    <comp ref="C3">
+      <value>0.1 uf</value>
+      <footprint>MF_Passives:MF_Passives-C0603</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">MF-CAP-0603-0.1uF</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D370E04</tstamp>
+    </comp>
+    <comp ref="R12">
+      <value>470 ohm</value>
+      <footprint>MF_Passives:MF_Passives-R0603</footprint>
+      <fields>
+        <field name="MPN">MF-RES-0603-470</field>
+      </fields>
+      <libsource lib="Vindor-rescue" part="RESISTOR_0603-MF_Passives" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DDD6AEB</tstamp>
+    </comp>
+    <comp ref="C13">
+      <value>0.1 uf</value>
+      <footprint>MF_Passives:MF_Passives-C0603</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">MF-CAP-0603-0.1uF</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DE49508</tstamp>
+    </comp>
+    <comp ref="J5">
+      <value>2.54mm 01x08 Female</value>
+      <footprint>MF_Connectors:MF_Connectors-PTH_2.54MM_01X08</footprint>
+      <fields>
+        <field name="LABEL01">&gt;LABEL01</field>
+        <field name="LABEL02">&gt;LABEL02</field>
+        <field name="LABEL03">&gt;LABEL03</field>
+        <field name="LABEL04">&gt;LABEL04</field>
+        <field name="LABEL05">&gt;LABEL05</field>
+        <field name="LABEL06">&gt;LABEL06</field>
+        <field name="LABEL07">&gt;LABEL07</field>
+        <field name="LABEL08">&gt;LABEL08</field>
+        <field name="MPN">PPTC081LFBN-RC</field>
+      </fields>
+      <libsource lib="Vindor-rescue" part="CON_01X08_PTH_2.54MM-MF_Connectors" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DE60647</tstamp>
+    </comp>
+    <comp ref="J4">
+      <value>47309-3351</value>
+      <footprint>Vindor:MOLEX_MICROSD_473093351</footprint>
+      <datasheet>https://www.hirose.com/product/en/download_file/key_name/DM3/category/Catalog/doc_file_id/49662/?file_category_id=4&amp;item_id=195&amp;is_series=1</datasheet>
+      <fields>
+        <field name="MPN">47309-3351</field>
+      </fields>
+      <libsource lib="Vindor" part="MODEL_MICROSD_473093351" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DD51B64</tstamp>
+    </comp>
+    <comp ref="C18">
+      <value>0.1 uf</value>
+      <footprint>MF_Passives:MF_Passives-C0603</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">MF-CAP-0603-0.1uF</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D991A8A</tstamp>
+    </comp>
+    <comp ref="C20">
+      <value>1 uf</value>
+      <footprint>MF_Passives:MF_Passives-C0603</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">MF-CAP-0603-1uF</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D9A64E8</tstamp>
+    </comp>
+    <comp ref="C19">
+      <value>10 uf</value>
+      <footprint>MF_Passives:MF_Passives-C1206</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">MF-CAP-1206-10uF</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D9CD972</tstamp>
+    </comp>
+    <comp ref="XTAL1">
+      <value>ECS-160-9-42-CKM-TR</value>
+      <footprint>Vindor:ECS-160-9-42-CKM-TR</footprint>
+      <fields>
+        <field name="MPN">ECS-160-9-42-CKM-TR</field>
+      </fields>
+      <libsource lib="Vindor" part="ECS-160-9-42-CKM-TR" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D8EF44A</tstamp>
+    </comp>
+    <comp ref="JX2">
+      <value>S9111-45R</value>
+      <footprint>Vindor:HARWIN_S9111_45R-TIGHT</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">S9111-45R</field>
+      </fields>
+      <libsource lib="Vindor" part="HARWIN_S9111-45R" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D9183B3</tstamp>
+    </comp>
+    <comp ref="J6">
+      <value>Conn_02x04_Odd_Even</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="DNP">1</field>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_02x04_Odd_Even" description="Generic connector, double row, 02x04, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DA08BDC</tstamp>
+    </comp>
+    <comp ref="R16">
+      <value>10k ohm</value>
+      <footprint>MF_Passives:MF_Passives-L0603</footprint>
+      <fields>
+        <field name="MPN">MF-RES-0603-10K</field>
+      </fields>
+      <libsource lib="Vindor-rescue" part="RESISTOR_0603-MF_Passives" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DA0A6EA</tstamp>
+    </comp>
+    <comp ref="R17">
+      <value>10k ohm</value>
+      <footprint>MF_Passives:MF_Passives-L0603</footprint>
+      <fields>
+        <field name="MPN">MF-RES-0603-10K</field>
+      </fields>
+      <libsource lib="Vindor-rescue" part="RESISTOR_0603-MF_Passives" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DA0BD89</tstamp>
+    </comp>
+    <comp ref="H1">
+      <value>MountingHole</value>
+      <footprint>Vindor:Screw_hole</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="DNP">1</field>
+      </fields>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DAF66B6</tstamp>
+    </comp>
+    <comp ref="H2">
+      <value>MountingHole</value>
+      <footprint>Vindor:Screw_hole</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="DNP">1</field>
+      </fields>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DAF7222</tstamp>
+    </comp>
+    <comp ref="H3">
+      <value>MountingHole</value>
+      <footprint>Vindor:Screw_hole</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="DNP">1</field>
+      </fields>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DAF7F87</tstamp>
+    </comp>
+    <comp ref="H4">
+      <value>MountingHole</value>
+      <footprint>Vindor:Screw_hole</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="DNP">1</field>
+      </fields>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DAF8E90</tstamp>
+    </comp>
+    <comp ref="H5">
+      <value>MountingHole</value>
+      <footprint>Vindor:Screw_hole</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="DNP">1</field>
+      </fields>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DAF9C62</tstamp>
+    </comp>
+    <comp ref="H6">
+      <value>MountingHole</value>
+      <footprint>Vindor:Screw_hole</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="DNP">1</field>
+      </fields>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DAFA996</tstamp>
+    </comp>
+    <comp ref="H7">
+      <value>MountingHole</value>
+      <footprint>Vindor:Screw_hole</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="DNP">1</field>
+      </fields>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DB09DA3</tstamp>
+    </comp>
+    <comp ref="H8">
+      <value>MountingHole</value>
+      <footprint>Vindor:Vindor_light_pipe</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="DNP">1</field>
+      </fields>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DB0C7E1</tstamp>
+    </comp>
+    <comp ref="U1">
+      <value>MK20DX256VLH7</value>
+      <footprint>MK20DX256VLH7:MK20DX256VLH7</footprint>
+      <datasheet>MK20DX256VLH7</datasheet>
+      <fields>
+        <field name="Field4">MK20DX256VLH7-ND</field>
+        <field name="Field5">NXP USA</field>
+        <field name="Field6">LQFP-64 NXP Semiconductors</field>
+        <field name="Field7">Kinetis K20: 72MHz Cortex-M4 Performance MCU, 288KB Flash, 64KB SRAM, Full-Speed USB, 64-LQFP</field>
+        <field name="Field8">https://www.digikey.com/product-detail/en/nxp-usa-inc/MK20DX256VLH7/MK20DX256VLH7-ND/3742957?utm_source=snapeda&amp;utm_medium=aggregator&amp;utm_campaign=symbol</field>
+        <field name="MPN">MK20DX256VLH7</field>
+      </fields>
+      <libsource lib="MK20DX256VLH7" part="MK20DX256VLH7" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D885242</tstamp>
+    </comp>
+    <comp ref="J7">
+      <value>Conn_01x08_Female</value>
+      <footprint>MF_Connectors:MF_Connectors-PTH_2.54MM_01X08</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="DNP">1</field>
+      </fields>
+      <libsource lib="Connector" part="Conn_01x08_Female" description="Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D8C6959</tstamp>
+    </comp>
+    <comp ref="C17">
+      <value>0.1 uf</value>
+      <footprint>MF_Passives:MF_Passives-C0603</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">MF-CAP-0603-0.1uF</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DA860D5</tstamp>
+    </comp>
+    <comp ref="TC1">
+      <value>CON_02X03_TC2030-IDC-NL</value>
+      <footprint>Vindor:TC2030</footprint>
+      <fields>
+        <field name="DNP">1</field>
+        <field name="LABEL01">&gt;LABEL01</field>
+        <field name="LABEL02">&gt;LABEL02</field>
+        <field name="LABEL03">&gt;LABEL03</field>
+        <field name="LABEL04">&gt;LABEL04</field>
+        <field name="LABEL05">&gt;LABEL05</field>
+        <field name="LABEL06">&gt;LABEL06</field>
+      </fields>
+      <libsource lib="Vindor-rescue" part="CON_02X03_TC2030-IDC-NL-MF_Connectors" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DB273B5</tstamp>
+    </comp>
+    <comp ref="U3">
+      <value>MCP73831T-2ACI/OT</value>
+      <footprint>digikey-footprints:SOT-753</footprint>
+      <datasheet>http://ww1.microchip.com/downloads/en/DeviceDoc/20001984g.pdf</datasheet>
+      <fields>
+        <field name="Category">Integrated Circuits (ICs)</field>
+        <field name="DK_Datasheet_Link">http://ww1.microchip.com/downloads/en/DeviceDoc/20001984g.pdf</field>
+        <field name="DK_Detail_Page">/product-detail/en/microchip-technology/MCP73831T-2ACI-OT/MCP73831T-2ACI-OTCT-ND/1979802</field>
+        <field name="Description">IC CONTROLLR LI-ION 4.2V SOT23-5</field>
+        <field name="Digi-Key_PN">MCP73831T-2ACI/OTCT-ND</field>
+        <field name="Family">PMIC - Battery Chargers</field>
+        <field name="MPN">MCP73831T-2ACI_OT</field>
+        <field name="Manufacturer">Microchip Technology</field>
+        <field name="Status">Active</field>
+      </fields>
+      <libsource lib="Vindor-rescue" part="MCP73831T-2ACI_OT-dk_PMIC-Battery-Chargers" description=""/>
+      <sheetpath names="/Battery/" tstamps="/5D9ECADF/"/>
+      <tstamp>5D9EE5DA</tstamp>
+    </comp>
+    <comp ref="D2">
+      <value>MF-LED-0603-RED</value>
+      <footprint>MF_LEDs:MF_LEDs-LED0603</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">MF-LED-0603-RED</field>
+      </fields>
+      <libsource lib="Vindor-rescue" part="LED_SINGLE-0603-RED-MF_LEDs" description=""/>
+      <sheetpath names="/Battery/" tstamps="/5D9ECADF/"/>
+      <tstamp>5D9F0318</tstamp>
+    </comp>
+    <comp ref="C6">
+      <value>4.7 uf</value>
+      <footprint>MF_Passives:MF_Passives-C0603</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">CL10A475KQ8NNNC</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/Battery/" tstamps="/5D9ECADF/"/>
+      <tstamp>5D9F1227</tstamp>
+    </comp>
+    <comp ref="D1">
+      <value>MF-DIO-SMA-B140</value>
+      <footprint>MF_Discrete_Semiconductor:MF_Discrete_Semiconductor-SMA</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">MF-DIO-SMA-B140</field>
+      </fields>
+      <libsource lib="Vindor-rescue" part="DIODES_B140_SMA-MF_Discrete_Semiconductor" description=""/>
+      <sheetpath names="/Battery/" tstamps="/5D9ECADF/"/>
+      <tstamp>5D9F1F1D</tstamp>
+    </comp>
+    <comp ref="R5">
+      <value>10k ohm</value>
+      <footprint>MF_Passives:MF_Passives-R0603</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">MF-RES-0603-10K</field>
+      </fields>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <sheetpath names="/Battery/" tstamps="/5D9ECADF/"/>
+      <tstamp>5D9F32EB</tstamp>
+    </comp>
+    <comp ref="C5">
+      <value>4.7 uf</value>
+      <footprint>MF_Passives:MF_Passives-C0603</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">CL10A475KQ8NNNC</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/Battery/" tstamps="/5D9ECADF/"/>
+      <tstamp>5D9F41E3</tstamp>
+    </comp>
+    <comp ref="R6">
+      <value>470 ohm</value>
+      <footprint>MF_Passives:MF_Passives-R0603</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">MF-RES-0603-470</field>
+      </fields>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <sheetpath names="/Battery/" tstamps="/5D9ECADF/"/>
+      <tstamp>5D9F9644</tstamp>
+    </comp>
+    <comp ref="S3">
+      <value>1825282-1</value>
+      <footprint>Vindor:TE1825282-1</footprint>
+      <datasheet>http://spec_sheets.e-switch.com/specs/P040040.pdf</datasheet>
+      <fields>
+        <field name="Category">Switches</field>
+        <field name="DK_Datasheet_Link">http://spec_sheets.e-switch.com/specs/P040040.pdf</field>
+        <field name="DK_Detail_Page">/product-detail/en/e-switch/EG1218/EG1903-ND/101726</field>
+        <field name="Description">SWITCH SLIDE SPDT 200MA 30V</field>
+        <field name="Digi-Key_PN">EG1903-ND</field>
+        <field name="Family">Slide Switches</field>
+        <field name="MPN">1825282-1</field>
+        <field name="Manufacturer">E-Switch</field>
+        <field name="Status">Active</field>
+      </fields>
+      <libsource lib="Vindor" part="TE1825282-1" description=""/>
+      <sheetpath names="/Battery/" tstamps="/5D9ECADF/"/>
+      <tstamp>5D9FC725</tstamp>
+    </comp>
+    <comp ref="R7">
+      <value>18k ohm</value>
+      <footprint>MF_Passives:MF_Passives-R0603</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">MF-RES-0603-18K</field>
+      </fields>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <sheetpath names="/Battery/" tstamps="/5D9ECADF/"/>
+      <tstamp>5D9FE334</tstamp>
+    </comp>
+    <comp ref="R8">
+      <value>18k ohm</value>
+      <footprint>MF_Passives:MF_Passives-R0603</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">MF-RES-0603-18K</field>
+      </fields>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <sheetpath names="/Battery/" tstamps="/5D9ECADF/"/>
+      <tstamp>5DA0019B</tstamp>
+    </comp>
+    <comp ref="BTPOS1">
+      <value>KEYSTONE 54</value>
+      <footprint>Vindor:KEYSTONE_54</footprint>
+      <fields>
+        <field name="MPN">Keystone 54</field>
+      </fields>
+      <libsource lib="Vindor" part="KEYSTONE_54" description=""/>
+      <sheetpath names="/Battery/" tstamps="/5D9ECADF/"/>
+      <tstamp>5DFF76D4</tstamp>
+    </comp>
+    <comp ref="BTNEG1">
+      <value>KEYSTONE 54</value>
+      <footprint>Vindor:KEYSTONE_54</footprint>
+      <fields>
+        <field name="MPN">Keystone 54</field>
+      </fields>
+      <libsource lib="Vindor" part="KEYSTONE_54" description=""/>
+      <sheetpath names="/Battery/" tstamps="/5D9ECADF/"/>
+      <tstamp>5DFF7E22</tstamp>
+    </comp>
+    <comp ref="R18">
+      <value>5.1k ohm</value>
+      <footprint>MF_Passives:MF_Passives-R0603</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">RC0603JR-075K1L</field>
+      </fields>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <sheetpath names="/Battery/" tstamps="/5D9ECADF/"/>
+      <tstamp>5D8B1828</tstamp>
+    </comp>
+    <comp ref="R19">
+      <value>5.1k ohm</value>
+      <footprint>MF_Passives:MF_Passives-R0603</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">RC0603JR-075K1L</field>
+      </fields>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <sheetpath names="/Battery/" tstamps="/5D9ECADF/"/>
+      <tstamp>5D8B2DA3</tstamp>
+    </comp>
+    <comp ref="J1">
+      <value>10137062-00021LF</value>
+      <footprint>Vindor:USBC_10137062-00021LF</footprint>
+      <datasheet>Unavailable</datasheet>
+      <fields>
+        <field name="Field4">None</field>
+        <field name="Field5">Molex</field>
+        <field name="Field6">None</field>
+        <field name="Field7">1054500101</field>
+        <field name="Field8">USB Shielded I/O Receptacle; Type C; Right Angle; Surface Mount; Gold over Nickel</field>
+        <field name="MPN">10137062-00021LF</field>
+      </fields>
+      <libsource lib="10137062-00021LF" part="10137062-00021LF" description=""/>
+      <sheetpath names="/Battery/" tstamps="/5D9ECADF/"/>
+      <tstamp>5D8AF1EB</tstamp>
+    </comp>
+    <comp ref="J8">
+      <value>Conn_01x02_Male</value>
+      <footprint>MF_Connectors:MF_Connectors-PTH_2.54MM_01X02</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="Conn_01x02_Male" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/Battery/" tstamps="/5D9ECADF/"/>
+      <tstamp>60006DE3</tstamp>
+    </comp>
+    <comp ref="U5">
+      <value>MCP1703A</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>http://ww1.microchip.com/downloads/en/DeviceDoc/20005122B.pdf</datasheet>
+      <fields>
+        <field name="MPN">MCP1703AT-1802E/CB</field>
+      </fields>
+      <libsource lib="Regulator_Linear" part="MCP1703A-1802_SOT23" description="Low Quiescent Current LDO Regulator, 1.8V, 250mA, Vin&lt;=16V, SOT-23"/>
+      <sheetpath names="/Audio Subsystem/" tstamps="/5D8A51A4/"/>
+      <tstamp>5D8AD52B</tstamp>
+    </comp>
+    <comp ref="U4">
+      <value>TLV70233_SOT23-5</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23-5</footprint>
+      <datasheet>http://www.ti.com/lit/ds/symlink/tlv702.pdf</datasheet>
+      <fields>
+        <field name="MPN">MF-REG-SOT235-3.3V-300mA</field>
+      </fields>
+      <libsource lib="Regulator_Linear" part="TLV70233_SOT23-5" description="300mA Low Dropout Voltage Regulator, Fixed Output 3.3V, SOT-23-5"/>
+      <sheetpath names="/Audio Subsystem/" tstamps="/5D8A51A4/"/>
+      <tstamp>5D8B054C</tstamp>
+    </comp>
+    <comp ref="U8">
+      <value>TPA2005D1DGNRQ1</value>
+      <footprint>Vindor:Vindor-MSOP-8-1EP_W3mm</footprint>
+      <datasheet>http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&amp;gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Ftpa2005d1-q1</datasheet>
+      <fields>
+        <field name="Category">Integrated Circuits (ICs)</field>
+        <field name="DK_Datasheet_Link">http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&amp;gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Ftpa2005d1-q1</field>
+        <field name="DK_Detail_Page">/product-detail/en/texas-instruments/TPA2005D1DGNRQ1/296-24831-1-ND/2094669</field>
+        <field name="Description">IC AMP AUDIO PWR 1.4W D 8MSOP</field>
+        <field name="Digi-Key_PN">296-24831-1-ND</field>
+        <field name="Family">Linear - Amplifiers - Audio</field>
+        <field name="MPN">TPA2005D1DGNRQ1</field>
+        <field name="Manufacturer">Texas Instruments</field>
+        <field name="Status">Active</field>
+      </fields>
+      <libsource lib="Vindor-rescue" part="TPA2005D1DGNRQ1-dk_Linear-Amplifiers-Audio" description=""/>
+      <sheetpath names="/Audio Subsystem/" tstamps="/5D8A51A4/"/>
+      <tstamp>5D8B39F1</tstamp>
+    </comp>
+    <comp ref="C8">
+      <value>0.1 uf</value>
+      <footprint>MF_Passives:MF_Passives-C0603</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">MF-CAP-0603-0.1uF</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/Audio Subsystem/" tstamps="/5D8A51A4/"/>
+      <tstamp>5D8CCB69</tstamp>
+    </comp>
+    <comp ref="C10">
+      <value>0.1 uf</value>
+      <footprint>MF_Passives:MF_Passives-C0603</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">MF-CAP-0603-0.1uF</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/Audio Subsystem/" tstamps="/5D8A51A4/"/>
+      <tstamp>5D8D4D3A</tstamp>
+    </comp>
+    <comp ref="CA1">
+      <value>100 nf</value>
+      <footprint>MF_Passives:MF_Passives-C1210</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">ECHU1C104JX5</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/Audio Subsystem/" tstamps="/5D8A51A4/"/>
+      <tstamp>5D8FCA7E</tstamp>
+    </comp>
+    <comp ref="CA2">
+      <value>100 nf</value>
+      <footprint>MF_Passives:MF_Passives-C1210</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">ECHU1C104JX5</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/Audio Subsystem/" tstamps="/5D8A51A4/"/>
+      <tstamp>5D8FD32D</tstamp>
+    </comp>
+    <comp ref="RA1">
+      <value>20k ohm</value>
+      <footprint>MF_Passives:MF_Passives-R0603</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">ERA-3AEB203V</field>
+      </fields>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <sheetpath names="/Audio Subsystem/" tstamps="/5D8A51A4/"/>
+      <tstamp>5D8FE0AA</tstamp>
+    </comp>
+    <comp ref="RA2">
+      <value>20k ohm</value>
+      <footprint>MF_Passives:MF_Passives-R0603</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">ERA-3AEB203V</field>
+      </fields>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <sheetpath names="/Audio Subsystem/" tstamps="/5D8A51A4/"/>
+      <tstamp>5D8FF057</tstamp>
+    </comp>
+    <comp ref="FB4">
+      <value>BLM21AG601SN1D</value>
+      <footprint>MF_Passives:MF_Passives-C0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">BLM21AG601SN1D</field>
+      </fields>
+      <libsource lib="Device" part="Ferrite_Bead_Small" description="Ferrite bead, small symbol"/>
+      <sheetpath names="/Audio Subsystem/" tstamps="/5D8A51A4/"/>
+      <tstamp>5D9146BC</tstamp>
+    </comp>
+    <comp ref="C12">
+      <value>0.1 uf</value>
+      <footprint>MF_Passives:MF_Passives-C0603</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">MF-CAP-0603-0.1uF</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/Audio Subsystem/" tstamps="/5D8A51A4/"/>
+      <tstamp>5D923E1B</tstamp>
+    </comp>
+    <comp ref="C9">
+      <value>0.1 uf</value>
+      <footprint>MF_Passives:MF_Passives-C0603</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">MF-CAP-0603-0.1uF</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/Audio Subsystem/" tstamps="/5D8A51A4/"/>
+      <tstamp>5D92AEEF</tstamp>
+    </comp>
+    <comp ref="U6">
+      <value>SGTL5000XNAA3</value>
+      <footprint>Vindor:SGTL5000</footprint>
+      <datasheet>Unavailable</datasheet>
+      <fields>
+        <field name="Field4">None</field>
+        <field name="Field5">SGTL5000XNAA3</field>
+        <field name="Field6">QFN-32 NXP Semiconductors</field>
+        <field name="Field7">Audio Codec , Ultra Low-Power, 4 mw for DAC-to-HP, 98 dB SNR and -80 dB THD+N, QFN 32, Tray</field>
+        <field name="Field8">NXP USA</field>
+        <field name="MPN">SGTL5000XNAA3</field>
+      </fields>
+      <libsource lib="SGTL5000XNAA3" part="SGTL5000XNAA3" description=""/>
+      <sheetpath names="/Audio Subsystem/" tstamps="/5D8A51A4/"/>
+      <tstamp>5D8A7C6F</tstamp>
+    </comp>
+    <comp ref="FB3">
+      <value>BLM21AG601SN1D</value>
+      <footprint>MF_Passives:MF_Passives-C0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">BLM21AG601SN1D</field>
+      </fields>
+      <libsource lib="Device" part="Ferrite_Bead_Small" description="Ferrite bead, small symbol"/>
+      <sheetpath names="/Audio Subsystem/" tstamps="/5D8A51A4/"/>
+      <tstamp>5D938A4D</tstamp>
+    </comp>
+    <comp ref="U9">
+      <value>NMJ4HHD2 or NMJ6HHD2</value>
+      <footprint>Vindor:NMJ6HFD2-center</footprint>
+      <datasheet>Unavailable</datasheet>
+      <fields>
+        <field name="Field4">None</field>
+        <field name="Field5">NMJ6HFD2</field>
+        <field name="Field6">None</field>
+        <field name="Field7">m Jack 1/4 Horiz - Trs Switched Full Thread Nose Pc Mt _M203</field>
+        <field name="Field8">Neutrik</field>
+        <field name="MPN">NMJ4HHD2</field>
+      </fields>
+      <libsource lib="NMJ6HFD2" part="NMJ6HFD2" description=""/>
+      <sheetpath names="/Audio Subsystem/" tstamps="/5D8A51A4/"/>
+      <tstamp>5DA27C24</tstamp>
+    </comp>
+    <comp ref="C7">
+      <value>0.1 uf</value>
+      <footprint>MF_Passives:MF_Passives-C0603</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">MF-CAP-0603-0.1uF</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/Audio Subsystem/" tstamps="/5D8A51A4/"/>
+      <tstamp>5D94309E</tstamp>
+    </comp>
+    <comp ref="R9">
+      <value>47 ohm</value>
+      <footprint>MF_Passives:MF_Passives-R0603</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">MF-RES-0603-47</field>
+      </fields>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <sheetpath names="/Audio Subsystem/" tstamps="/5D8A51A4/"/>
+      <tstamp>5D8EE731</tstamp>
+    </comp>
+    <comp ref="R10">
+      <value>47 ohm</value>
+      <footprint>MF_Passives:MF_Passives-R0603</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">MF-RES-0603-47</field>
+      </fields>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <sheetpath names="/Audio Subsystem/" tstamps="/5D8A51A4/"/>
+      <tstamp>5D8EAA4F</tstamp>
+    </comp>
+    <comp ref="U7">
+      <value>TS3A5018PW</value>
+      <footprint>TS3A5018PW:SOP65P640X120-16N</footprint>
+      <datasheet>Unavailable</datasheet>
+      <fields>
+        <field name="Field4">Texas Instruments</field>
+        <field name="Field5">Analogue Switch IC [Texas Instruments] TS3A5018PW Analogue Switch IC</field>
+        <field name="Field6">None</field>
+        <field name="Field7">TSSOP-16 Texas Instruments</field>
+        <field name="Field8">TS3A5018PW</field>
+        <field name="MPN">TS3A5018PW</field>
+      </fields>
+      <libsource lib="TS3A5018PW" part="TS3A5018PW" description=""/>
+      <sheetpath names="/Audio Subsystem/" tstamps="/5D8A51A4/"/>
+      <tstamp>5D8B2447</tstamp>
+    </comp>
+    <comp ref="J2">
+      <value>35RASMT4BHNTRX</value>
+      <footprint>35RASMT4BHNTRX:SWITCHCRAFT_35RASMT4BHNTRX</footprint>
+      <datasheet>Unavailable</datasheet>
+      <fields>
+        <field name="Field4">None</field>
+        <field name="Field5">35RASMT4BHNTRX</field>
+        <field name="Field6">None</field>
+        <field name="Field7">Conn 3.5MM Stereo Jack F 3 POS Solder RA SMD 5 Terminal 1 Port T/R</field>
+        <field name="Field8">Switchcraft</field>
+        <field name="MPN">35RASMT4BHNTRX</field>
+      </fields>
+      <libsource lib="35RASMT4BHNTRX" part="35RASMT4BHNTRX" description=""/>
+      <sheetpath names="/Audio Subsystem/" tstamps="/5D8A51A4/"/>
+      <tstamp>5D8E2365</tstamp>
+    </comp>
+    <comp ref="C11">
+      <value>0.1 uf</value>
+      <footprint>MF_Passives:MF_Passives-C0603</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">MF-CAP-0603-0.1uF</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/Audio Subsystem/" tstamps="/5D8A51A4/"/>
+      <tstamp>5D8F3FFF</tstamp>
+    </comp>
+    <comp ref="R11">
+      <value>220 ohm</value>
+      <footprint>MF_Passives:MF_Passives-R0603</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">MF-RES-0603-220</field>
+      </fields>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <sheetpath names="/Audio Subsystem/" tstamps="/5D8A51A4/"/>
+      <tstamp>5DA7DF63</tstamp>
+    </comp>
+    <comp ref="J3">
+      <value>B2B-PH-SM4-TB(LF)(SN)</value>
+      <footprint>digikey-footprints:PinHeader_1x2_P2mm</footprint>
+      <datasheet>http://www.jst-mfg.com/product/pdf/eng/ePH.pdf</datasheet>
+      <fields>
+        <field name="Category">Connectors, Interconnects</field>
+        <field name="DK_Datasheet_Link">http://www.jst-mfg.com/product/pdf/eng/ePH.pdf</field>
+        <field name="DK_Detail_Page">/product-detail/en/jst-sales-america-inc/B2B-PH-SM4-TB(LF)(SN)/455-1734-1-ND/926831</field>
+        <field name="Description">CONN HEADER SMD 2POS 2MM</field>
+        <field name="Digi-Key_PN">455-1734-1-ND</field>
+        <field name="Family">Rectangular Connectors - Headers, Male Pins</field>
+        <field name="MPN">B2B-PH-SM4-TB(LF)(SN)</field>
+        <field name="Manufacturer">JST Sales America Inc.</field>
+        <field name="Status">Active</field>
+      </fields>
+      <libsource lib="Vindor-rescue" part="B2B-PH-SM4-TB_LF__SN_-dk_Rectangular-Connectors-Headers-Male-Pins" description=""/>
+      <sheetpath names="/Audio Subsystem/" tstamps="/5D8A51A4/"/>
+      <tstamp>5D8B4B0D</tstamp>
+    </comp>
+    <comp ref="FB5">
+      <value>BLM21AG601SN1D</value>
+      <footprint>MF_Passives:MF_Passives-C0805</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">BLM21AG601SN1D</field>
+      </fields>
+      <libsource lib="Device" part="Ferrite_Bead_Small" description="Ferrite bead, small symbol"/>
+      <sheetpath names="/Audio Subsystem/" tstamps="/5D8A51A4/"/>
+      <tstamp>5D91607B</tstamp>
+    </comp>
+    <comp ref="C21">
+      <value>1 uf</value>
+      <footprint>MF_Passives:MF_Passives-C0603</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">MF-CAP-0603-1uF</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/Audio Subsystem/" tstamps="/5D8A51A4/"/>
+      <tstamp>5DE50F97</tstamp>
+    </comp>
+    <comp ref="U11">
+      <value>MP3V5004GP</value>
+      <footprint>Vindor:MP3V5004GP</footprint>
+      <fields>
+        <field name="MPN">MP3V5004GP</field>
+      </fields>
+      <libsource lib="Vindor" part="MP3V5004" description=""/>
+      <sheetpath names="/Sensors/" tstamps="/5D8ED0D4/"/>
+      <tstamp>5D88C905</tstamp>
+    </comp>
+    <comp ref="C14">
+      <value>0.1 uf</value>
+      <footprint>MF_Passives:MF_Passives-C0603</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">MF-CAP-0603-0.1uF</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Sensors/" tstamps="/5D8ED0D4/"/>
+      <tstamp>5D88EB90</tstamp>
+    </comp>
+    <comp ref="U10">
+      <value>LSM6DS3TR</value>
+      <footprint>Vindor:LGA-14_3x2.5mm_P0.5mm</footprint>
+      <datasheet>http://www.st.com/content/ccc/resource/technical/document/datasheet/a3/f5/4f/ae/8e/44/41/d7/DM00133076.pdf/files/DM00133076.pdf/jcr:content/translations/en.DM00133076.pdf</datasheet>
+      <fields>
+        <field name="Category">Sensors, Transducers</field>
+        <field name="DK_Datasheet_Link">http://www.st.com/content/ccc/resource/technical/document/datasheet/a3/f5/4f/ae/8e/44/41/d7/DM00133076.pdf/files/DM00133076.pdf/jcr:content/translations/en.DM00133076.pdf</field>
+        <field name="DK_Detail_Page">/product-detail/en/stmicroelectronics/LSM6DS3TR/497-15383-1-ND/5180534</field>
+        <field name="Description">IMU ACCEL/GYRO I2C/SPI 14VFLGA</field>
+        <field name="Digi-Key_PN">497-15383-1-ND</field>
+        <field name="Family">Motion Sensors - IMUs (Inertial Measurement Units)</field>
+        <field name="MPN">LSM6DS3TR</field>
+        <field name="Manufacturer">STMicroelectronics</field>
+        <field name="Status">Active</field>
+      </fields>
+      <libsource lib="Vindor-rescue" part="LSM6DS3TR-dk_Motion-Sensors-IMUs-Inertial-Measurement-Units" description=""/>
+      <sheetpath names="/Sensors/" tstamps="/5D8ED0D4/"/>
+      <tstamp>5D89D8CF</tstamp>
+    </comp>
+    <comp ref="C15">
+      <value>0.1 uf</value>
+      <footprint>MF_Passives:MF_Passives-C0603</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">MF-CAP-0603-0.1uF</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Sensors/" tstamps="/5D8ED0D4/"/>
+      <tstamp>5D89FB8F</tstamp>
+    </comp>
+    <comp ref="C16">
+      <value>0.1 uf</value>
+      <footprint>MF_Passives:MF_Passives-C0603</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">MF-CAP-0603-0.1uF</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/Sensors/" tstamps="/5D8ED0D4/"/>
+      <tstamp>5D8A06A6</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="10137062-00021LF" part="10137062-00021LF">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">10137062-00021LF</field>
+        <field name="Footprint">CONN_10137062-00021LF</field>
+        <field name="Datasheet">Manufacturer Recommendations</field>
+        <field name="Field4">B</field>
+        <field name="Field5">Amphenol</field>
+      </fields>
+      <pins>
+        <pin num="A1" name="GND" type="power_in"/>
+        <pin num="A2" name="SSTXP1" type="output"/>
+        <pin num="A3" name="SSTXN1" type="output"/>
+        <pin num="A4" name="VBUS_A" type="power_in"/>
+        <pin num="A5" name="CC1" type="BiDi"/>
+        <pin num="A6" name="DP1" type="BiDi"/>
+        <pin num="A7" name="DN1" type="BiDi"/>
+        <pin num="A8" name="SBU1" type="BiDi"/>
+        <pin num="A9" name="VBUS_A" type="power_in"/>
+        <pin num="A10" name="SSRXN2" type="input"/>
+        <pin num="A11" name="SSRXP2" type="input"/>
+        <pin num="A12" name="GND" type="power_in"/>
+        <pin num="B1" name="GND" type="power_in"/>
+        <pin num="B2" name="SSTXP2" type="output"/>
+        <pin num="B3" name="SSTXN2" type="output"/>
+        <pin num="B4" name="VBUS_B" type="power_in"/>
+        <pin num="B5" name="CC2" type="BiDi"/>
+        <pin num="B6" name="DP2" type="BiDi"/>
+        <pin num="B7" name="DN2" type="BiDi"/>
+        <pin num="B8" name="SBU2" type="BiDi"/>
+        <pin num="B9" name="VBUS_B" type="power_in"/>
+        <pin num="B10" name="SSRXN1" type="input"/>
+        <pin num="B11" name="SSRXP1" type="input"/>
+        <pin num="B12" name="GND" type="power_in"/>
+        <pin num="S1" name="SHIELD" type="power_in"/>
+        <pin num="S2" name="SHIELD" type="power_in"/>
+        <pin num="S3" name="SHIELD" type="power_in"/>
+        <pin num="S4" name="SHIELD" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="35RASMT4BHNTRX" part="35RASMT4BHNTRX">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">35RASMT4BHNTRX</field>
+        <field name="Footprint">SWITCHCRAFT_35RASMT4BHNTRX</field>
+        <field name="Datasheet">Unavailable</field>
+        <field name="Field4">None</field>
+        <field name="Field5">35RASMT4BHNTRX</field>
+        <field name="Field6">None</field>
+        <field name="Field7">Conn 3.5MM Stereo Jack F 3 POS Solder RA SMD 5 Terminal 1 Port T/R</field>
+        <field name="Field8">Switchcraft</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="4" type="passive"/>
+        <pin num="5" name="5" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="Conn_01x02_Male">
+      <description>Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x02_Male</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="Conn_01x08_Female">
+      <description>Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x08_Female</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+        <pin num="7" name="Pin_7" type="passive"/>
+        <pin num="8" name="Pin_8" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_02x04_Odd_Even">
+      <description>Generic connector, double row, 02x04, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_2x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_02x04_Odd_Even</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+        <pin num="7" name="Pin_7" type="passive"/>
+        <pin num="8" name="Pin_8" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C_Small">
+      <description>Unpolarized capacitor, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_Small</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Ferrite_Bead">
+      <description>Ferrite bead</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Inductor_*</fp>
+        <fp>L_*</fp>
+        <fp>*Ferrite*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">FB</field>
+        <field name="Value">Ferrite_Bead</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Ferrite_Bead_Small">
+      <description>Ferrite bead, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Inductor_*</fp>
+        <fp>L_*</fp>
+        <fp>*Ferrite*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">FB</field>
+        <field name="Value">Ferrite_Bead_Small</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R_Small_US">
+      <description>Resistor, small US symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R_Small_US</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R_US">
+      <description>Resistor, US symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R_US</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="MK20DX256VLH7" part="MK20DX256VLH7">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">MK20DX256VLH7</field>
+        <field name="Footprint">MK20DX256VLH7</field>
+        <field name="Datasheet">MK20DX256VLH7</field>
+        <field name="Field4">MK20DX256VLH7-ND</field>
+        <field name="Field5">NXP USA</field>
+        <field name="Field6">LQFP-64 NXP Semiconductors</field>
+        <field name="Field7">Kinetis K20: 72MHz Cortex-M4 Performance MCU, 288KB Flash, 64KB SRAM, Full-Speed USB, 64-LQFP</field>
+        <field name="Field8">https://www.digikey.com/product-detail/en/nxp-usa-inc/MK20DX256VLH7/MK20DX256VLH7-ND/3742957?utm_source=snapeda&amp;utm_medium=aggregator&amp;utm_campaign=symbol</field>
+      </fields>
+      <pins>
+        <pin num="1" name="PTE0" type="BiDi"/>
+        <pin num="2" name="PTE1" type="BiDi"/>
+        <pin num="3" name="VDD" type="BiDi"/>
+        <pin num="4" name="VSS" type="BiDi"/>
+        <pin num="5" name="USB0_DP" type="BiDi"/>
+        <pin num="6" name="USB0_DM" type="BiDi"/>
+        <pin num="7" name="VOUT33" type="BiDi"/>
+        <pin num="8" name="VREGIN" type="BiDi"/>
+        <pin num="9" name="ADC0_DP0" type="BiDi"/>
+        <pin num="10" name="ADC0_DM0" type="BiDi"/>
+        <pin num="11" name="ADC0_DP3" type="BiDi"/>
+        <pin num="12" name="ADC0_DM3" type="BiDi"/>
+        <pin num="13" name="VDDA" type="BiDi"/>
+        <pin num="14" name="VREFH" type="BiDi"/>
+        <pin num="15" name="VREFL" type="BiDi"/>
+        <pin num="16" name="VSSA" type="BiDi"/>
+        <pin num="17" name="VREF_OUT" type="BiDi"/>
+        <pin num="18" name="DAC0" type="BiDi"/>
+        <pin num="19" name="XTAL32" type="BiDi"/>
+        <pin num="20" name="EXTAL32" type="BiDi"/>
+        <pin num="21" name="VBAT" type="BiDi"/>
+        <pin num="22" name="PTA0" type="BiDi"/>
+        <pin num="23" name="PTA1" type="BiDi"/>
+        <pin num="24" name="PTA2" type="BiDi"/>
+        <pin num="25" name="PTA3" type="BiDi"/>
+        <pin num="26" name="PTA4" type="BiDi"/>
+        <pin num="27" name="PTA5" type="BiDi"/>
+        <pin num="28" name="PTA12" type="BiDi"/>
+        <pin num="29" name="PTA13" type="BiDi"/>
+        <pin num="30" name="VDD" type="BiDi"/>
+        <pin num="31" name="VSS" type="BiDi"/>
+        <pin num="32" name="PTA18" type="BiDi"/>
+        <pin num="33" name="PTA19" type="BiDi"/>
+        <pin num="34" name="RESET_B" type="BiDi"/>
+        <pin num="35" name="PTB0" type="BiDi"/>
+        <pin num="36" name="PTB1" type="BiDi"/>
+        <pin num="37" name="PTB2" type="BiDi"/>
+        <pin num="38" name="PTB3" type="BiDi"/>
+        <pin num="39" name="PTB16" type="BiDi"/>
+        <pin num="40" name="PTB17" type="BiDi"/>
+        <pin num="41" name="PTB18" type="BiDi"/>
+        <pin num="42" name="PTB19" type="BiDi"/>
+        <pin num="43" name="PTC0" type="BiDi"/>
+        <pin num="44" name="PTC1" type="BiDi"/>
+        <pin num="45" name="PTC2" type="BiDi"/>
+        <pin num="46" name="PTC3" type="BiDi"/>
+        <pin num="47" name="VSS" type="BiDi"/>
+        <pin num="48" name="VDD" type="BiDi"/>
+        <pin num="49" name="PTC4" type="BiDi"/>
+        <pin num="50" name="PTC5" type="BiDi"/>
+        <pin num="51" name="PTC6" type="BiDi"/>
+        <pin num="52" name="PTC7" type="BiDi"/>
+        <pin num="53" name="PTC8" type="BiDi"/>
+        <pin num="54" name="PTC9" type="BiDi"/>
+        <pin num="55" name="PTC10" type="BiDi"/>
+        <pin num="56" name="PTC11" type="BiDi"/>
+        <pin num="57" name="PTD0" type="BiDi"/>
+        <pin num="58" name="PTD1" type="BiDi"/>
+        <pin num="59" name="PTD2" type="BiDi"/>
+        <pin num="60" name="PTD3" type="BiDi"/>
+        <pin num="61" name="PTD4" type="BiDi"/>
+        <pin num="62" name="PTD5" type="BiDi"/>
+        <pin num="63" name="PTD6" type="BiDi"/>
+        <pin num="64" name="PTD7" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="Mechanical" part="MountingHole">
+      <description>Mounting Hole without connection</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>MountingHole*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">H</field>
+        <field name="Value">MountingHole</field>
+      </fields>
+    </libpart>
+    <libpart lib="NMJ6HFD2" part="NMJ6HFD2">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">NMJ6HFD2</field>
+        <field name="Footprint">NMJ6HFD2</field>
+        <field name="Datasheet">Unavailable</field>
+        <field name="Field4">None</field>
+        <field name="Field5">NMJ6HFD2</field>
+        <field name="Field6">None</field>
+        <field name="Field7">m Jack 1/4 Horiz - Trs Switched Full Thread Nose Pc Mt _M203</field>
+        <field name="Field8">Neutrik</field>
+      </fields>
+      <pins>
+        <pin num="RING" name="RING-CONT" type="BiDi"/>
+        <pin num="RINGNORMAL" name="RING-NORM" type="BiDi"/>
+        <pin num="SLEEVE" name="SL-CONT" type="BiDi"/>
+        <pin num="SLEEVENORMAL" name="SLVE-NORM" type="BiDi"/>
+        <pin num="TIP" name="TIP-CONT" type="BiDi"/>
+        <pin num="TIPNORMAL" name="TIP-NORM" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="PTS810_SJM_250_SMTR_LFS" part="PTS810_SJM_250_SMTR_LFS">
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">PTS810_SJM_250_SMTR_LFS</field>
+        <field name="Footprint">SW_PTS810_SJM_250_SMTR_LFS</field>
+        <field name="Datasheet">PTS810 SJM 250 SMTR LFS</field>
+        <field name="Field4">None</field>
+        <field name="Field5">Unavailable</field>
+        <field name="Field6">DO-201 C&amp;amp;K Components</field>
+        <field name="Field7">C&amp;K</field>
+        <field name="Field8">Switch Tactile Spst-No 0.05a 16v</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Regulator_Linear" part="MCP1703A-3302_SOT23">
+      <aliases>
+        <alias>MCP1703A-1202_SOT23</alias>
+        <alias>MCP1703A-1502_SOT23</alias>
+        <alias>MCP1703A-1802_SOT23</alias>
+        <alias>MCP1703A-2502_SOT23</alias>
+        <alias>MCP1703A-2802_SOT23</alias>
+        <alias>MCP1703A-3002_SOT23</alias>
+        <alias>MCP1703A-4002_SOT23</alias>
+        <alias>MCP1703A-5002_SOT23</alias>
+      </aliases>
+      <description>Low Quiescent Current LDO Regulator, 3.3V, 250mA, Vin&lt;=16V, SOT-23</description>
+      <docs>http://ww1.microchip.com/downloads/en/DeviceDoc/20005122B.pdf</docs>
+      <footprints>
+        <fp>SOT?23*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">MCP1703A-3302_SOT23</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_in"/>
+        <pin num="2" name="VO" type="power_out"/>
+        <pin num="3" name="VI" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Regulator_Linear" part="TLV70012_SOT23-5">
+      <aliases>
+        <alias>TLV70013_SOT23-5</alias>
+        <alias>TLV70015_SOT23-5</alias>
+        <alias>TLV70018_SOT23-5</alias>
+        <alias>TLV70019_SOT23-5</alias>
+        <alias>TLV70025_SOT23-5</alias>
+        <alias>TLV70030_SOT23-5</alias>
+        <alias>TLV70032_SOT23-5</alias>
+        <alias>TLV70033_SOT23-5</alias>
+        <alias>TLV70036_SOT23-5</alias>
+        <alias>TLV70212_SOT23-5</alias>
+        <alias>TLV70215_SOT23-5</alias>
+        <alias>TLV70218_SOT23-5</alias>
+        <alias>TLV70225_SOT23-5</alias>
+        <alias>TLV70228_SOT23-5</alias>
+        <alias>TLV70230_SOT23-5</alias>
+        <alias>TLV70231_SOT23-5</alias>
+        <alias>TLV70233_SOT23-5</alias>
+        <alias>TLV70235_SOT23-5</alias>
+        <alias>TLV70237_SOT23-5</alias>
+        <alias>TLV70245_SOT23-5</alias>
+        <alias>TLV702475_SOT23-5</alias>
+      </aliases>
+      <description>200mA Low Dropout Voltage Regulator, Fixed Output 1.2V, SOT-23-5</description>
+      <docs>http://www.ti.com/lit/ds/symlink/tlv700.pdf</docs>
+      <footprints>
+        <fp>SOT?23*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TLV70012_SOT23-5</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23-5</field>
+      </fields>
+      <pins>
+        <pin num="1" name="IN" type="power_in"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="EN" type="input"/>
+        <pin num="4" name="NC" type="NotConnected"/>
+        <pin num="5" name="OUT" type="power_out"/>
+      </pins>
+    </libpart>
+    <libpart lib="SGTL5000XNAA3" part="SGTL5000XNAA3">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">SGTL5000XNAA3</field>
+        <field name="Footprint">QFN50P500X500X100-33N</field>
+        <field name="Datasheet">Unavailable</field>
+        <field name="Field4">None</field>
+        <field name="Field5">SGTL5000XNAA3</field>
+        <field name="Field6">QFN-32 NXP Semiconductors</field>
+        <field name="Field7">Audio Codec , Ultra Low-Power, 4 mw for DAC-to-HP, 98 dB SNR and -80 dB THD+N, QFN 32, Tray</field>
+        <field name="Field8">NXP USA</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="passive"/>
+        <pin num="2" name="HP_R" type="output"/>
+        <pin num="3" name="GND" type="passive"/>
+        <pin num="4" name="HP_VGND" type="input"/>
+        <pin num="5" name="VDDA" type="input"/>
+        <pin num="6" name="HP_L" type="output"/>
+        <pin num="7" name="AGND" type="passive"/>
+        <pin num="10" name="VAG" type="input"/>
+        <pin num="11" name="LINEOUT_R" type="output"/>
+        <pin num="12" name="LINEOUT_L" type="output"/>
+        <pin num="13" name="LINEIN_R" type="input"/>
+        <pin num="14" name="LINEIN_L" type="input"/>
+        <pin num="15" name="MIC" type="input"/>
+        <pin num="16" name="MIC_BIAS" type="input"/>
+        <pin num="18" name="CPFILT" type="input"/>
+        <pin num="20" name="VDDIO" type="power_in"/>
+        <pin num="21" name="SYS_MCLK" type="input"/>
+        <pin num="23" name="I2S_LRCLK" type="input"/>
+        <pin num="24" name="I2S_SCLK" type="input"/>
+        <pin num="25" name="I2S_DOUT" type="output"/>
+        <pin num="26" name="I2S_DIN" type="input"/>
+        <pin num="27" name="CTRL_DATA" type="input"/>
+        <pin num="29" name="CTRL_CLK" type="input"/>
+        <pin num="30" name="VDDD" type="input"/>
+        <pin num="31" name="CTRL_ADR0_CS" type="input"/>
+        <pin num="32" name="CTRL_MODE" type="input"/>
+        <pin num="EXP" name="GND" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TL3301EF100QG" part="TL3301EF100QG">
+      <fields>
+        <field name="Reference">S</field>
+        <field name="Value">TL3301EF100QG</field>
+        <field name="Footprint">SOIC450P1000X730-4N</field>
+        <field name="Datasheet">TL3301EF100QG</field>
+        <field name="Field4">Unavailable</field>
+        <field name="Field5">E-Switch</field>
+        <field name="Field6">None</field>
+        <field name="Field7">TL3301 Series SPST 1 N Standard Gull Wing Surface Mount Tactile Switch</field>
+        <field name="Field8">None</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TS3A5018PW" part="TS3A5018PW">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TS3A5018PW</field>
+        <field name="Footprint">SOP65P640X120-16N</field>
+        <field name="Datasheet">Unavailable</field>
+        <field name="Field4">Texas Instruments</field>
+        <field name="Field5">Analogue Switch IC [Texas Instruments] TS3A5018PW Analogue Switch IC</field>
+        <field name="Field6">None</field>
+        <field name="Field7">TSSOP-16 Texas Instruments</field>
+        <field name="Field8">TS3A5018PW</field>
+      </fields>
+      <pins>
+        <pin num="1" name="IN" type="passive"/>
+        <pin num="2" name="NC1" type="passive"/>
+        <pin num="3" name="NO1" type="passive"/>
+        <pin num="4" name="COM1" type="passive"/>
+        <pin num="5" name="NC2" type="passive"/>
+        <pin num="6" name="NO2" type="passive"/>
+        <pin num="7" name="COM2" type="passive"/>
+        <pin num="8" name="GND" type="passive"/>
+        <pin num="9" name="COM3" type="passive"/>
+        <pin num="10" name="NO3" type="passive"/>
+        <pin num="11" name="NC3" type="passive"/>
+        <pin num="12" name="COM4" type="passive"/>
+        <pin num="13" name="NO4" type="passive"/>
+        <pin num="14" name="NC4" type="passive"/>
+        <pin num="15" name="~EN" type="input"/>
+        <pin num="16" name="V+" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Vindor" part="ECS-160-9-42-CKM-TR">
+      <fields>
+        <field name="Reference">XTAL</field>
+        <field name="Value">ECS-160-9-42-CKM-TR</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="BiDi"/>
+        <pin num="2" name="~" type="BiDi"/>
+        <pin num="3" name="~" type="BiDi"/>
+        <pin num="4" name="GND" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="Vindor" part="HARWIN_S9111-45R">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">HARWIN_S9111-45R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="Vindor" part="KEYSTONE_54">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">KEYSTONE_54</field>
+      </fields>
+      <pins>
+        <pin num="1" name="BAT" type="unspc"/>
+      </pins>
+    </libpart>
+    <libpart lib="Vindor" part="MODEL_MICROSD_473093351">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">MODEL_MICROSD_473093351</field>
+      </fields>
+      <pins>
+        <pin num="1" name="DAT2" type="unspc"/>
+        <pin num="2" name="CD/DAT3" type="unspc"/>
+        <pin num="3" name="CMD" type="unspc"/>
+        <pin num="4" name="VDD" type="unspc"/>
+        <pin num="5" name="CLK" type="unspc"/>
+        <pin num="6" name="VSS" type="unspc"/>
+        <pin num="7" name="DAT0" type="unspc"/>
+        <pin num="8" name="DAT1" type="unspc"/>
+        <pin num="9" name="GND" type="unspc"/>
+        <pin num="10" name="GND" type="unspc"/>
+        <pin num="11" name="POL" type="unspc"/>
+        <pin num="12" name="DET" type="unspc"/>
+      </pins>
+    </libpart>
+    <libpart lib="Vindor" part="MP3V5004">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">MP3V5004</field>
+      </fields>
+      <pins>
+        <pin num="1" name="MT1" type="NotConnected"/>
+        <pin num="2" name="Vs/VCC" type="input"/>
+        <pin num="3" name="GND" type="BiDi"/>
+        <pin num="4" name="OUT" type="output"/>
+        <pin num="5" name="MNT2" type="NotConnected"/>
+        <pin num="6" name="MNT3" type="NotConnected"/>
+        <pin num="7" name="MNT4" type="NotConnected"/>
+        <pin num="8" name="MNT5" type="NotConnected"/>
+      </pins>
+    </libpart>
+    <libpart lib="Vindor" part="TE1825282-1">
+      <fields>
+        <field name="Reference">S</field>
+        <field name="Value">TE1825282-1</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+        <pin num="3" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Vindor" part="TOUCHPAD">
+      <fields>
+        <field name="Reference">TP</field>
+        <field name="Value">TOUCHPAD</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="unspc"/>
+      </pins>
+    </libpart>
+    <libpart lib="Vindor-rescue" part="B2B-PH-SM4-TB_LF__SN_-dk_Rectangular-Connectors-Headers-Male-Pins">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">B2B-PH-SM4-TB_LF__SN_-dk_Rectangular-Connectors-Headers-Male-Pins</field>
+        <field name="Footprint">digikey-footprints:PinHeader_1x2_P2mm</field>
+        <field name="Datasheet">http://www.jst-mfg.com/product/pdf/eng/ePH.pdf</field>
+        <field name="Digi-Key_PN">455-1734-1-ND</field>
+        <field name="MPN">B2B-PH-SM4-TB(LF)(SN)</field>
+        <field name="Category">Connectors, Interconnects</field>
+        <field name="Family">Rectangular Connectors - Headers, Male Pins</field>
+        <field name="DK_Datasheet_Link">http://www.jst-mfg.com/product/pdf/eng/ePH.pdf</field>
+        <field name="DK_Detail_Page">/product-detail/en/jst-sales-america-inc/B2B-PH-SM4-TB(LF)(SN)/455-1734-1-ND/926831</field>
+        <field name="Description">CONN HEADER SMD 2POS 2MM</field>
+        <field name="Manufacturer">JST Sales America Inc.</field>
+        <field name="Status">Active</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Vindor-rescue" part="CON_01X08_PTH_2.54MM-MF_Connectors">
+      <footprints>
+        <fp>*PTH_2.54MM_01X08*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">CON_01X08_PTH_2.54MM-MF_Connectors</field>
+        <field name="Footprint">MF_Connectors_PTH_2.54MM_01X08</field>
+        <field name="LABEL01">&gt;LABEL01</field>
+        <field name="LABEL02">&gt;LABEL02</field>
+        <field name="LABEL03">&gt;LABEL03</field>
+        <field name="LABEL04">&gt;LABEL04</field>
+        <field name="LABEL05">&gt;LABEL05</field>
+        <field name="LABEL06">&gt;LABEL06</field>
+        <field name="LABEL07">&gt;LABEL07</field>
+        <field name="LABEL08">&gt;LABEL08</field>
+      </fields>
+      <pins>
+        <pin num="1" name="PIN1" type="BiDi"/>
+        <pin num="2" name="PIN2" type="BiDi"/>
+        <pin num="3" name="PIN3" type="BiDi"/>
+        <pin num="4" name="PIN4" type="BiDi"/>
+        <pin num="5" name="PIN5" type="BiDi"/>
+        <pin num="6" name="PIN6" type="BiDi"/>
+        <pin num="7" name="PIN7" type="BiDi"/>
+        <pin num="8" name="PIN8" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="Vindor-rescue" part="CON_02X03_TC2030-IDC-NL-MF_Connectors">
+      <footprints>
+        <fp>*TC2030-IDC-NL*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">TC</field>
+        <field name="Value">CON_02X03_TC2030-IDC-NL-MF_Connectors</field>
+        <field name="Footprint">MF_Connectors_TC2030-IDC-NL</field>
+        <field name="LABEL01">&gt;LABEL01</field>
+        <field name="LABEL02">&gt;LABEL02</field>
+        <field name="LABEL03">&gt;LABEL03</field>
+        <field name="LABEL04">&gt;LABEL04</field>
+        <field name="LABEL05">&gt;LABEL05</field>
+        <field name="LABEL06">&gt;LABEL06</field>
+      </fields>
+      <pins>
+        <pin num="1" name="PIN1" type="BiDi"/>
+        <pin num="2" name="PIN2" type="BiDi"/>
+        <pin num="3" name="PIN3" type="BiDi"/>
+        <pin num="4" name="PIN4" type="BiDi"/>
+        <pin num="5" name="PIN5" type="BiDi"/>
+        <pin num="6" name="PIN6" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="Vindor-rescue" part="DIODES_B140_SMA-MF_Discrete_Semiconductor">
+      <footprints>
+        <fp>*SMA*</fp>
+        <fp>*SOD-123*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">DIODES_B140_SMA-MF_Discrete_Semiconductor</field>
+        <field name="Footprint">MF_Discrete_Semiconductor_SMA</field>
+      </fields>
+      <pins>
+        <pin num="ANOD" name="ANODE" type="BiDi"/>
+        <pin num="CATH" name="CATHODE" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="Vindor-rescue" part="LED_RGB_CA_PLCC4-MF_LEDs">
+      <footprints>
+        <fp>*PLCC4*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED_RGB_CA_PLCC4-MF_LEDs</field>
+        <field name="Footprint">MF_LEDs_PLCC4</field>
+      </fields>
+      <pins>
+        <pin num="1" name="ANODE" type="power_in"/>
+        <pin num="2" name="CATHODE_RED" type="power_in"/>
+        <pin num="3" name="CATHODE_GREEN" type="power_in"/>
+        <pin num="4" name="CATHODE_BLUE" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Vindor-rescue" part="LED_SINGLE-0603-RED-MF_LEDs">
+      <footprints>
+        <fp>*LED0603*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED_SINGLE-0603-RED-MF_LEDs</field>
+        <field name="Footprint">MF_LEDs_LED0603</field>
+      </fields>
+      <pins>
+        <pin num="ANOD" name="ANODE" type="power_in"/>
+        <pin num="CATH" name="CATHODE" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Vindor-rescue" part="LSM6DS3TR-dk_Motion-Sensors-IMUs-Inertial-Measurement-Units">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LSM6DS3TR-dk_Motion-Sensors-IMUs-Inertial-Measurement-Units</field>
+        <field name="Footprint">digikey-footprints:LGA-14L_2.5x3mm__LSM6DS3</field>
+        <field name="Datasheet">http://www.st.com/content/ccc/resource/technical/document/datasheet/a3/f5/4f/ae/8e/44/41/d7/DM00133076.pdf/files/DM00133076.pdf/jcr:content/translations/en.DM00133076.pdf</field>
+        <field name="Digi-Key_PN">497-15383-1-ND</field>
+        <field name="MPN">LSM6DS3TR</field>
+        <field name="Category">Sensors, Transducers</field>
+        <field name="Family">Motion Sensors - IMUs (Inertial Measurement Units)</field>
+        <field name="DK_Datasheet_Link">http://www.st.com/content/ccc/resource/technical/document/datasheet/a3/f5/4f/ae/8e/44/41/d7/DM00133076.pdf/files/DM00133076.pdf/jcr:content/translations/en.DM00133076.pdf</field>
+        <field name="DK_Detail_Page">/product-detail/en/stmicroelectronics/LSM6DS3TR/497-15383-1-ND/5180534</field>
+        <field name="Description">IMU ACCEL/GYRO I2C/SPI 14VFLGA</field>
+        <field name="Manufacturer">STMicroelectronics</field>
+        <field name="Status">Active</field>
+      </fields>
+      <pins>
+        <pin num="1" name="SDO/SA0" type="output"/>
+        <pin num="2" name="SDx" type="output"/>
+        <pin num="3" name="SCx" type="output"/>
+        <pin num="4" name="INT1" type="output"/>
+        <pin num="5" name="VDDIO" type="BiDi"/>
+        <pin num="6" name="GND" type="BiDi"/>
+        <pin num="7" name="GND" type="BiDi"/>
+        <pin num="8" name="VDD" type="BiDi"/>
+        <pin num="9" name="INT2" type="output"/>
+        <pin num="10" name="NC" type="NotConnected"/>
+        <pin num="11" name="NC" type="NotConnected"/>
+        <pin num="12" name="CS" type="input"/>
+        <pin num="13" name="SCL" type="input"/>
+        <pin num="14" name="SDA" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="Vindor-rescue" part="MCP73831T-2ACI_OT-dk_PMIC-Battery-Chargers">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">MCP73831T-2ACI_OT-dk_PMIC-Battery-Chargers</field>
+        <field name="Footprint">digikey-footprints:SOT-753</field>
+        <field name="Datasheet">http://ww1.microchip.com/downloads/en/DeviceDoc/20001984g.pdf</field>
+        <field name="Digi-Key_PN">MCP73831T-2ACI/OTCT-ND</field>
+        <field name="MPN">MCP73831T-2ACI/OT</field>
+        <field name="Category">Integrated Circuits (ICs)</field>
+        <field name="Family">PMIC - Battery Chargers</field>
+        <field name="DK_Datasheet_Link">http://ww1.microchip.com/downloads/en/DeviceDoc/20001984g.pdf</field>
+        <field name="DK_Detail_Page">/product-detail/en/microchip-technology/MCP73831T-2ACI-OT/MCP73831T-2ACI-OTCT-ND/1979802</field>
+        <field name="Description">IC CONTROLLR LI-ION 4.2V SOT23-5</field>
+        <field name="Manufacturer">Microchip Technology</field>
+        <field name="Status">Active</field>
+      </fields>
+      <pins>
+        <pin num="1" name="STAT" type="output"/>
+        <pin num="2" name="VSS" type="power_in"/>
+        <pin num="3" name="VBAT" type="power_out"/>
+        <pin num="4" name="VDD" type="power_in"/>
+        <pin num="5" name="PROG" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="Vindor-rescue" part="RESISTOR_0603-MF_Passives">
+      <footprints>
+        <fp>*R0603*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">RESISTOR_0603-MF_Passives</field>
+        <field name="Footprint">MF_Passives_R0603</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Vindor-rescue" part="TPA2005D1DGNRQ1-dk_Linear-Amplifiers-Audio">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TPA2005D1DGNRQ1-dk_Linear-Amplifiers-Audio</field>
+        <field name="Footprint">digikey-footprints:MSOP-8-1EP_W3mm</field>
+        <field name="Datasheet">http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&amp;gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Ftpa2005d1-q1</field>
+        <field name="Digi-Key_PN">296-24831-1-ND</field>
+        <field name="MPN">TPA2005D1DGNRQ1</field>
+        <field name="Category">Integrated Circuits (ICs)</field>
+        <field name="Family">Linear - Amplifiers - Audio</field>
+        <field name="DK_Datasheet_Link">http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&amp;gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Ftpa2005d1-q1</field>
+        <field name="DK_Detail_Page">/product-detail/en/texas-instruments/TPA2005D1DGNRQ1/296-24831-1-ND/2094669</field>
+        <field name="Description">IC AMP AUDIO PWR 1.4W D 8MSOP</field>
+        <field name="Manufacturer">Texas Instruments</field>
+        <field name="Status">Active</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~Shutdown" type="input"/>
+        <pin num="2" name="NC" type="NotConnected"/>
+        <pin num="3" name="IN+" type="input"/>
+        <pin num="4" name="IN-" type="input"/>
+        <pin num="5" name="VO+" type="output"/>
+        <pin num="6" name="VDD" type="power_in"/>
+        <pin num="7" name="GND" type="power_in"/>
+        <pin num="8" name="VO-" type="output"/>
+        <pin num="9" name="GND_PAD" type="power_in"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="10137062-00021LF">
+      <uri>/Users/ftrias/Documents/Source/Vindor/vindor/hardware/pcb/KiCad/10137062-00021LF/10137062-00021LF.lib</uri>
+    </library>
+    <library logical="35RASMT4BHNTRX">
+      <uri>/Users/ftrias/Documents/Source/Vindor/vindor/hardware/pcb/KiCad/35RASMT4BHNTRX/35RASMT4BHNTRX.lib</uri>
+    </library>
+    <library logical="Connector">
+      <uri>/Library/Application Support/kicad/library/Connector.lib</uri>
+    </library>
+    <library logical="Connector_Generic">
+      <uri>/Library/Application Support/kicad/library/Connector_Generic.lib</uri>
+    </library>
+    <library logical="Device">
+      <uri>/Library/Application Support/kicad/library/Device.lib</uri>
+    </library>
+    <library logical="MK20DX256VLH7">
+      <uri>/Users/ftrias/Documents/Source/Vindor/vindor/hardware/pcb/KiCad/MK20DX256VLH7/MK20DX256VLH7.lib</uri>
+    </library>
+    <library logical="Mechanical">
+      <uri>/Library/Application Support/kicad/library/Mechanical.lib</uri>
+    </library>
+    <library logical="NMJ6HFD2">
+      <uri>/Users/ftrias/Documents/Source/Vindor/vindor/hardware/pcb/KiCad/NMJ6HFD2/NMJ6HFD2.lib</uri>
+    </library>
+    <library logical="PTS810_SJM_250_SMTR_LFS">
+      <uri>/Users/ftrias/Documents/Source/Vindor/vindor/hardware/pcb/KiCad/PTS810_SJM_250_SMTR_LFS/PTS810_SJM_250_SMTR_LFS.lib</uri>
+    </library>
+    <library logical="Regulator_Linear">
+      <uri>/Library/Application Support/kicad/library/Regulator_Linear.lib</uri>
+    </library>
+    <library logical="SGTL5000XNAA3">
+      <uri>/Users/ftrias/Documents/Source/Vindor/vindor/hardware/pcb/KiCad/SGTL5000XNAA3/SGTL5000XNAA3.lib</uri>
+    </library>
+    <library logical="TL3301EF100QG">
+      <uri>/Users/ftrias/Documents/Source/Vindor/vindor/hardware/pcb/KiCad/TL3301EF100QG/TL3301EF100QG.lib</uri>
+    </library>
+    <library logical="TS3A5018PW">
+      <uri>/Users/ftrias/Documents/Source/Vindor/vindor/hardware/pcb/KiCad/TS3A5018PW/TS3A5018PW.lib</uri>
+    </library>
+    <library logical="Vindor">
+      <uri>/Users/ftrias/Documents/Source/Vindor/vindor/hardware/pcb/KiCad/Vindor/Vindor.lib</uri>
+    </library>
+    <library logical="Vindor-rescue">
+      <uri>/Users/ftrias/Documents/Source/Vindor/vindor/hardware/pcb/layout/R60/Vindor-rescue.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="26">
+      <node ref="S1" pin="1"/>
+      <node ref="U1" pin="2"/>
+    </net>
+    <net code="2" name="Net-(SW1-Pad2)">
+      <node ref="SW1" pin="2"/>
+    </net>
+    <net code="3" name="Net-(SW1-Pad3)">
+      <node ref="SW1" pin="3"/>
+    </net>
+    <net code="4" name="RESET_B">
+      <node ref="SW1" pin="1"/>
+      <node ref="U1" pin="34"/>
+      <node ref="TC1" pin="3"/>
+    </net>
+    <net code="5" name="+3.3VA">
+      <node ref="U1" pin="13"/>
+      <node ref="FB1" pin="1"/>
+      <node ref="U1" pin="14"/>
+    </net>
+    <net code="6" name="Net-(S2-Pad2)">
+      <node ref="S2" pin="2"/>
+    </net>
+    <net code="7" name="Net-(S2-Pad3)">
+      <node ref="S2" pin="3"/>
+    </net>
+    <net code="8" name="Net-(S1-Pad2)">
+      <node ref="S1" pin="2"/>
+    </net>
+    <net code="9" name="Net-(S1-Pad3)">
+      <node ref="S1" pin="3"/>
+    </net>
+    <net code="10" name="24">
+      <node ref="U1" pin="27"/>
+      <node ref="S2" pin="1"/>
+    </net>
+    <net code="11" name="SWDIO">
+      <node ref="U1" pin="25"/>
+      <node ref="TC1" pin="2"/>
+    </net>
+    <net code="12" name="SWDCLK">
+      <node ref="U1" pin="22"/>
+      <node ref="TC1" pin="4"/>
+    </net>
+    <net code="13" name="+4V">
+      <node ref="R7" pin="1"/>
+      <node ref="S3" pin="1"/>
+      <node ref="U4" pin="1"/>
+      <node ref="U2" pin="1"/>
+      <node ref="U2" pin="3"/>
+    </net>
+    <net code="14" name="Net-(U2-Pad4)">
+      <node ref="U2" pin="4"/>
+    </net>
+    <net code="15" name="8:UART_TX">
+      <node ref="R9" pin="2"/>
+      <node ref="J7" pin="4"/>
+      <node ref="J6" pin="1"/>
+      <node ref="U1" pin="60"/>
+    </net>
+    <net code="16" name="7:UART_RX">
+      <node ref="J7" pin="3"/>
+      <node ref="U1" pin="59"/>
+      <node ref="J6" pin="8"/>
+    </net>
+    <net code="17" name="14:EN_MIDI">
+      <node ref="U1" pin="58"/>
+      <node ref="U7" pin="1"/>
+    </net>
+    <net code="18" name="2:AMP_SHUTDOWN">
+      <node ref="U8" pin="1"/>
+      <node ref="U1" pin="57"/>
+    </net>
+    <net code="19" name="4:I2S_LRCLK">
+      <node ref="U1" pin="29"/>
+      <node ref="U6" pin="23"/>
+    </net>
+    <net code="20" name="9:I2S_SCLK">
+      <node ref="U6" pin="24"/>
+      <node ref="U1" pin="46"/>
+    </net>
+    <net code="21" name="9:I2S_DOUT">
+      <node ref="U1" pin="62"/>
+      <node ref="U6" pin="25"/>
+    </net>
+    <net code="22" name="3:I2S_DIN">
+      <node ref="U6" pin="26"/>
+      <node ref="U1" pin="28"/>
+    </net>
+    <net code="23" name="28:SYS_MCLK">
+      <node ref="U6" pin="21"/>
+      <node ref="U1" pin="53"/>
+    </net>
+    <net code="24" name="BV">
+      <node ref="U1" pin="10"/>
+      <node ref="R7" pin="2"/>
+      <node ref="R8" pin="1"/>
+    </net>
+    <net code="25" name="27:LDO_EN">
+      <node ref="U1" pin="54"/>
+      <node ref="U4" pin="3"/>
+    </net>
+    <net code="26" name="AMP_JACK">
+      <node ref="U1" pin="9"/>
+      <node ref="U9" pin="SLEEVENORMAL"/>
+    </net>
+    <net code="27" name="HP_JACK">
+      <node ref="R11" pin="2"/>
+      <node ref="J2" pin="4"/>
+      <node ref="U1" pin="12"/>
+    </net>
+    <net code="28" name="Net-(C4-Pad1)">
+      <node ref="C4" pin="1"/>
+      <node ref="U1" pin="17"/>
+    </net>
+    <net code="29" name="30:CTRL_DATA">
+      <node ref="U10" pin="14"/>
+      <node ref="J5" pin="7"/>
+      <node ref="U6" pin="27"/>
+      <node ref="U1" pin="56"/>
+      <node ref="R4" pin="2"/>
+    </net>
+    <net code="30" name="29:CTRL_CLK">
+      <node ref="J5" pin="6"/>
+      <node ref="U1" pin="55"/>
+      <node ref="U10" pin="13"/>
+      <node ref="U6" pin="29"/>
+      <node ref="R3" pin="2"/>
+    </net>
+    <net code="31" name="Net-(R1-Pad1)">
+      <node ref="R1" pin="1"/>
+      <node ref="U1" pin="6"/>
+    </net>
+    <net code="32" name="USB_DM">
+      <node ref="J1" pin="A7"/>
+      <node ref="J1" pin="B7"/>
+      <node ref="R1" pin="2"/>
+    </net>
+    <net code="33" name="Net-(R2-Pad1)">
+      <node ref="U1" pin="5"/>
+      <node ref="R2" pin="1"/>
+    </net>
+    <net code="34" name="USB_DP">
+      <node ref="R2" pin="2"/>
+      <node ref="J1" pin="B6"/>
+      <node ref="J1" pin="A6"/>
+    </net>
+    <net code="35" name="Net-(TP1-Pad1)">
+      <node ref="TP1" pin="1"/>
+      <node ref="U1" pin="39"/>
+    </net>
+    <net code="36" name="Net-(TP2-Pad1)">
+      <node ref="U1" pin="40"/>
+      <node ref="TP2" pin="1"/>
+    </net>
+    <net code="37" name="Net-(TP3-Pad1)">
+      <node ref="TP3" pin="1"/>
+      <node ref="U1" pin="41"/>
+    </net>
+    <net code="38" name="Net-(TP4-Pad1)">
+      <node ref="U1" pin="35"/>
+      <node ref="TP4" pin="1"/>
+    </net>
+    <net code="39" name="Net-(TP5-Pad1)">
+      <node ref="U1" pin="36"/>
+      <node ref="TP5" pin="1"/>
+    </net>
+    <net code="40" name="Net-(TP6-Pad1)">
+      <node ref="U1" pin="26"/>
+      <node ref="TP6" pin="1"/>
+    </net>
+    <net code="41" name="Net-(TP7-Pad1)">
+      <node ref="U1" pin="38"/>
+      <node ref="TP7" pin="1"/>
+    </net>
+    <net code="42" name="Net-(TP8-Pad1)">
+      <node ref="U1" pin="37"/>
+      <node ref="TP8" pin="1"/>
+    </net>
+    <net code="43" name="Net-(TP9-Pad1)">
+      <node ref="U1" pin="23"/>
+      <node ref="TP9" pin="1"/>
+    </net>
+    <net code="44" name="Net-(TP10-Pad1)">
+      <node ref="TP10" pin="1"/>
+      <node ref="U1" pin="43"/>
+    </net>
+    <net code="45" name="Net-(TP11-Pad1)">
+      <node ref="TP11" pin="1"/>
+      <node ref="U1" pin="42"/>
+    </net>
+    <net code="46" name="Net-(JX1-Pad1)">
+      <node ref="U1" pin="24"/>
+      <node ref="JX1" pin="1"/>
+    </net>
+    <net code="47" name="Net-(D3-Pad2)">
+      <node ref="R15" pin="1"/>
+      <node ref="D3" pin="2"/>
+    </net>
+    <net code="48" name="Net-(D3-Pad3)">
+      <node ref="R14" pin="1"/>
+      <node ref="D3" pin="3"/>
+    </net>
+    <net code="49" name="Net-(D3-Pad4)">
+      <node ref="D3" pin="4"/>
+      <node ref="R13" pin="1"/>
+    </net>
+    <net code="50" name="21:LED_BLUE">
+      <node ref="U1" pin="63"/>
+      <node ref="R13" pin="2"/>
+    </net>
+    <net code="51" name="5:LED_GREEN">
+      <node ref="R14" pin="2"/>
+      <node ref="U1" pin="64"/>
+    </net>
+    <net code="52" name="6:LED_RED">
+      <node ref="U1" pin="61"/>
+      <node ref="R15" pin="2"/>
+    </net>
+    <net code="53" name="31:SD_DET">
+      <node ref="J4" pin="12"/>
+      <node ref="U1" pin="1"/>
+      <node ref="R12" pin="2"/>
+    </net>
+    <net code="54" name="A12">
+      <node ref="U11" pin="4"/>
+      <node ref="U1" pin="11"/>
+    </net>
+    <net code="55" name="A14">
+      <node ref="J5" pin="8"/>
+      <node ref="U1" pin="18"/>
+    </net>
+    <net code="56" name="22:TOUCH_HIGH">
+      <node ref="J5" pin="1"/>
+      <node ref="U1" pin="44"/>
+    </net>
+    <net code="57" name="23:TOUCH_LOW">
+      <node ref="J5" pin="3"/>
+      <node ref="U1" pin="45"/>
+    </net>
+    <net code="58" name="Net-(J4-Pad1)">
+      <node ref="J4" pin="1"/>
+    </net>
+    <net code="59" name="10:SC_CD">
+      <node ref="U1" pin="49"/>
+      <node ref="J4" pin="2"/>
+    </net>
+    <net code="60" name="11:SD_CMD">
+      <node ref="U1" pin="51"/>
+      <node ref="J4" pin="3"/>
+    </net>
+    <net code="61" name="13:SD_CLK">
+      <node ref="U1" pin="50"/>
+      <node ref="J4" pin="5"/>
+    </net>
+    <net code="62" name="12:SD_DAT0">
+      <node ref="J4" pin="7"/>
+      <node ref="U1" pin="52"/>
+    </net>
+    <net code="63" name="Net-(J4-Pad8)">
+      <node ref="J4" pin="8"/>
+    </net>
+    <net code="64" name="Net-(U1-Pad32)">
+      <node ref="XTAL1" pin="1"/>
+      <node ref="U1" pin="32"/>
+    </net>
+    <net code="65" name="Net-(U1-Pad33)">
+      <node ref="XTAL1" pin="3"/>
+      <node ref="U1" pin="33"/>
+    </net>
+    <net code="66" name="Net-(J6-Pad4)">
+      <node ref="J6" pin="4"/>
+    </net>
+    <net code="67" name="Net-(J6-Pad5)">
+      <node ref="J6" pin="5"/>
+    </net>
+    <net code="68" name="Net-(J6-Pad7)">
+      <node ref="J6" pin="7"/>
+    </net>
+    <net code="69" name="Net-(J6-Pad3)">
+      <node ref="J6" pin="3"/>
+      <node ref="R16" pin="1"/>
+    </net>
+    <net code="70" name="Net-(J6-Pad6)">
+      <node ref="J6" pin="6"/>
+      <node ref="R17" pin="2"/>
+    </net>
+    <net code="71" name="Net-(U1-Pad8)">
+      <node ref="U1" pin="8"/>
+    </net>
+    <net code="72" name="GNDA">
+      <node ref="U1" pin="16"/>
+      <node ref="FB2" pin="1"/>
+      <node ref="U11" pin="3"/>
+    </net>
+    <net code="73" name="Net-(U1-Pad19)">
+      <node ref="U1" pin="19"/>
+    </net>
+    <net code="74" name="Net-(U1-Pad20)">
+      <node ref="U1" pin="20"/>
+    </net>
+    <net code="75" name="Net-(J7-Pad1)">
+      <node ref="J7" pin="1"/>
+    </net>
+    <net code="76" name="Net-(J7-Pad6)">
+      <node ref="J7" pin="6"/>
+    </net>
+    <net code="77" name="Net-(J7-Pad8)">
+      <node ref="J7" pin="8"/>
+    </net>
+    <net code="78" name="Net-(J2-Pad3)">
+      <node ref="U7" pin="7"/>
+      <node ref="J2" pin="3"/>
+    </net>
+    <net code="79" name="Net-(J2-Pad2)">
+      <node ref="U7" pin="4"/>
+      <node ref="J2" pin="2"/>
+    </net>
+    <net code="80" name="LGND">
+      <node ref="SW1" pin="4"/>
+      <node ref="U1" pin="15"/>
+      <node ref="C1" pin="1"/>
+      <node ref="C2" pin="1"/>
+      <node ref="J1" pin="S4"/>
+      <node ref="JX2" pin="1"/>
+      <node ref="XTAL1" pin="4"/>
+      <node ref="XTAL1" pin="2"/>
+      <node ref="J1" pin="S3"/>
+      <node ref="J1" pin="S2"/>
+      <node ref="J1" pin="S1"/>
+      <node ref="J1" pin="B12"/>
+      <node ref="J1" pin="B1"/>
+      <node ref="C19" pin="1"/>
+      <node ref="J1" pin="A12"/>
+      <node ref="J1" pin="A1"/>
+      <node ref="C20" pin="1"/>
+      <node ref="C18" pin="1"/>
+      <node ref="U1" pin="4"/>
+      <node ref="U1" pin="31"/>
+      <node ref="U1" pin="47"/>
+      <node ref="R19" pin="2"/>
+      <node ref="J7" pin="2"/>
+      <node ref="R18" pin="2"/>
+      <node ref="J7" pin="7"/>
+      <node ref="J4" pin="9"/>
+      <node ref="C17" pin="1"/>
+      <node ref="BTNEG1" pin="1"/>
+      <node ref="U3" pin="2"/>
+      <node ref="J4" pin="6"/>
+      <node ref="C6" pin="2"/>
+      <node ref="J4" pin="11"/>
+      <node ref="TC1" pin="5"/>
+      <node ref="R5" pin="2"/>
+      <node ref="C5" pin="2"/>
+      <node ref="J4" pin="10"/>
+      <node ref="S2" pin="4"/>
+      <node ref="R8" pin="2"/>
+      <node ref="S1" pin="4"/>
+      <node ref="C21" pin="1"/>
+      <node ref="J5" pin="4"/>
+      <node ref="J5" pin="2"/>
+      <node ref="U2" pin="2"/>
+      <node ref="C14" pin="1"/>
+      <node ref="U10" pin="1"/>
+      <node ref="U10" pin="2"/>
+      <node ref="C13" pin="1"/>
+      <node ref="U10" pin="3"/>
+      <node ref="R11" pin="1"/>
+      <node ref="U10" pin="6"/>
+      <node ref="U10" pin="7"/>
+      <node ref="C15" pin="1"/>
+      <node ref="C16" pin="1"/>
+      <node ref="C11" pin="2"/>
+      <node ref="U7" pin="11"/>
+      <node ref="U7" pin="8"/>
+      <node ref="C3" pin="1"/>
+      <node ref="U7" pin="15"/>
+      <node ref="U6" pin="7"/>
+      <node ref="U6" pin="EXP"/>
+      <node ref="U6" pin="3"/>
+      <node ref="U6" pin="1"/>
+      <node ref="U6" pin="32"/>
+      <node ref="U6" pin="31"/>
+      <node ref="TC1" pin="6"/>
+      <node ref="C12" pin="1"/>
+      <node ref="C7" pin="2"/>
+      <node ref="C9" pin="2"/>
+      <node ref="U9" pin="SLEEVE"/>
+      <node ref="C4" pin="2"/>
+      <node ref="C10" pin="2"/>
+      <node ref="C8" pin="2"/>
+      <node ref="U5" pin="1"/>
+      <node ref="U4" pin="2"/>
+      <node ref="FB2" pin="2"/>
+      <node ref="U8" pin="9"/>
+      <node ref="U8" pin="7"/>
+    </net>
+    <net code="81" name="Net-(FB5-Pad1)">
+      <node ref="FB5" pin="1"/>
+      <node ref="J3" pin="2"/>
+    </net>
+    <net code="82" name="Net-(FB4-Pad1)">
+      <node ref="J3" pin="1"/>
+      <node ref="FB4" pin="1"/>
+    </net>
+    <net code="83" name="Net-(FB4-Pad2)">
+      <node ref="U8" pin="5"/>
+      <node ref="FB4" pin="2"/>
+    </net>
+    <net code="84" name="Net-(FB5-Pad2)">
+      <node ref="U8" pin="8"/>
+      <node ref="FB5" pin="2"/>
+    </net>
+    <net code="85" name="AMP_LEFT">
+      <node ref="RA1" pin="2"/>
+      <node ref="CA1" pin="1"/>
+      <node ref="U9" pin="TIP"/>
+    </net>
+    <net code="86" name="VCC33">
+      <node ref="U1" pin="48"/>
+      <node ref="U1" pin="3"/>
+      <node ref="U1" pin="7"/>
+      <node ref="D3" pin="1"/>
+      <node ref="C7" pin="1"/>
+      <node ref="C10" pin="1"/>
+      <node ref="R17" pin="1"/>
+      <node ref="FB1" pin="2"/>
+      <node ref="R16" pin="2"/>
+      <node ref="C1" pin="2"/>
+      <node ref="C2" pin="2"/>
+      <node ref="J6" pin="2"/>
+      <node ref="C19" pin="2"/>
+      <node ref="C20" pin="2"/>
+      <node ref="C18" pin="2"/>
+      <node ref="U1" pin="21"/>
+      <node ref="R10" pin="2"/>
+      <node ref="J7" pin="5"/>
+      <node ref="U6" pin="20"/>
+      <node ref="C17" pin="2"/>
+      <node ref="TC1" pin="1"/>
+      <node ref="J4" pin="4"/>
+      <node ref="U1" pin="30"/>
+      <node ref="J5" pin="5"/>
+      <node ref="FB3" pin="2"/>
+      <node ref="U5" pin="3"/>
+      <node ref="R4" pin="1"/>
+      <node ref="U7" pin="16"/>
+      <node ref="C3" pin="2"/>
+      <node ref="U11" pin="2"/>
+      <node ref="C14" pin="2"/>
+      <node ref="C11" pin="1"/>
+      <node ref="C16" pin="2"/>
+      <node ref="C15" pin="2"/>
+      <node ref="R12" pin="1"/>
+      <node ref="U10" pin="8"/>
+      <node ref="U10" pin="5"/>
+      <node ref="C13" pin="2"/>
+      <node ref="U2" pin="5"/>
+      <node ref="U10" pin="12"/>
+      <node ref="R3" pin="1"/>
+    </net>
+    <net code="87" name="Net-(J2-Pad5)">
+      <node ref="J2" pin="5"/>
+    </net>
+    <net code="88" name="Net-(U7-Pad13)">
+      <node ref="U7" pin="13"/>
+    </net>
+    <net code="89" name="HP_L">
+      <node ref="U6" pin="6"/>
+      <node ref="U7" pin="6"/>
+    </net>
+    <net code="90" name="HP_R">
+      <node ref="U6" pin="2"/>
+      <node ref="U7" pin="3"/>
+    </net>
+    <net code="91" name="Net-(U7-Pad14)">
+      <node ref="U7" pin="14"/>
+    </net>
+    <net code="92" name="Net-(U7-Pad12)">
+      <node ref="U7" pin="12"/>
+    </net>
+    <net code="93" name="Net-(J2-Pad1)">
+      <node ref="J2" pin="1"/>
+      <node ref="U7" pin="9"/>
+    </net>
+    <net code="94" name="Net-(R10-Pad1)">
+      <node ref="R10" pin="1"/>
+      <node ref="U7" pin="2"/>
+    </net>
+    <net code="95" name="Net-(R9-Pad1)">
+      <node ref="U7" pin="5"/>
+      <node ref="R9" pin="1"/>
+    </net>
+    <net code="96" name="HP_G">
+      <node ref="U7" pin="10"/>
+      <node ref="U6" pin="4"/>
+    </net>
+    <net code="97" name="Net-(U9-PadTIPNORMAL)">
+      <node ref="U9" pin="TIPNORMAL"/>
+    </net>
+    <net code="98" name="Net-(U9-PadRINGNORMAL)">
+      <node ref="U9" pin="RINGNORMAL"/>
+    </net>
+    <net code="99" name="Net-(U9-PadRING)">
+      <node ref="U9" pin="RING"/>
+    </net>
+    <net code="100" name="Net-(U4-Pad4)">
+      <node ref="U4" pin="4"/>
+    </net>
+    <net code="101" name="VCC_3.3AUD">
+      <node ref="C12" pin="2"/>
+      <node ref="U4" pin="5"/>
+      <node ref="U8" pin="6"/>
+      <node ref="C21" pin="2"/>
+    </net>
+    <net code="102" name="Net-(U8-Pad2)">
+      <node ref="U8" pin="2"/>
+    </net>
+    <net code="103" name="VCC_1.8">
+      <node ref="U5" pin="2"/>
+      <node ref="C8" pin="1"/>
+      <node ref="U6" pin="30"/>
+    </net>
+    <net code="104" name="Net-(RA1-Pad1)">
+      <node ref="RA1" pin="1"/>
+      <node ref="U8" pin="4"/>
+    </net>
+    <net code="105" name="Net-(RA2-Pad1)">
+      <node ref="RA2" pin="1"/>
+      <node ref="U8" pin="3"/>
+    </net>
+    <net code="106" name="Net-(CA2-Pad1)">
+      <node ref="RA2" pin="2"/>
+      <node ref="CA2" pin="1"/>
+    </net>
+    <net code="107" name="LO_LEFT">
+      <node ref="U6" pin="12"/>
+      <node ref="CA1" pin="2"/>
+    </net>
+    <net code="108" name="LO_RIGHT">
+      <node ref="CA2" pin="2"/>
+      <node ref="U6" pin="11"/>
+    </net>
+    <net code="109" name="Net-(U6-Pad15)">
+      <node ref="U6" pin="15"/>
+    </net>
+    <net code="110" name="Net-(U6-Pad16)">
+      <node ref="U6" pin="16"/>
+    </net>
+    <net code="111" name="Net-(U6-Pad18)">
+      <node ref="U6" pin="18"/>
+    </net>
+    <net code="112" name="Net-(U6-Pad14)">
+      <node ref="U6" pin="14"/>
+    </net>
+    <net code="113" name="Net-(U6-Pad13)">
+      <node ref="U6" pin="13"/>
+    </net>
+    <net code="114" name="Net-(C9-Pad1)">
+      <node ref="U6" pin="10"/>
+      <node ref="C9" pin="1"/>
+    </net>
+    <net code="115" name="Net-(FB3-Pad1)">
+      <node ref="U6" pin="5"/>
+      <node ref="FB3" pin="1"/>
+    </net>
+    <net code="116" name="Net-(U10-Pad9)">
+      <node ref="U10" pin="9"/>
+    </net>
+    <net code="117" name="Net-(U10-Pad4)">
+      <node ref="U10" pin="4"/>
+    </net>
+    <net code="118" name="Net-(U10-Pad11)">
+      <node ref="U10" pin="11"/>
+    </net>
+    <net code="119" name="Net-(U10-Pad10)">
+      <node ref="U10" pin="10"/>
+    </net>
+    <net code="120" name="Net-(U11-Pad8)">
+      <node ref="U11" pin="8"/>
+    </net>
+    <net code="121" name="Net-(U11-Pad7)">
+      <node ref="U11" pin="7"/>
+    </net>
+    <net code="122" name="Net-(U11-Pad6)">
+      <node ref="U11" pin="6"/>
+    </net>
+    <net code="123" name="Net-(U11-Pad5)">
+      <node ref="U11" pin="5"/>
+    </net>
+    <net code="124" name="Net-(U11-Pad1)">
+      <node ref="U11" pin="1"/>
+    </net>
+    <net code="125" name="Net-(S3-Pad3)">
+      <node ref="S3" pin="3"/>
+    </net>
+    <net code="126" name="Net-(R6-Pad2)">
+      <node ref="R6" pin="2"/>
+      <node ref="U3" pin="1"/>
+    </net>
+    <net code="127" name="Net-(D2-PadCATH)">
+      <node ref="R6" pin="1"/>
+      <node ref="D2" pin="CATH"/>
+    </net>
+    <net code="128" name="Net-(C5-Pad1)">
+      <node ref="D2" pin="ANOD"/>
+      <node ref="J8" pin="2"/>
+      <node ref="C5" pin="1"/>
+      <node ref="D1" pin="CATH"/>
+      <node ref="U3" pin="4"/>
+    </net>
+    <net code="129" name="Net-(R5-Pad1)">
+      <node ref="R5" pin="1"/>
+      <node ref="U3" pin="5"/>
+    </net>
+    <net code="130" name="Net-(J1-PadA5)">
+      <node ref="R18" pin="1"/>
+      <node ref="J1" pin="A5"/>
+    </net>
+    <net code="131" name="Net-(J1-PadB5)">
+      <node ref="R19" pin="1"/>
+      <node ref="J1" pin="B5"/>
+    </net>
+    <net code="132" name="Net-(J1-PadA2)">
+      <node ref="J1" pin="A2"/>
+    </net>
+    <net code="133" name="Net-(J1-PadA3)">
+      <node ref="J1" pin="A3"/>
+    </net>
+    <net code="134" name="Net-(J1-PadA8)">
+      <node ref="J1" pin="A8"/>
+    </net>
+    <net code="135" name="Net-(J1-PadA10)">
+      <node ref="J1" pin="A10"/>
+    </net>
+    <net code="136" name="Net-(J1-PadA11)">
+      <node ref="J1" pin="A11"/>
+    </net>
+    <net code="137" name="Net-(J1-PadB10)">
+      <node ref="J1" pin="B10"/>
+    </net>
+    <net code="138" name="Net-(J1-PadB11)">
+      <node ref="J1" pin="B11"/>
+    </net>
+    <net code="139" name="USB_VBUS">
+      <node ref="J1" pin="B4"/>
+      <node ref="J1" pin="B9"/>
+      <node ref="D1" pin="ANOD"/>
+      <node ref="J1" pin="A9"/>
+      <node ref="J1" pin="A4"/>
+    </net>
+    <net code="140" name="Net-(J1-PadB8)">
+      <node ref="J1" pin="B8"/>
+    </net>
+    <net code="141" name="Net-(J1-PadB2)">
+      <node ref="J1" pin="B2"/>
+    </net>
+    <net code="142" name="Net-(J1-PadB3)">
+      <node ref="J1" pin="B3"/>
+    </net>
+    <net code="143" name="Net-(BTPOS1-Pad1)">
+      <node ref="C6" pin="1"/>
+      <node ref="U3" pin="3"/>
+      <node ref="BTPOS1" pin="1"/>
+      <node ref="J8" pin="1"/>
+      <node ref="S3" pin="2"/>
+    </net>
+  </nets>
+</export>

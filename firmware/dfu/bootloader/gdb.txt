@@ -1,0 +1,11 @@
+#!/bin/sh
+gdb <<EOF
+#target remote localhost:3333
+target extended-remote localhost:3333
+monitor kinetis mdm halt
+#monitor flash read_bank 0 bank-0.bin
+#monitor flash write_bank 0 bank-0.bin
+monitor flash write_image erase unlock boot-mk20dx256.elf
+#monitor flash write_image firmware.elf
+#symbol-file firmware.elf
+EOF

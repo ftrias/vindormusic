@@ -1,0 +1,61 @@
+PCBNEW-LibModule-V1  
+# encoding utf-8
+Units mm
+$INDEX
+SOIC450P1000X730-4N
+$EndINDEX
+$MODULE SOIC450P1000X730-4N
+Po 0 0 0 15 00000000 00000000 ~~
+Li SOIC450P1000X730-4N
+Cd 
+Sc 00000000
+At SMD
+Op 0 0 0
+.SolderMask 0
+.SolderPaste 0
+T0 -0.76065 -4.03841 1.00084 1.00084 0 0.05 N V 21 "SOIC450P1000X730-4N"
+T1 -0.325645 3.87264 1.00198 1.00198 0 0.05 N V 21 "VAL**"
+DS -3 -3 -3 3 0.127 21
+DS 3 -3 3 3 0.127 21
+DS -3 -3 3 -3 0.127 21
+DS -3 3 3 3 0.127 21
+DC -4.5 -3.7 -4.2 -3.7 0.4064 21
+DS -5.9 -2.8 -5.9 -2.9 0.127 26
+DS -5.9 -2.9 -5.9 -3.4 0.127 26
+DS -5.9 -3.4 5.9 -3.4 0.127 26
+DS 5.9 -3.4 5.9 3.3 0.127 26
+DS 5.9 3.3 -5.9 3.3 0.127 26
+DS -5.9 3.3 -5.9 -2.8 0.127 26
+$PAD
+Sh "1" R 2.1 1.4 0 0 0
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po -4.55 -2.25
+$EndPAD
+$PAD
+Sh "2" R 2.1 1.4 0 0 0
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po 4.55 -2.25
+$EndPAD
+$PAD
+Sh "3" R 2.1 1.4 0 0 0
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po -4.55 2.25
+$EndPAD
+$PAD
+Sh "4" R 2.1 1.4 0 0 0
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po 4.55 2.25
+$EndPAD
+$EndMODULE SOIC450P1000X730-4N

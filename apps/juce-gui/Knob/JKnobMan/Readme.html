@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<body style="font-family:sans-serif;font-size:small">
+<h1>JKnobMan</h1>
+<p>Copyright (c) 2012-2016 <a href="http://www.g200kg.com/" target="_blank">g200kg</a></p>
+<img src="Samples/BlueDot_V.png"><br/>
+</p>
+<h2>What is this?</h2>
+<p><b>JKnobMan</b> is a 'Knob' graphic image design tool.<br/>
+The image strip has continuous frames stitched vertical, stitched horizontal or individual files.
+Though <b>JKnobMan</b> is mainly designed for VST-plugin GUI development, it may be useful if you need image-strips like this.
+</p>
+<p><b>JKnobMan</b> is a freeware.<br/>
+There are no limitations to use including commercial use.<br/>
+Donations are appreciated if you would like.
+</p>
+<p>
+<b><a href="http://www.g200kg.com/en/software/knobman.html" target="_blank">http://www.g200kg.com/en/software/knobman.html</a></b> (English)<br/>
+<b><a href="http://www.g200kg.com/jp/software/knobman.html" target="_blank">http://www.g200kg.com/jp/software/knobman.html</a></b> (Japanese)
+</p>
+Runnable on Java environment (Win/Mac/Linux)<br/>
+At first, confirm the Java Runtime Environment (JRE) is installed. JRE7 or later is recommended.<br/>
+<b><a href="http://www.java.com/" target="_blank">http://www.java.com/</a></b>
+</p>
+<hr/>
+<h2>Packages</h2>
+<ul>
+  <li>JKnobManXXX-mac.zip : Application bundle for Mac OS X.</li>
+  <li>JKnobManXXX-exe.zip : Wrapped to Windows .exe file. Though this version also need a JRE, it can run like a windows native application.</li>
+  <li>JKnobManXXX-jar.zip : Executable jar file. For any platform that JRE is available.</li>
+</ul>
+<hr/>
+<h2>How to use</h2>
+<p>The detail of usage is here</p>
+<b><a href="http://www.g200kg.com/en/docs/jknobman/" target="_blank">http://www.g200kg.com/en/docs/jknobman/</a></b>
+<hr/>
+<h2>History</h2>
+<ul>
+ <li>2016/10/05 1.3.3
+  <ul>
+    <li>Bugfix : Exe version cannot run with Java 8 update 101 (Windows).</li>
+		<li>Bugfix : Gif animation export image is corrupted with Java 8 update 101.</li>
+		<li>BugFix : Layer preview behavior with frame mask is not normal.</li>
+		<li>Frame Bit-Mask is now evenly assigned to frame length regardless of preview/render mode.</li>
+    <li>Language Ukrainian configuration file is added (may not be perfect).</li>
+  </ul>
+ </li>
+ <li>2013/11/07 1.3.2
+  <ul>
+   <li>Bugfix : Texture setting may be lost after save/load in some case.
+   </li>
+  </ul>
+ </li>
+ <li>2013/10/11 1.3.1
+  <ul>
+   <li>.knob-file format is changed for reducing size<br/>
+   (backword compatible: note that the file saved with 1.3.1 is loadable only for 1.3.1 or later)
+   </li>
+   <li>Thumbnails for KnobBrowser size is changed to reflect the oversampling setting</li>
+   <li>Rotation CenterX/CenterY display on layer preview</li>
+   <li>Improved UI response if large output image size</li>
+  </ul>
+ </li>
+ <li>2013/10/05 1.3.0
+  <ul>
+   <li>Fix : Overwrite prompt may appear twice in some case</li>
+   <li>Thumbnails on texture select dropdown</li>
+   <li>Some more textures are added</li>
+   <li>Transparency is enabled on texture when alpha-PNG is used as texture file</li>
+   <li>Improved interpolation for texture zooming</li>
+   <li>Added magnifier with color pipette tool</li>
+   <li>Exe warpping tool is changed to Launch4j</li>
+  </ul>
+ </li>
+ <li>2013/09/26 1.2.9
+  <ul>
+   <li>Color value editing with hex string</li>
+   <li>Added some Textures (Thanks to <a href="http://bji.yukihotaru.com/">AZ</a>)</li>
+   <li>Use previous extension when export if no extension is specified</li>
+   <li>SVG import/export for shape editor</li>
+   <li>Frame mask mode 'Maskbits' is added</li>
+   <li>Enable value editing from keyboard in AnimCurve editor</li>
+  </ul>
+ </li>
+ <li>2013/09/18 1.2.8
+  <ul>
+   <li>Editing is immediately reflect to 'Test' floating icon</li>
+   <li>Remember individually the folders for knob-files and image-files on file dialog</li>
+   <li>Adding status bar</li>
+   <li>Delete 'Export Done' dialog, that may cause hung up in some case.</li>
+   <li>Fix : The 'Recent Files' cannot work normal on Japanese kanji char folder-name</li>
+  </ul>
+ </li>
+ <li>2013/05/02 1.2.7
+  <ul>
+   <li>Fix : illegal behavior on complex DynamicText e.g. '(99:1),&lt;C&gt;(1:99)' (enbugged in 1.2.6)</li>
+  </ul>
+ </li>
+ <li>2013/04/23 1.2.6
+  <ul>
+   <li>Fix : Dynamix text freezing in some case</li>
+  </ul>
+ </li>
+ <li>2013/03/05 Ver.1.2.5
+  <ul>
+   <li>Expand parameter max-value of offset/angle</li>
+   <li>Foldable effect parameters</li>
+  </ul>
+ </li>
+ <li>2012/12/26 Ver.1.2.4
+  <ul>
+    <li>BugFix: Japanese setting is forced on .dmg version</li>
+    <li>BugFix: Specific RGB color value cannot be set</li>
+    <li>BugFix: Center offset when odd pixel size knob</li>
+    <li>configuration for Dutch (nl.ini) is added. (Thanks to Sjoerd Bijleveld)</li>
+  </ul>
+ </li>
+ <li>2012/07/06 Ver.1.2.3
+  <ul>
+   <li>Number of frames max limitation is expanded to 1000</li>
+  </ul>
+ </li>
+ <li>2012/05/11 Ver.1.2.2
+  <ul>
+   <li>BugFix: Anti-aliasing is not work properly when Zoom< about 20%</li>
+   <li>BugFix: Export result become not completed image in some cases.</li>
+   <li>BugFix: Crush on some illegal dynamic text syntax in the 'Text' primitive</li>
+   <li>BugFix: Cannot launch normally from .knob association (exe version)</li>
+   <li>Help menu is added</li>
+  </ul>
+ </li>
+ <li>2012/05/04 Ver 1.21
+  <ul>
+   <li>Image primitive without 'auto-fit' behavior is adjusted to KnobMan</li>
+   <li>improved image primitive / oversampling decimation</li>
+   <li>fixed launch error in some environment ( japanese windows).</li>
+   <li>dmg packaged version is prepared for mac</li>
+   <li>and many minor bug fixes / expanded localizable parameters </li>
+  </ul>
+ </li>
+ <li>2012/04/25 Ver 1.20
+  <ul>
+   <li>full localizable GUI parts</li>
+   <li>direct file drop to the 'Image' primitve's filename field</li>
+   <li>number of animation curve and curve points are expanded</li>
+   <li>improved oversampling decimation algo generating better results</li>
+   <li>other minor bug-fixes</li>
+  </ul>
+ </li>
+ <li>2012/04/22 Ver.1.10
+  <ul>
+   <li>performance improved</li>
+   <li>support Undo / Redo</li>
+   <li>export to Animation (AnimGIF / APNG)</li>
+   <li>multi-language suport</li>
+   <li>menu, mnemonic, shortcuts support & customaizable</li>
+   <li>texture-image direct drop support </li>
+   <li>switchable look&feel / language from file-config</li>
+   <li>Texture folder should be placed to same folder to JKnobMan.jar</li>
+   <li>image files can be dropped directly to 'Texture-combobox' from explorer / finder.</li>
+   <li>menu mnemonic / shortcuts are custmizable. </li>
+  </ul>
+ </li>
+ <li>2012/04/16 Ver.1.00
+  <ul>
+   <li>First Release.Based on KnobMan (windows-native) 1.50</li>
+  </ul>
+ </li>
+</ul>
+</body>
+</html>

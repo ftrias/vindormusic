@@ -1,0 +1,22 @@
+Change version to next version
+
+General / Application Category = Music
+
+General / Automatically manage signing, Team = Vindor Music, Inc.
+
+General / App Icons - Migrate to asset catalog, then change screens and go
+back to reset; click arrow right; then add icon1024.png if not there
+
+Capabilities / App Sandbox - turn ON, options all off.
+
+Info / Copyright = Copyright 2018 by Vindor Music, Inc.
+
+Info / +add / Minimum system version = 10.11.0
+
+Build Settings / Installation Directory = /Applications
+
+
+---------
+
+
+Android key password: Wind4@ll

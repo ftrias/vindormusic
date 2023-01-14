@@ -1,0 +1,5 @@
+MainPackage=C:\Source\win\apps\juce-gui\Dist\Vindor WAP\Vindor WAP\bin\x64\Release\Upload\Vindor WAP_1.2.0.0_x64.appx
+ResourcePack=C:\Source\win\apps\juce-gui\Dist\Vindor WAP\Vindor WAP\bin\x64\Release\Upload\Vindor WAP_1.2.0.0_scale-100.appx
+ResourcePack=C:\Source\win\apps\juce-gui\Dist\Vindor WAP\Vindor WAP\bin\x64\Release\Upload\Vindor WAP_1.2.0.0_scale-125.appx
+ResourcePack=C:\Source\win\apps\juce-gui\Dist\Vindor WAP\Vindor WAP\bin\x64\Release\Upload\Vindor WAP_1.2.0.0_scale-150.appx
+ResourcePack=C:\Source\win\apps\juce-gui\Dist\Vindor WAP\Vindor WAP\bin\x64\Release\Upload\Vindor WAP_1.2.0.0_scale-400.appx

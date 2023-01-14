@@ -1,0 +1,16 @@
+### Module positions - created on Wednesday, April 14, 2021 at 05:22:11 PM ###
+### Printed by Pcbnew version kicad (5.1.4-0-10_14)
+## Unit = mm, Angle = deg.
+## Side : bottom
+# Ref     Val                Package                             PosX       PosY       Rot  Side
+C5        4.7_uf             MF_Passives-C0603              -239.3950     3.0480   90.0000  bottom
+D1        MF-DIO-SMA-B140    MF_Discrete_Semiconductor-SMA  -244.8306     2.9210    0.0000  bottom
+R1        27_ohm             MF_Passives-R0603              -252.1915    18.3693    0.0000  bottom
+R2        27_ohm             MF_Passives-R0603              -252.1915    16.3119    0.0000  bottom
+R5        10k_ohm            MF_Passives-R0603              -233.3752     3.0480   90.0000  bottom
+R6        470_ohm            MF_Passives-R0603              -232.6132     6.0960    0.0000  bottom
+R18       5.1k_ohm           MF_Passives-R0603              -252.1915    20.4267  180.0000  bottom
+R19       5.1k_ohm           MF_Passives-R0603              -252.1915    14.2545  180.0000  bottom
+S2        TL3301EF100QG      SOIC450P1000X730-4N            -121.7930     6.6573    0.0000  bottom
+U3        MCP73831T-2ACI/OT  SOT-753                        -236.3724     3.7350    0.0000  bottom
+## End

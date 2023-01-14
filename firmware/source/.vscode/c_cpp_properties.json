@@ -1,0 +1,23 @@
+{
+    "configurations": [
+        {
+            "name": "Mac-ARM",
+            "intelliSenseMode": "macos-gcc-arm",
+            "compilerPath": "/Applications/ARM/bin/arm-none-eabi-gcc",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/../../external/modules/**",
+                "${workspaceFolder}/../../external/fork/**",
+                "${workspaceFolder}/../../external/fork/cores/teensy3",
+                "${workspaceFolder}/../../external/modules/SPI"
+            ],
+            "cStandard": "c17",
+            "cppStandard": "c++20",
+            "defines": [
+                "VINDOR_USB_AUDIO_MIDI",
+                "USE_SDCARD"
+            ]
+        }
+    ],
+    "version": 4
+}

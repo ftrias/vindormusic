@@ -1,0 +1,1 @@
+MainPackage=C:\Source\win\apps\juce-gui\Dist\Vindor WAP\Vindor WAP\bin\x86\Release\Upload\Vindor WAP_1.2.0.0_x86.appx

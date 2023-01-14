@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package
+  xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
+  xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
+  xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities">
+  <Identity Name="Vindor.VindorPlayer" 
+            Version="1.0.0.0" 
+            Publisher="CN=1F6602F7-1121-4E09-B35D-BB76EC9318DF" />
+  <Properties>
+    <DisplayName>Vindor Player</DisplayName>
+    <PublisherDisplayName>Vindor</PublisherDisplayName>
+    <Logo>images\icon.png</Logo>
+  </Properties>
+  <Resources>
+    <Resource Language="en-us" />
+  </Resources>
+  <Dependencies>
+	<TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.14316.0" MaxVersionTested="10.0.15063.0" />
+  </Dependencies>
+  <Capabilities>
+    <rescap:Capability Name="runFullTrust" />
+  </Capabilities>
+
+  <Applications>
+    <Application Id="vindorplayer" Executable="VindorPlayer.exe" EntryPoint="Windows.FullTrustApplication">
+      <uap:VisualElements DisplayName="Vindor Player" Description="Basic MIDI synthesizer for Vindor ES1"
+           Square150x150Logo="images/icon150.png" Square44x44Logo="images\icon44.png"  
+           BackgroundColor="#FFFFFF">
+      </uap:VisualElements>
+    </Application>
+  </Applications>
+</Package>

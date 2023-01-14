@@ -1,0 +1,20 @@
+{
+    "name": "DS28E17 1-Wire to i2C Bridge",
+    "description": "Arduino library for Maxim Integrated DS28E17 1-Wire to i2C Bridge. The DS28E17 allow to communicate with I2C device throught 1-wire which is little bit more robust than I2C.",
+    "keywords": "onewire, 1-wire, i2c, bridge",
+    "authors": [
+        {
+            "name": "Jakub Podivinsky",
+            "email": "podija@seznam.cz",
+            "url": " ",
+            "maintainer": true
+        }
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/podija/DS28E17"
+    },
+    "version": "1.1.0",
+    "homepage": "https://www.maximintegrated.com/en/products/interface/controllers-expanders/DS28E17.html",
+    "frameworks": "Arduino"
+}

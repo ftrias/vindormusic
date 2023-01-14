@@ -1,0 +1,31 @@
+#######################################
+# Syntax Coloring Map For OneWire
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+DS28E17	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+setAddress	KEYWORD2
+wakeUp	KEYWORD2
+enableSleepMode	KEYWORD2
+write	KEYWORD2
+memoryWrite	KEYWORD2
+read	KEYWORD2
+memoryRead	KEYWORD2
+
+
+#######################################
+# Instances (KEYWORD2)
+#######################################
+
+
+#######################################
+# Constants (LITERAL1)
+#######################################

@@ -1,0 +1,65 @@
+<script type="module">
+import * as t1 from './__target__/convert.js'; 
+window.t1 = t1;
+</script>
+<script>
+  function download(filename, text) {
+    var element = document.createElement('a');
+    element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+    element.setAttribute('download', filename);
+  
+    element.style.display = 'none';
+    document.body.appendChild(element);
+  
+    element.click();
+  
+    document.body.removeChild(element);
+  }
+</script>
+<button onclick="t1.runme()">Run conversion</button>
+<p>Name:<input type="text" id="name" value="Basic"></p>
+<p>Keys:
+  <select id="bits">
+    <option value="10">10: ignore side button and bar</option>
+    <option value="11">11: include side; ignore bar</option>
+    <option value="12">12: include side and small bar</option>
+    <option value="14">14: all buttons including octaves</option>
+  </select>
+</p>
+<p>Description:<input type="text" id="desc" value="Basic fingering"></p>
+<!-- <p>Oct:<input type="checkbox" id="oct" value="1" checked></p> -->
+<table>
+<tr>
+<td>Input</td><td>Output</td><td>Diagnostic</td>
+</tr>
+<tr>
+<td><textarea id="in" cols="20" rows="20" style="font-family: 'Courier New', Courier, monospace;">
+111 00 111 01:C
+111 00 111 10:C#
+111 00 111 00:D
+111 00 110 10:D#
+111 00 110 00:E
+111 00 100 00:F
+111 00 010 00:F#
+111 00 000 00:G
+111 10 000 00:G#
+111 01 000 00:G#
+110 00 000 00:A
+110 10 000 00:A#
+110 01 000 00:A#
+100 00 000 00:B
+010 00 000 00:C2
+010 10 000 00:C2#
+010 01 000 00:C2#
+000 00 000 00:D2
+</textarea></td>
+<td><textarea id="out" cols="40" rows="20" style="font-family: 'Courier New', Courier, monospace;"></textarea></td>
+<td><textarea id="diag" cols="40" rows="20" style="font-family: 'Courier New', Courier, monospace;"></textarea></td>
+</tr>
+<tr><td></td><td><br><button onclick="t1.downloadme()">Download</button>
+<td></td></tr>
+</table>
+<div style="break-after: page;"></div>
+<div id="printableArea">
+  <p id="rendersvg"></p>
+</div>

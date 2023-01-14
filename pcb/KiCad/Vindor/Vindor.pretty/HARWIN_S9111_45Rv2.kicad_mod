@@ -1,0 +1,17 @@
+(module HARWIN_S9111_45Rv2 (layer F.Cu) (tedit 5D878019)
+  (fp_text reference REF** (at 0.762 -3.7592) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_text value HARWIN_S9111_45Rv2 (at 0.3048 -5.207) (layer F.Fab)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (pad 1 thru_hole custom (at 0 0) (size 3 3) (drill 2.6) (layers *.Cu *.Paste *.Mask)
+    (clearance 2) (zone_connect 0)
+    (options (clearance outline) (anchor circle))
+    (primitives
+      (gr_poly (pts
+         (xy -1 -2.85) (xy 1 -2.85) (xy 0.5 -1.425) (xy -0.5 -1.425)) (width 0.1))
+      (gr_poly (pts
+         (xy -1 2.85) (xy 1 2.85) (xy 0.5 1.425) (xy -0.5 1.425)) (width 0.1))
+    ))
+)

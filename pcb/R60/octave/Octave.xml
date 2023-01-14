@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/Users/ftrias/Documents/Source/Vindor/vindor/hardware/pcb/layout/R60/octave/Octave.sch</source>
+    <date>Tuesday, October 29, 2019 at 03:45:03 PM</date>
+    <tool>Eeschema (5.1.4-0-10_14)</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>Octave.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="J2">
+      <value>Conn_01x04_Female</value>
+      <footprint>Vindor:Moldex-0448120004</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">44812-0004</field>
+      </fields>
+      <libsource lib="Connector" part="Conn_01x04_Female" description="Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D8FDC38</tstamp>
+    </comp>
+    <comp ref="J3">
+      <value>Conn_01x08_Male</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">MF-CONN-2.54mm-01x08</field>
+      </fields>
+      <libsource lib="Connector" part="Conn_01x08_Male" description="Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D8FE5D8</tstamp>
+    </comp>
+    <comp ref="TP2">
+      <value>TOUCHPAD</value>
+      <footprint>Vindor:Vindor_Touchpad</footprint>
+      <fields>
+        <field name="DNP">1</field>
+      </fields>
+      <libsource lib="Vindor" part="TOUCHPAD" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D8FFE53</tstamp>
+    </comp>
+    <comp ref="TP3">
+      <value>TOUCHPAD</value>
+      <footprint>Vindor:Vindor_Touchpad</footprint>
+      <fields>
+        <field name="DNP">1</field>
+      </fields>
+      <libsource lib="Vindor" part="TOUCHPAD" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D90034C</tstamp>
+    </comp>
+    <comp ref="J1">
+      <value>HARWIN_S9111-45R</value>
+      <footprint>Vindor:HARWIN_S9111_45R</footprint>
+      <fields>
+        <field name="MPN">S9111-45</field>
+      </fields>
+      <libsource lib="Vindor" part="HARWIN_S9111-45R" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D900B66</tstamp>
+    </comp>
+    <comp ref="TP1">
+      <value>TestPoint</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="DNP">1</field>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D901794</tstamp>
+    </comp>
+    <comp ref="J4">
+      <value>Conn_01x02_Male</value>
+      <footprint>Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">S2B-PH-K-S(LF)(SN)</field>
+      </fields>
+      <libsource lib="Connector" part="Conn_01x02_Male" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D91218C</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>0.1uF</value>
+      <footprint>MF_Passives:MF_Passives-C0603</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">MF-CAP-0603-0.1uF</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D913FB4</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>50k</value>
+      <footprint>MF_Passives:MF_Passives-R0603</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="MPN">MF-RES-0603-50K</field>
+      </fields>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D91623D</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Connector" part="Conn_01x02_Male">
+      <description>Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x02_Male</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="Conn_01x04_Female">
+      <description>Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x04_Female</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="Conn_01x08_Male">
+      <description>Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x08_Male</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+        <pin num="7" name="Pin_7" type="passive"/>
+        <pin num="8" name="Pin_8" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="TestPoint">
+      <description>test point</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Pin*</fp>
+        <fp>Test*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">TP</field>
+        <field name="Value">TestPoint</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R_Small_US">
+      <description>Resistor, small US symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R_Small_US</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Vindor" part="HARWIN_S9111-45R">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">HARWIN_S9111-45R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="Vindor" part="TOUCHPAD">
+      <fields>
+        <field name="Reference">TP</field>
+        <field name="Value">TOUCHPAD</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="unspc"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Connector">
+      <uri>/Library/Application Support/kicad/library/Connector.lib</uri>
+    </library>
+    <library logical="Device">
+      <uri>/Library/Application Support/kicad/library/Device.lib</uri>
+    </library>
+    <library logical="Vindor">
+      <uri>/Users/ftrias/Documents/Source/Vindor/vindor/hardware/pcb/KiCad/Vindor/Vindor.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="GND">
+      <node ref="J2" pin="1"/>
+      <node ref="J3" pin="2"/>
+      <node ref="R1" pin="1"/>
+      <node ref="J3" pin="4"/>
+      <node ref="C1" pin="2"/>
+      <node ref="J1" pin="1"/>
+      <node ref="TP1" pin="1"/>
+    </net>
+    <net code="2" name="+3V3">
+      <node ref="J2" pin="2"/>
+      <node ref="J4" pin="2"/>
+      <node ref="C1" pin="1"/>
+      <node ref="J3" pin="5"/>
+    </net>
+    <net code="3" name="SCL">
+      <node ref="J2" pin="3"/>
+      <node ref="J3" pin="6"/>
+    </net>
+    <net code="4" name="SDA">
+      <node ref="J3" pin="7"/>
+      <node ref="J2" pin="4"/>
+    </net>
+    <net code="5" name="Net-(J3-Pad1)">
+      <node ref="J3" pin="1"/>
+      <node ref="TP2" pin="1"/>
+    </net>
+    <net code="6" name="Net-(J3-Pad3)">
+      <node ref="J3" pin="3"/>
+      <node ref="TP3" pin="1"/>
+    </net>
+    <net code="7" name="Net-(J3-Pad8)">
+      <node ref="R1" pin="2"/>
+      <node ref="J4" pin="1"/>
+      <node ref="J3" pin="8"/>
+    </net>
+  </nets>
+</export>

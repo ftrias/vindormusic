@@ -1,0 +1,882 @@
+#define _WSTRING_DEFINED 
+#define _CRT_INSECURE_DEPRECATE_MEMORY(_Replacement) 
+#define __DBL_MIN_EXP__ (-1021)
+#define _MCRTIMP _CRTIMP
+#define _CONST_RETURN 
+#define _IOSTRG 0x0040
+#define __GETOPT_LONG_H__ 
+#define __UINT_LEAST16_MAX__ 0xffff
+#define _INTPTR_T_DEFINED 
+#define __ATOMIC_ACQUIRE 2
+#define __MINGW_GNU_PRINTF(__format,__args) __attribute__((__format__(gnu_printf,__format,__args)))
+#define __FLT_MIN__ 1.17549435082228750797e-38F
+#define __GCC_IEC_559_COMPLEX 2
+#define _NLSCMP_DEFINED 
+#define __UINT_LEAST8_TYPE__ unsigned char
+#define __SIZEOF_FLOAT80__ 16
+#define _CRT_ERRNO_DEFINED 
+#define INT_LEAST16_MIN INT16_MIN
+#define _I8_MIN (-127 - 1)
+#define __MINGW64_VERSION_MAJOR 4
+#define _WIN32 1
+#define _findnext _findnext64i32
+#define __INTMAX_C(c) c ## LL
+#define _fmode (* __MINGW_IMP_SYMBOL(_fmode))
+#define __CHAR_BIT__ 8
+#define DUMMYUNIONNAME6 
+#define EAFNOSUPPORT 102
+#define popen _popen
+#define SHRT_MAX __SHRT_MAX__
+#define __MINGW64_VERSION_RC 0
+#define EACCES 13
+#define __UINT8_MAX__ 0xff
+#define _WIN64 1
+#define _FILE_DEFINED 
+#define WCHAR_MAX 0xffffU
+#define EDESTADDRREQ 109
+#define INT16_C(val) (INT_LEAST16_MAX-INT_LEAST16_MAX+(val))
+#define __WINT_MAX__ 0xffff
+#define _WCTYPE_T_DEFINED 
+#define __MINGW_IMPORT extern __attribute__ ((__dllimport__))
+#define INT8_MAX 127
+#define UINT_LEAST64_MAX UINT64_MAX
+#define stderr (&__iob_func()[2])
+#define USE___UUIDOF 0
+#define _OUT_TO_MSGBOX 2
+#define _mm_malloc(a,b) _aligned_malloc(a,b)
+#define EILSEQ 42
+#define ESPIPE 29
+#define EMLINK 31
+#define __ORDER_LITTLE_ENDIAN__ 1234
+#define __SIZE_MAX__ 0xffffffffffffffffULL
+#define DUMMYUNIONNAME1 
+#define DUMMYUNIONNAME2 
+#define DUMMYUNIONNAME3 
+#define DUMMYUNIONNAME4 
+#define DUMMYUNIONNAME5 
+#define __WCHAR_MAX__ 0xffff
+#define DUMMYUNIONNAME7 
+#define DUMMYUNIONNAME8 
+#define DUMMYUNIONNAME9 
+#define _MM_MALLOC_H_INCLUDED 
+#define INT16_MAX 32767
+#define __DEFINE_CPP_OVERLOAD_SECURE_FUNC_2_0(__ret,__func,__type1,__arg1,__type2,__arg2,__dsttype,__dst) 
+#define __GCC_HAVE_SYNC_COMPARE_AND_SWAP_1 1
+#define __GCC_HAVE_SYNC_COMPARE_AND_SWAP_2 1
+#define __GCC_HAVE_SYNC_COMPARE_AND_SWAP_4 1
+#define __DBL_DENORM_MIN__ ((double)4.94065645841246544177e-324L)
+#define __GCC_HAVE_SYNC_COMPARE_AND_SWAP_8 1
+#define __GCC_ATOMIC_CHAR_LOCK_FREE 2
+#define __MINGW_MSVC2005_DEPREC_STR "This POSIX function is deprecated beginning in Visual C++ 2005, use _CRT_NONSTDC_NO_DEPRECATE to disable deprecation"
+#define __GCC_IEC_559 2
+#define PACKAGE_STRING "dfu-util 0.9-msvc"
+#define _IOFBF 0x0000
+#define __nothrow 
+#define __FLT_EVAL_METHOD__ 0
+#define SHRT_MIN (-SHRT_MAX - 1)
+#define EX_USAGE 64
+#define SSIZE_MAX _I64_MAX
+#define _WINT_T 
+#define __GCC_ATOMIC_CHAR32_T_LOCK_FREE 2
+#define ENOFILE ENOENT
+#define INT8_MIN (-128)
+#define __x86_64 1
+#define _WSPAWN_DEFINED 
+#define _CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES 0
+#define strcasecmp _stricmp
+#define EOWNERDEAD 133
+#define __UINT_FAST64_MAX__ 0xffffffffffffffffULL
+#define __SIG_ATOMIC_TYPE__ int
+#define _DLL 
+#define __MINGW_ATTRIB_CONST __attribute__ ((__const__))
+#define __DBL_MIN_10_EXP__ (-307)
+#define INT16_MIN (-32768)
+#define ENOTTY 25
+#define __FINITE_MATH_ONLY__ 0
+#define __argv (* __MINGW_IMP_SYMBOL(__argv))
+#define UINTMAX_C(val) val ##ULL
+#define _DIV_T_DEFINED 
+#define _SECURECRT_FILL_BUFFER_PATTERN 0xFD
+#define EBADF 9
+#define ___mb_cur_max_func() (__mb_cur_max)
+#define __GETOPT_H__ 
+#define __MINGW_USE_UNDERSCORE_PREFIX 0
+#define __MINGW_ATTRIB_USED __attribute__ ((__used__))
+#define ERANGE 34
+#define __GNUC_PATCHLEVEL__ 0
+#define ECANCELED 105
+#define __MINGW_SEC_WARN_STR "This function or variable may be unsafe, use _CRT_SECURE_NO_WARNINGS to disable deprecation"
+#define _ADDRESSOF(v) (&(v))
+#define __UINT_FAST8_MAX__ 0xff
+#define _INC_MINGW_SECAPI 
+#define _LIMITS_H___ 
+#define _HEAPOK (-2)
+#define __has_include(STR) __has_include__(STR)
+#define warnx(...) do { fprintf(stderr, __VA_ARGS__); fprintf(stderr, "\n"); } while (0)
+#define INT_FAST8_MAX INT8_MAX
+#define _stdcall __attribute__((__stdcall__))
+#define __DEC64_MAX_EXP__ 385
+#define _WCHAR_T_DEFINED 
+#define ENOMEM 12
+#define __INT8_C(c) c
+#define _CRT_OBSOLETE(_NewItem) 
+#define onexit_t _onexit_t
+#define _wfindnexti64 _wfindnext64
+#define __UINT_LEAST64_MAX__ 0xffffffffffffffffULL
+#define __LONG32 long
+#define __SHRT_MAX__ 0x7fff
+#define __LDBL_MAX__ 1.18973149535723176502e+4932L
+#define _crt_va_copy(d,s) __builtin_va_copy(d,s)
+#define _pgmptr (* __MINGW_IMP_SYMBOL(_pgmptr))
+#define off_t long int
+#define SCHAR_MAX __SCHAR_MAX__
+#define __UINT_LEAST8_MAX__ 0xff
+#define __GCC_ATOMIC_BOOL_LOCK_FREE 2
+#define __UINTMAX_TYPE__ long long unsigned int
+#define EINPROGRESS 112
+#define _CRT_MEMORY_DEFINED 
+#define INT_FAST8_MIN INT8_MIN
+#define _getc_nolock(_stream) _fgetc_nolock(_stream)
+#define __DEC32_EPSILON__ 1E-6DF
+#define strtod __strtod
+#define WCHAR_MIN 0U
+#define _CRT_DIRECTORY_DEFINED 
+#define ULONG_LONG_MAX (LONG_LONG_MAX * 2ULL + 1ULL)
+#define _CRT_ALIGN(x) __attribute__ ((__aligned__ (x)))
+#define _INC_STRING 
+#define __MINGW_MS_SCANF(__format,__args) __attribute__((__format__(ms_scanf, __format,__args)))
+#define __UINT32_MAX__ 0xffffffffU
+#define __MINGW_ATTRIB_UNUSED __attribute__ ((__unused__))
+#define __LDBL_MAX_EXP__ 16384
+#define UINT_FAST16_MAX UINT16_MAX
+#define __WINT_MIN__ 0
+#define EPROTOTYPE 136
+#define __mingw_ovr static __attribute__ ((__unused__)) __inline__ __cdecl
+#define UINT16_C(val) (val)
+#define _environ (* __MINGW_IMP_SYMBOL(_environ))
+#define SCHAR_MIN (-SCHAR_MAX - 1)
+#define EXIT_FAILURE 1
+#define _FPOS_T_DEFINED 
+#define __SCHAR_MAX__ 0x7f
+#define _CRT_WSYSTEM_DEFINED 
+#define EALREADY 103
+#define __WCHAR_MIN__ 0
+#define _wpgmptr (* __MINGW_IMP_SYMBOL(_wpgmptr))
+#define __INT64_C(c) c ## LL
+#define __DBL_DIG__ 15
+#define PORTABLE_H 
+#define __GCC_ATOMIC_POINTER_LOCK_FREE 2
+#define _putwc_nolock(_c,_stm) _fputwc_nolock(_c,_stm)
+#define _crt_va_arg(v,l) __builtin_va_arg(v,l)
+#define _TIME_T_DEFINED 
+#define _UINTPTR_T_DEFINED 
+#define __SIZEOF_INT__ 4
+#define __SIZEOF_POINTER__ 8
+#define _INC_CRTDEFS_MACRO 
+#define _WFINDDATA_T_DEFINED 
+#define _ANONYMOUS_STRUCT __MINGW_EXTENSION
+#define _INC_STDIO 
+#define USHRT_MAX (SHRT_MAX * 2 + 1)
+#define ETIMEDOUT 138
+#define __USER_LABEL_PREFIX__ 
+#define __C89_NAMELESSSTRUCTNAME1 
+#define __C89_NAMELESSSTRUCTNAME2 
+#define __C89_NAMELESSSTRUCTNAME3 
+#define __C89_NAMELESSSTRUCTNAME4 
+#define __C89_NAMELESSSTRUCTNAME5 
+#define _W64 
+#define _AGLOBAL 
+#define EOVERFLOW 132
+#define UINT8_MAX 255
+#define __STDC_HOSTED__ 1
+#define _RSIZE_T_DEFINED 
+#define __WIN32 1
+#define _MAX_ENV 32767
+#define __LDBL_HAS_INFINITY__ 1
+#define _HEAPBADBEGIN (-3)
+#define EX_OK 0
+#define _WConst_return _CONST_RETURN
+#define _WSTDIO_DEFINED 
+#define __WIN64 1
+#define __DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_0_EX(__ret_type,__ret_policy,__decl_spec,__name,__sec_name,__dst_attr,__dst_type,__dst) 
+#define __DEFINE_CPP_OVERLOAD_SECURE_FUNC_0_0(__ret,__func,__dsttype,__dst) 
+#define EINTR 4
+#define __FLT_EPSILON__ 1.19209289550781250000e-7F
+#define PATH_MAX 260
+#define TMP_MAX 32767
+#define ENOTCONN 126
+#define __LDBL_MIN__ 3.36210314311209350626e-4932L
+#define __STDC_UTF_16__ 1
+#define __MINGW_ATTRIB_MALLOC __attribute__ ((__malloc__))
+#define __DEC32_MAX__ 9.999999E96DF
+#define _CVTBUFSIZE (309+40)
+#define _UI32_MAX 0xffffffffu
+#define __MINGW32__ 1
+#define EPERM 1
+#define _STDDEF_H 
+#define _MAX_EXT 256
+#define __INT32_MAX__ 0x7fffffff
+#define _CRT_UNUSED(x) (void)x
+#define __SIZEOF_LONG__ 4
+#define _IONBF 0x0004
+#define __C89_NAMELESSSTRUCTNAME 
+#define _INC_STRING_S 
+#define EMFILE 24
+#define _CRTIMP_NOIA64 _CRTIMP
+#define __UINT16_C(c) c
+#define __MINGW_CRT_NAME_CONCAT2(sym) ::sym ##_s
+#define __MINGW_ATTRIB_DEPRECATED_MSVC2005 __MINGW_ATTRIB_DEPRECATED_STR(__MINGW_MSVC2005_DEPREC_STR)
+#define __DECIMAL_DIG__ 21
+#define SEEK_SET 0
+#define _CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES_MEMORY 0
+#define INT_FAST16_MAX INT16_MAX
+#define ENETDOWN 116
+#define _findfirst _findfirst64i32
+#define getwchar() fgetwc(stdin)
+#define __has_include_next(STR) __has_include_next__(STR)
+#define _CRT_PERROR_DEFINED 
+#define _osplatform (* __MINGW_IMP_SYMBOL(_osplatform))
+#define PTRDIFF_MAX INT64_MAX
+#define __LDBL_HAS_QUIET_NAN__ 1
+#define INT64_C(val) val ##LL
+#define _ALLOCA_S_HEAP_MARKER 0xDDDD
+#define _OUT_TO_DEFAULT 0
+#define _INC__MINGW_H 
+#define _REENTRANT 1
+#define __w64 
+#define L_tmpnam (sizeof(_P_tmpdir) + 12)
+#define __GNUC__ 5
+#define getwc(_stm) fgetwc(_stm)
+#define sys_errlist _sys_errlist
+#define _cdecl __attribute__((__cdecl__))
+#define __MMX__ 1
+#define __DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_3_EX(__ret_type,__ret_policy,__decl_spec,__name,__sec_name,__dst_attr,__dst_type,__dst,__arg1_type,__arg1,__arg2_type,__arg2,__arg3_type,__arg3) 
+#define _HEAPBADPTR (-6)
+#define offsetof(TYPE,MEMBER) __builtin_offsetof (TYPE, MEMBER)
+#define __FLT_HAS_DENORM__ 1
+#define __SIZEOF_LONG_DOUBLE__ 16
+#define INT_FAST16_MIN INT16_MIN
+#define SEEK_CUR 1
+#define __BIGGEST_ALIGNMENT__ 16
+#define _CRT_DEPRECATE_TEXT(_Text) __declspec(deprecated)
+#define PTRDIFF_MIN INT64_MIN
+#define LONG_MAX __LONG_MAX__
+#define _finddata_t _finddata64i32_t
+#define __MINGW32_MINOR_VERSION 11
+#define STDERR_FILENO 2
+#define _IOB_ENTRIES 20
+#define _threadid (__threadid())
+#define DUMMYUNIONNAME 
+#define _FPOSOFF(fp) ((long)(fp))
+#define __USE_CRTIMP 1
+#define EXIT_SUCCESS 0
+#define _P_NOWAIT 1
+#define __DBL_MAX__ ((double)1.79769313486231570815e+308L)
+#define _thiscall __attribute__((__thiscall__))
+#define __INT_FAST32_MAX__ 0x7fffffff
+#define __WINNT 1
+#define DUMMYSTRUCTNAME1 
+#define DUMMYSTRUCTNAME2 
+#define DUMMYSTRUCTNAME3 
+#define DUMMYSTRUCTNAME4 
+#define DUMMYSTRUCTNAME5 
+#define __DBL_HAS_INFINITY__ 1
+#define _CRT_INSECURE_DEPRECATE_GLOBALS(_Replacement) 
+#define _CRTNOALIAS 
+#define _I16_MAX 32767
+#define __WINNT__ 1
+#define stdin (&__iob_func()[0])
+#define __MINGW_HAVE_WIDE_C99_SCANF 1
+#define __DEC32_MIN_EXP__ (-94)
+#define _putc_nolock(_c,_stream) _fputc_nolock(_c,_stream)
+#define PACKAGE_BUGREPORT "http://sourceforge.net/p/dfu-util/tickets/"
+#define EPIPE 32
+#define __MINGW_LSYMBOL(sym) _ ##sym
+#define __C89_NAMELESSUNIONNAME1 
+#define __C89_NAMELESSUNIONNAME2 
+#define __C89_NAMELESSUNIONNAME3 
+#define __C89_NAMELESSUNIONNAME4 
+#define __C89_NAMELESSUNIONNAME5 
+#define __C89_NAMELESSUNIONNAME6 
+#define __C89_NAMELESSUNIONNAME7 
+#define __C89_NAMELESSUNIONNAME8 
+#define _INC_STDIO_S 
+#define LONG_MIN (-LONG_MAX - 1L)
+#define MINGW_HAS_DDK_H 1
+#define __CRT_INLINE extern inline __attribute__((__gnu_inline__))
+#define __INT_FAST16_TYPE__ short int
+#define _SIZE_T_DEFINED 
+#define putwc(_c,_stm) fputwc(_c,_stm)
+#define _NFILE _NSTREAM_
+#define ECHILD 10
+#define _fastcall __attribute__((__fastcall__))
+#define UINT_LEAST8_MAX UINT8_MAX
+#define __LDBL_HAS_DENORM__ 1
+#define __MINGW_HAS_DXSDK 1
+#define __MINGW_ATTRIB_NO_OPTIMIZE __attribute__((__optimize__ ("0")))
+#define __DEC128_MAX__ 9.999999999999999999999999999999999E6144DL
+#define __INT_LEAST32_MAX__ 0x7fffffff
+#define _finddatai64_t __finddata64_t
+#define _GCC_WRAP_STDINT_H 
+#define __DEC32_MIN__ 1E-95DF
+#define _I16_MIN (-32767 - 1)
+#define __DBL_MAX_EXP__ 1024
+#define __C89_NAMELESS __MINGW_EXTENSION
+#define _M_X64 100
+#define __DEC128_EPSILON__ 1E-33DL
+#define _iob __iob_func()
+#define __SSE2_MATH__ 1
+#define __ATOMIC_HLE_RELEASE 131072
+#define __WIN32__ 1
+#define __PTRDIFF_MAX__ 0x7fffffffffffffffLL
+#define __MSABI_LONG(x) x ## l
+#define _MAX_WAIT_MALLOC_CRT 60000
+#define __amd64 1
+#define _FILE_OFFSET_BITS_SET_LSEEK 
+#define _wenviron (* __MINGW_IMP_SYMBOL(_wenviron))
+#define _SYS_OPEN 20
+#define _CRTIMP_ALTERNATIVE _CRTIMP
+#define _UI8_MAX 0xffu
+#define __ATOMIC_HLE_ACQUIRE 65536
+#define __LONG_LONG_MAX__ 0x7fffffffffffffffLL
+#define __SIZEOF_SIZE_T__ 8
+#define _CRT_glob _dowildcard
+#define _UI64_MAX 0xffffffffffffffffull
+#define ENOTEMPTY 41
+#define SIZE_MAX _UI64_MAX
+#define __SIZEOF_WINT_T__ 2
+#define UINT64_C(val) val ##ULL
+#define INT32_MIN (-2147483647 - 1)
+#define _INT128_DEFINED 
+#define __CRT_WIDE(_String) L ## _String
+#define WINT_MAX 0xffffU
+#define __MINGW64_STRINGIFY(x) __STRINGIFY(x)
+#define _TIME64_T_DEFINED 
+#define UINTPTR_MAX UINT64_MAX
+#define __GXX_ABI_VERSION 1008
+#define __FLT_MIN_EXP__ (-125)
+#define _WSTDLIBP_DEFINED 
+#define UINT32_MAX 0xffffffffU
+#define alloca(x) __builtin_alloca((x))
+#define _SSIZE_T_DEFINED 
+#define __MINGW_ATTRIB_DEPRECATED_SEC_WARN __MINGW_ATTRIB_DEPRECATED_STR(__MINGW_SEC_WARN_STR)
+#define __INT_FAST64_TYPE__ long long int
+#define _A_SUBDIR 0x10
+#define _putwchar_nolock(_c) _putwc_nolock((_c),stdout)
+#define _wfindfirsti64 _wfindfirst64
+#define _ANSI_STDDEF_H 
+#define _osver (* __MINGW_IMP_SYMBOL(_osver))
+#define __DBL_MIN__ ((double)2.22507385850720138309e-308L)
+#define EADDRINUSE 100
+#define WINT_MIN 0U
+#define _CRT_DOUBLE_DEC 
+#define _findfirsti64 _findfirst64
+#define ENETRESET 117
+#define _ALLOCA_S_MARKER_SIZE 16
+#define _P_tmpdir "\\"
+#define _ALLOCA_S_STACK_MARKER 0xCCCC
+#define EISDIR 21
+#define __DECIMAL_BID_FORMAT__ 1
+#define CHAR_MAX SCHAR_MAX
+#define HAVE_DECL_GETOPT 1
+#define putwchar(_c) fputwc((_c),stdout)
+#define INT_LEAST8_MAX INT8_MAX
+#define __GXX_TYPEINFO_EQUALITY_INLINE 0
+#define _A_ARCH 0x20
+#define MINGW_DDK_H 
+#define ULONG_MAX (LONG_MAX * 2UL + 1UL)
+#define _P_NOWAITO 3
+#define _IOREAD 0x0001
+#define _ALLOCA_S_THRESHOLD 1024
+#define __DEC128_MIN__ 1E-6143DL
+#define __MINGW_BROKEN_INTERFACE(x) __MINGW_PRAGMA_PARAM(message ("Interface " _CRT_STRINGIZE(x) " has unverified layout."))
+#define __REGISTER_PREFIX__ 
+#define __UINT16_MAX__ 0xffff
+#define _HEAPEND (-5)
+#define __DBL_HAS_DENORM__ 1
+#define _IOMYBUF 0x0008
+#define __cdecl __attribute__((__cdecl__))
+#define CHAR_BIT __CHAR_BIT__
+#define __UINT8_TYPE__ unsigned char
+#define _CRT_ALTERNATIVE_IMPORTED 
+#define __NO_INLINE__ 1
+#define __MINGW_SCANF_FORMAT ms_scanf
+#define LONG_LONG_MAX __LONG_LONG_MAX__
+#define _MRTIMP2 _CRTIMP
+#define CHAR_MIN SCHAR_MIN
+#define __FLT_MANT_DIG__ 24
+#define INT_LEAST8_MIN INT8_MIN
+#define __VERSION__ "5.1.0"
+#define __max(a,b) (((a) > (b)) ? (a) : (b))
+#define _INC_SWPRINTF_INL 
+#define UINT_LEAST16_MAX UINT16_MAX
+#define __UINT64_C(c) c ## ULL
+#define _PTRDIFF_T_ 
+#define INT_LEAST32_MIN INT32_MIN
+#define _putchar_nolock(_c) _putc_nolock((_c),stdout)
+#define __int16 short
+#define _INC_CRTDEFS 
+#define __DEFINE_CPP_OVERLOAD_SECURE_FUNC_0_1(__ret,__func,__dsttype,__dst,__type1,__arg1) 
+#define __DEFINE_CPP_OVERLOAD_SECURE_FUNC_0_2(__ret,__func,__dsttype,__dst,__type1,__arg1,__type2,__arg2) 
+#define __DEFINE_CPP_OVERLOAD_SECURE_FUNC_0_3(__ret,__func,__dsttype,__dst,__type1,__arg1,__type2,__arg2,__type3,__arg3) 
+#define __DEFINE_CPP_OVERLOAD_SECURE_FUNC_0_4(__ret,__func,__dsttype,__dst,__type1,__arg1,__type2,__arg2,__type3,__arg3,__type4,__arg4) 
+#define ENOTSOCK 128
+#define _INC_LIMITS 
+#define __GCC_ATOMIC_INT_LOCK_FREE 2
+#define EHOSTUNREACH 110
+#define _MAX_PATH 260
+#define WEOF (wint_t)(0xFFFF)
+#define __int32 int
+#define __wargv (* __MINGW_IMP_SYMBOL(__wargv))
+#define _CRT_ALLOCATION_DEFINED 
+#define __MINGW_MS_PRINTF(__format,__args) __attribute__((__format__(ms_printf, __format,__args)))
+#define LONG_LONG_MIN (-LONG_LONG_MAX - 1LL)
+#define _HEAPEMPTY (-1)
+#define _INC_STDLIB_S 
+#define __MINGW_HAVE_ANSI_C99_SCANF 1
+#define __int64 long long
+#define _CRTIMP __attribute__ ((__dllimport__))
+#define _WIN32_WINNT 0x502
+#define __FLOAT_WORD_ORDER__ __ORDER_LITTLE_ENDIAN__
+#define _A_NORMAL 0x00
+#define _STDIO_DEFINED 
+#define errxx(eval,...) do { warnx(__VA_ARGS__); return(eval); } while (0)
+#define SIG_ATOMIC_MAX INT32_MAX
+#define INT32_MAX 2147483647
+#define __MSVCRT_VERSION__ 0x0700
+#define ELOOP 114
+#define _STATIC_ASSERT(expr) extern void __static_assert_t(int [(expr)?1:-1])
+#define _PGLOBAL 
+#define _ONEXIT_T_DEFINED 
+#define _CRT_WPERROR_DEFINED 
+#define __MINGW_INTRIN_INLINE extern __inline__ __attribute__((__always_inline__,__gnu_inline__))
+#define __DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_0(__ret_type,__ret_policy,__decl_spec,__name,__dst_attr,__dst_type,__dst) __DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_0_EX(__ret_type, __ret_policy, __decl_spec, __func_name, __func_name ##_s, __dst_attr, __dst_type, __dst)
+#define __DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_1(__ret_type,__ret_policy,__decl_spec,__name,__dst_attr,__dst_type,__dst,__arg1_type,__arg1) __DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_2_EX(__ret_type, __ret_policy, __decl_spec, __func_name, __func_name ##_s, __dst_attr, __dst_type, __dst, __arg1_type, __arg1, __arg2_type, __arg2)
+#define __DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_2(__ret_type,__ret_policy,__decl_spec,__name,__dst_attr,__dst_type,__dst,__arg1_type,__arg1,__arg2_type,__arg2) __DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_2_EX(__ret_type, __ret_policy, __decl_spec, __func_name, __func_name ##_s, __dst_attr, __dst_type, __dst, __arg1_type, __arg1, __arg2_type, __arg2)
+#define __DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_4(__ret_type,__ret_policy,__decl_spec,__name,__dst_attr,__dst_type,__dst,__arg1_type,__arg1,__arg2_type,__arg2,__arg3_type,__arg3,__arg4_type,__arg4) __DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_4_EX(__ret_type, __ret_policy, __decl_spec, __func_name, __func_name ##_s, __dst_attr, __dst_type, __dst, __arg1_type, __arg1, __arg2_type, __arg2, __arg3_type, __arg3, __arg4_type, __arg4)
+#define EX_SOFTWARE 70
+#define __INT32_C(c) c
+#define __DEC64_EPSILON__ 1E-15DD
+#define __ORDER_PDP_ENDIAN__ 3412
+#define __DEC128_MIN_EXP__ (-6142)
+#define _mm_free(a) _aligned_free(a)
+#define _CRT_MANAGED_HEAP_DEPRECATE 
+#define _SECURECRT_ERRCODE_VALUES_DEFINED 
+#define _OFF_T_DEFINED 
+#define __INT_FAST32_TYPE__ int
+#define __MINGW_ATTRIB_NONNULL(arg) __attribute__ ((__nonnull__ (arg)))
+#define __MINGW_IMP_LSYMBOL(sym) __imp_ ##sym
+#define UINT64_MAX 0xffffffffffffffffULL
+#define EINVAL 22
+#define SIG_ATOMIC_MIN INT32_MIN
+#define __UINT_LEAST16_TYPE__ short unsigned int
+#define F_OK 0
+#define __DEFINE_CPP_OVERLOAD_SECURE_FUNC_0_2_ARGLIST(__ret,__func,__vfunc,__dsttype,__dst,__type1,__arg1,__type2,__arg2) 
+#define RAND_MAX 0x7fff
+#define EDOM 33
+#define INT_LEAST32_MAX INT32_MAX
+#define _A_SYSTEM 0x04
+#define __INT16_MAX__ 0x7fff
+#define __UNUSED_PARAM(x) x __attribute__ ((__unused__))
+#define __SIZE_TYPE__ long long unsigned int
+#define _wfinddatai64_t _wfinddata64_t
+#define __DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_1_EX(__ret_type,__ret_policy,__decl_spec,__name,__sec_name,__dst_attr,__dst_type,__dst,__arg1_type,__arg1) 
+#define __UINT64_MAX__ 0xffffffffffffffffULL
+#define __INT8_TYPE__ signed char
+#define _IORW 0x0080
+#define _FSIZE_T_DEFINED 
+#define _OLD_P_OVERLAY 2
+#define PACKAGE_VERSION "0.9-msvc"
+#define _CRTIMP2 _CRTIMP
+#define _winver (* __MINGW_IMP_SYMBOL(_winver))
+#define _WSTDLIB_DEFINED 
+#define __ptr32 
+#define pclose _pclose
+#define __FLT_RADIX__ 2
+#define __INT_LEAST16_TYPE__ short int
+#define wpopen _wpopen
+#define __LDBL_EPSILON__ 1.08420217248550443401e-19L
+#define INTPTR_MAX INT64_MAX
+#define __UINTMAX_C(c) c ## ULL
+#define _alloca(x) __builtin_alloca((x))
+#define __SSE_MATH__ 1
+#define __ANONYMOUS_DEFINED 
+#define __k8 1
+#define _HEAP_MAXREQ 0xFFFFFFFFFFFFFFE0
+#define __ptr64 
+#define __SEH__ 1
+#define __SIG_ATOMIC_MAX__ 0x7fffffff
+#define _CRT_ABS_DEFINED 
+#define INT_LEAST64_MAX INT64_MAX
+#define __GCC_ATOMIC_WCHAR_T_LOCK_FREE 2
+#define UCHAR_MAX (SCHAR_MAX * 2 + 1)
+#define __SIZEOF_PTRDIFF_T__ 8
+#define UNALIGNED __unaligned
+#define _HEAPBADNODE (-4)
+#define strncasecmp _strnicmp
+#define _OFF_T_ 
+#define __restrict_arr __restrict
+#define INTPTR_MIN INT64_MIN
+#define __CRT__NO_INLINE 1
+#define INT8_C(val) (INT_LEAST8_MAX-INT_LEAST8_MAX+(val))
+#define _inline __inline
+#define _UNION_NAME(x) 
+#define EBUSY 16
+#define _GCC_LIMITS_H_ 
+#define W_OK 2
+#define __x86_64__ 1
+#define _MAX_DRIVE 3
+#define __DEC32_SUBNORMAL_MIN__ 0.000001E-95DF
+#define UINT_FAST32_MAX UINT32_MAX
+#define EPROTO 134
+#define ENODEV 19
+#define INT_FAST32_MAX INT32_MAX
+#define __MSVCRT__ 1
+#define __INT_FAST16_MAX__ 0x7fff
+#define _FINDDATA_T_DEFINED 
+#define __CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES_MEMORY_0_3_(__ret,__func,__type1,__attrib1,__arg1,__type2,__attrib2,__arg2,__type3,__attrib3,__arg3) _CRTIMP __ret __cdecl __func(__type1 * __attrib1 __arg1, __type2 __attrib2 __arg2, __type3 __attrib3 __arg3) __MINGW_ATTRIB_DEPRECATED_SEC_WARN;
+#define INT_MAX __INT_MAX__
+#define ULLONG_MAX (LLONG_MAX * 2ULL + 1ULL)
+#define __DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_4_EX(__ret_type,__ret_policy,__decl_spec,__name,__sec_name,__dst_attr,__dst_type,__dst,__arg1_type,__arg1,__arg2_type,__arg2,__arg3_type,__arg3,__arg4_type,__arg4) 
+#define _TAGLC_ID_DEFINED 
+#define EROFS 30
+#define __UINT_FAST32_MAX__ 0xffffffffU
+#define PACKAGE "dfu-util"
+#define __UINT_LEAST64_TYPE__ long long unsigned int
+#define __FLT_HAS_QUIET_NAN__ 1
+#define UINTMAX_MAX UINT64_MAX
+#define INT32_C(val) (INT_LEAST32_MAX-INT_LEAST32_MAX+(val))
+#define __FLT_MAX_10_EXP__ 38
+#define EX_IOERR 74
+#define __LONG_MAX__ 0x7fffffffL
+#define __argc (* __MINGW_IMP_SYMBOL(__argc))
+#define __DEC128_SUBNORMAL_MIN__ 0.000000000000000000000000000000001E-6143DL
+#define __FLT_HAS_INFINITY__ 1
+#define __UINT_FAST16_TYPE__ short unsigned int
+#define __DEC64_MAX__ 9.999999999999999E384DD
+#define _CRT_TERMINATE_DEFINED 
+#define __MINGW_EXTENSION __extension__
+#define _NSTREAM_ 512
+#define NULL ((void *)0)
+#define __CHAR16_TYPE__ short unsigned int
+#define __PRAGMA_REDEFINE_EXTNAME 1
+#define E2BIG 7
+#define _VA_LIST_DEFINED 
+#define __MINGW_HAVE_WIDE_C99_PRINTF 1
+#define __INT_LEAST16_MAX__ 0x7fff
+#define INT_MIN (-INT_MAX - 1)
+#define _CRT_SECURE_CPP_OVERLOAD_SECURE_NAMES_MEMORY 0
+#define __DEC64_MANT_DIG__ 16
+#define __INT64_MAX__ 0x7fffffffffffffffLL
+#define EDEADLK 36
+#define __UINT_LEAST32_MAX__ 0xffffffffU
+#define __GCC_ATOMIC_LONG_LOCK_FREE 2
+#define _fgetc_nolock(_stream) (--(_stream)->_cnt >= 0 ? 0xff & *(_stream)->_ptr++ : _filbuf(_stream))
+#define __INT_LEAST64_TYPE__ long long int
+#define INT64_MAX 9223372036854775807LL
+#define _countof(_Array) (sizeof(_Array) / sizeof(_Array[0]))
+#define __INT16_TYPE__ short int
+#define __INT_LEAST8_TYPE__ signed char
+#define _CRT_SWAB_DEFINED 
+#define _doserrno (*__doserrno())
+#define __STDC_VERSION__ 201112L
+#define ENOTDIR 20
+#define __DEC32_MAX_EXP__ 97
+#define __INT_FAST8_MAX__ 0x7f
+#define __INTPTR_MAX__ 0x7fffffffffffffffLL
+#define ECONNRESET 108
+#define _getwchar_nolock() _getwc_nolock(stdin)
+#define _INC_VADEFS 
+#define _P_WAIT 0
+#define ENXIO 6
+#define __GXX_MERGED_TYPEINFO_NAMES 0
+#define INT_FAST64_MIN INT64_MIN
+#define sys_nerr _sys_nerr
+#define _IOLBF 0x0040
+#define __stdcall 
+#define err(eval,...) do { warn(__VA_ARGS__); return; } while (0)
+#define __SSE2__ 1
+#define _crt_va_end(v) __builtin_va_end(v)
+#define INT64_MIN (-9223372036854775807LL - 1)
+#define _CRT_SECURE_CPP_OVERLOAD_SECURE_NAMES 0
+#define __LDBL_MANT_DIG__ 64
+#define _INC_ERRNO 
+#define __MINGW_GNU_SCANF(__format,__args) __attribute__((__format__(gnu_scanf, __format,__args)))
+#define ENAMETOOLONG 38
+#define _getwc_nolock(_c) _fgetwc_nolock(_c)
+#define __MINGW64_VERSION_STR __MINGW64_STRINGIFY(__MINGW64_VERSION_MAJOR) "." __MINGW64_STRINGIFY(__MINGW64_VERSION_MINOR)
+#define __DBL_HAS_QUIET_NAN__ 1
+#define _CALL_REPORTFAULT 0x2
+#define __GNUC_VA_LIST 
+#define _GCC_MAX_ALIGN_T 
+#define __SIG_ATOMIC_MIN__ (-__SIG_ATOMIC_MAX__ - 1)
+#define _WIO_DEFINED 
+#define warn(...) do { fprintf(stderr, "%s: ", strerror(errno)); warnx(__VA_ARGS__); } while (0)
+#define _MALLOC_H_ 
+#define FILENAME_MAX 260
+#define _CRT_ATOF_DEFINED 
+#define _WRITE_ABORT_MSG 0x1
+#define __mb_cur_max (* __MINGW_IMP_SYMBOL(__mb_cur_max))
+#define __k8__ 1
+#define __INTPTR_TYPE__ long long int
+#define __UINT16_TYPE__ short unsigned int
+#define __WCHAR_TYPE__ short unsigned int
+#define __SIZEOF_FLOAT__ 4
+#define _INC_STDDEF 
+#define _UI16_MAX 0xffffu
+#define _ARGMAX 100
+#define __pic__ 1
+#define __MINGW_USYMBOL(sym) sym
+#define __UINTPTR_MAX__ 0xffffffffffffffffULL
+#define __DEC64_MIN_EXP__ (-382)
+#define __DEFINE_CPP_OVERLOAD_SECURE_FUNC_SPLITPATH(__ret,__func,__dsttype,__src) 
+#define INT_LEAST64_MIN INT64_MIN
+#define __uintptr_t_defined 
+#define EADDRNOTAVAIL 101
+#define _FREEA_INLINE 
+#define __INT_FAST64_MAX__ 0x7fffffffffffffffLL
+#define __GCC_ATOMIC_TEST_AND_SET_TRUEVAL 1
+#define __forceinline extern __inline__ __attribute__((__always_inline__,__gnu_inline__))
+#define BUFSIZ 512
+#define __FLT_DIG__ 6
+#define _malloca(size) ((((size) + _ALLOCA_S_MARKER_SIZE) <= _ALLOCA_S_THRESHOLD) ? _MarkAllocaS(_alloca((size) + _ALLOCA_S_MARKER_SIZE),_ALLOCA_S_STACK_MARKER) : _MarkAllocaS(malloc((size) + _ALLOCA_S_MARKER_SIZE),_ALLOCA_S_HEAP_MARKER))
+#define __UINT_FAST64_TYPE__ long long unsigned int
+#define __min(a,b) (((a) < (b)) ? (a) : (b))
+#define STDIN_FILENO 0
+#define UINT_FAST8_MAX UINT8_MAX
+#define __INT_MAX__ 0x7fffffff
+#define __amd64__ 1
+#define MINGW_DDRAW_VERSION 7
+#define WIN32 1
+#define EPROTONOSUPPORT 135
+#define UINT_MAX (INT_MAX * 2U + 1U)
+#define _P_OVERLAY 2
+#define _CRT_ALGO_DEFINED 
+#define LLONG_MAX __LONG_LONG_MAX__
+#define __CRT_UUID_DECL(type,l,w1,w2,b1,b2,b3,b4,b5,b6,b7,b8) 
+#define _wfinddata_t _wfinddata64i32_t
+#define __code_model_medium__ 1
+#define _TWO_DIGIT_EXPONENT 0x1
+#define _STRUCT_NAME(x) 
+#define __INT64_TYPE__ long long int
+#define SYS_OPEN _SYS_OPEN
+#define EIO 5
+#define __FLT_MAX_EXP__ 128
+#define ENETUNREACH 118
+#define EXDEV 18
+#define UINT32_C(val) (val ##U)
+#define __GNU_EXTENSION __MINGW_EXTENSION
+#define WIN64 1
+#define __ORDER_BIG_ENDIAN__ 4321
+#define __DBL_MANT_DIG__ 53
+#define __DEFINE_CPP_OVERLOAD_SECURE_FUNC_1_1(__ret,__func,__type0,__arg0,__dsttype,__dst,__type1,__arg1) 
+#define __DEFINE_CPP_OVERLOAD_SECURE_FUNC_1_2(__ret,__func,__type0,__arg0,__dsttype,__dst,__type1,__arg1,__type2,__arg2) 
+#define __DEFINE_CPP_OVERLOAD_SECURE_FUNC_1_3(__ret,__func,__type0,__arg0,__dsttype,__dst,__type1,__arg1,__type2,__arg2,__type3,__arg3) 
+#define _crt_va_start(v,l) __builtin_va_start(v,l)
+#define __SIZEOF_FLOAT128__ 16
+#define __INT_LEAST64_MAX__ 0x7fffffffffffffffLL
+#define __GCC_ATOMIC_CHAR16_T_LOCK_FREE 2
+#define _STDSTREAM_DEFINED 
+#define UINT_FAST64_MAX UINT64_MAX
+#define _IOWRT 0x0002
+#define INT_FAST32_MIN INT32_MIN
+#define __DEC64_MIN__ 1E-383DD
+#define __WINT_TYPE__ short unsigned int
+#define __UINT_LEAST32_TYPE__ unsigned int
+#define __SIZEOF_SHORT__ 2
+#define STDOUT_FILENO 1
+#define __SSE__ 1
+#define _FILE_OFFSET_BITS_SET_FTELLO 
+#define __intptr_t_defined 
+#define __LDBL_MIN_EXP__ (-16381)
+#define _CRT_STRINGIZE(_Value) __CRT_STRINGIZE(_Value)
+#define __MINGW_ATTRIB_DEPRECATED_STR(X) 
+#define _HEAPINFO_DEFINED 
+#define __MINGW_PRAGMA_PARAM(x) _Pragma (#x)
+#define ENOSPC 28
+#define stdout (&__iob_func()[1])
+#define ENOEXEC 8
+#define MINGW_SDK_INIT 
+#define EOF (-1)
+#define __INT_LEAST8_MAX__ 0x7f
+#define __MINGW_MSC_PREREQ(major,minor) 0
+#define __crt_typefix(ctype) 
+#define LLONG_MIN (-LLONG_MAX - 1LL)
+#define __MINGW_IMP_SYMBOL(sym) __imp_ ##sym
+#define __SIZEOF_INT128__ 16
+#define _wP_tmpdir L"\\"
+#define __LDBL_MAX_10_EXP__ 4932
+#define __ATOMIC_RELAXED 0
+#define __DBL_EPSILON__ ((double)2.22044604925031308085e-16L)
+#define EMSGSIZE 115
+#define __thiscall __attribute__((__thiscall__))
+#define _I32_MAX 2147483647
+#define _CRTRESTRICT 
+#define __UINT8_C(c) c
+#define EFBIG 27
+#define ESRCH 3
+#define __INT_LEAST32_TYPE__ int
+#define _NLSCMPERROR 2147483647
+#define SEEK_END 2
+#define __SIZEOF_WCHAR_T__ 2
+#define __UINT64_TYPE__ long long unsigned int
+#define __DEFINE_CPP_OVERLOAD_SECURE_FUNC_0_1_ARGLIST(__ret,__func,__vfunc,__dsttype,__dst,__type1,__arg1) 
+#define ENOLCK 39
+#define ENFILE 23
+#define EAGAIN 11
+#define __MINGW32_MAJOR_VERSION 3
+#define _STDDEF_H_ 
+#define _PTRDIFF_T_DEFINED 
+#define _ANONYMOUS_UNION __MINGW_EXTENSION
+#define MB_CUR_MAX ___mb_cur_max_func()
+#define ENOSYS 40
+#define _MAX_FNAME 256
+#define __INT_FAST8_TYPE__ signed char
+#define _getchar_nolock() _getc_nolock(stdin)
+#define EOPNOTSUPP 130
+#define __fastcall __attribute__((__fastcall__))
+#define __MINGW_GNUC_PREREQ(major,minor) (__GNUC__ > (major) || (__GNUC__ == (major) && __GNUC_MINOR__ >= (minor)))
+#define _IOEOF 0x0010
+#define _I32_MIN (-2147483647 - 1)
+#define __GNUC_STDC_INLINE__ 1
+#define _THREADLOCALEINFO 
+#define P_tmpdir _P_tmpdir
+#define _FILE_OFFSET_BITS_SET_OFFT 
+#define ENOTSUP 129
+#define INTMAX_MAX INT64_MAX
+#define R_OK 4
+#define __STRINGIFY(x) #x
+#define __DBL_DECIMAL_DIG__ 17
+#define __STDC_UTF_32__ 1
+#define __unaligned 
+#define __MINGW_PRINTF_FORMAT ms_printf
+#define _IOERR 0x0020
+#define __FXSR__ 1
+#define EDEADLOCK EDEADLK
+#define __DEC_EVAL_METHOD__ 2
+#define ECONNABORTED 106
+#define FOPEN_MAX 20
+#define __CRT_STRINGIZE(_Value) #_Value
+#define __MINGW64__ 1
+#define _CRT_PACKING 8
+#define _TRUNCATE ((size_t)-1)
+#define environ _environ
+#define _WAIT_CHILD 0
+#define _USEDENTRY 1
+#define __UINT32_C(c) c ## U
+#define _CRT_SECURE_CPP_NOTHROW throw()
+#define __INTMAX_MAX__ 0x7fffffffffffffffLL
+#define EISCONN 113
+#define __BYTE_ORDER__ __ORDER_LITTLE_ENDIAN__
+#define WINNT 1
+#define __FLT_DENORM_MIN__ 1.40129846432481707092e-45F
+#define _CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES_COUNT 0
+#define INTMAX_MIN INT64_MIN
+#define _wfindnext _wfindnext64i32
+#define MINGW_HAS_DDRAW_H 1
+#define __INT8_MAX__ 0x7f
+#define __PIC__ 1
+#define _WAIT_GRANDCHILD 1
+#define _CRT_SYSTEM_DEFINED 
+#define __UINT_FAST32_TYPE__ unsigned int
+#define __MINGW_NOTHROW __attribute__ ((__nothrow__))
+#define __CHAR32_TYPE__ unsigned int
+#define ENOPROTOOPT 123
+#define __MINGW_MBWC_CONVERT_DEFINED 
+#define __FLT_MAX__ 3.40282346638528859812e+38F
+#define INT_FAST64_MAX INT64_MAX
+#define UINT_LEAST32_MAX UINT32_MAX
+#define _OFF64_T_DEFINED 
+#define __int8 char
+#define _winminor (* __MINGW_IMP_SYMBOL(_winminor))
+#define wcswcs wcsstr
+#define __INT32_TYPE__ int
+#define _CRT_WIDE(_String) __CRT_WIDE(_String)
+#define ENOBUFS 119
+#define __SIZEOF_DOUBLE__ 8
+#define __FLT_MIN_10_EXP__ (-37)
+#define __MINGW_ATTRIB_PURE __attribute__ ((__pure__))
+#define _MAX_DIR 256
+#define __INTMAX_TYPE__ long long int
+#define _OUT_TO_STDERR 1
+#define EFAULT 14
+#define _MT 
+#define _INTEGRAL_MAX_BITS 64
+#define __MINGW_ATTRIB_NORETURN __attribute__ ((__noreturn__))
+#define __DEC128_MAX_EXP__ 6145
+#define UINT8_C(val) (val)
+#define _CRTIMP_PURE _CRTIMP
+#define EWOULDBLOCK 140
+#define __MINGW64_VERSION_STATE "stable"
+#define __ATOMIC_CONSUME 1
+#define __GNUC_MINOR__ 1
+#define __UINTMAX_MAX__ 0xffffffffffffffffULL
+#define __DEC32_MANT_DIG__ 7
+#define INTMAX_C(val) val ##LL
+#define __DECLSPEC_SUPPORTED 
+#define ECONNREFUSED 107
+#define _STDINT_H 
+#define __DBL_MAX_10_EXP__ 308
+#define UINT16_MAX 65535
+#define __LDBL_DENORM_MIN__ 3.64519953188247460253e-4951L
+#define __DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_2_EX(__ret_type,__ret_policy,__decl_spec,__name,__sec_name,__dst_attr,__dst_type,__dst,__arg1_type,__arg1,__arg2_type,__arg2) 
+#define __INT16_C(c) c
+#define _IO_H_ 
+#define _A_HIDDEN 0x02
+#define STRUNCATE 80
+#define __STDC__ 1
+#define __CRTDECL __cdecl
+#define __MINGW_POISON_NAME(__IFACE) __IFACE ##_layout_has_not_been_verified_and_its_declaration_is_most_likely_incorrect
+#define EEXIST 17
+#define __MINGW_HAVE_ANSI_C99_PRINTF 1
+#define __PTRDIFF_TYPE__ long long int
+#define errno (*_errno())
+#define __MINGW_GCC_VERSION (__GNUC__ * 10000 + __GNUC_MINOR__ * 100 + __GNUC_PATCHLEVEL__)
+#define _INC_STDLIB 
+#define _winmajor (* __MINGW_IMP_SYMBOL(_winmajor))
+#define _PTR_LD(x) ((unsigned char *)(&(x)->ld))
+#define DFU_FILE_H 
+#define __ATOMIC_SEQ_CST 5
+#define ENOENT 2
+#define __UINT32_TYPE__ unsigned int
+#define _I64_MAX 9223372036854775807ll
+#define __C89_NAMELESSUNIONNAME 
+#define __UINTPTR_TYPE__ long long unsigned int
+#define _fputc_nolock(_c,_stream) (--(_stream)->_cnt >= 0 ? 0xff & (*(_stream)->_ptr++ = (char)(_c)) : _flsbuf((_c),(_stream)))
+#define _INC_IO_S 
+#define __DEC64_SUBNORMAL_MIN__ 0.000000000000001E-383DD
+#define _wfindfirst _wfindfirst64i32
+#define __DEC128_MANT_DIG__ 34
+#define __LDBL_MIN_10_EXP__ (-4931)
+#define X_OK 1
+#define __SIZEOF_LONG_LONG__ 8
+#define _A_RDONLY 0x01
+#define DUMMYSTRUCTNAME 
+#define __GCC_ATOMIC_LLONG_LOCK_FREE 2
+#define __MINGW64_VERSION_MINOR 0
+#define __LDBL_DIG__ 18
+#define _findnexti64 _findnext64
+#define __MINGW_ATTRIB_DEPRECATED __attribute__ ((__deprecated__))
+#define __FLT_DECIMAL_DIG__ 9
+#define __UINT_FAST16_MAX__ 0xffff
+#define _ERRCODE_DEFINED 
+#define __GCC_ATOMIC_SHORT_LOCK_FREE 2
+#define _P_DETACH 4
+#define MB_LEN_MAX 5
+#define _SPAWNV_DEFINED 
+#define INT_LEAST16_MAX INT16_MAX
+#define __UINT_FAST8_TYPE__ unsigned char
+#define _I8_MAX 127
+#define __WIN64__ 1
+#define _REPORT_ERRMODE 3
+#define _I64_MIN (-9223372036854775807ll - 1)
+#define __DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_3(__ret_type,__ret_policy,__decl_spec,__name,__dst_attr,__dst_type,__dst,__arg1_type,__arg1,__arg2_type,__arg2,__arg3_type,__arg3) __DEFINE_CPP_OVERLOAD_STANDARD_FUNC_0_3_EX(__ret_type, __ret_policy, __decl_spec, __func_name, __func_name ##_s, __dst_attr, __dst_type, __dst, __arg1_type, __arg1, __arg2_type, __arg2, __arg3_type, __arg3)
+#define errx(eval,...) do { warnx(__VA_ARGS__); return; } while (0)
+#define _TIME32_T_DEFINED 
+#define __ATOMIC_ACQ_REL 4
+#define __ATOMIC_RELEASE 3
+#define _FREEENTRY 0
+#define _FILE_OFFSET_BITS_SET_FSEEKO 
+#define __declspec(x) __attribute__((x))
+#define _M_AMD64 100
+#define O_BINARY 0

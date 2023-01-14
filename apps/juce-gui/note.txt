@@ -1,0 +1,121 @@
+*** MACOS
+
+https://appstoreconnect.apple.com/WebObjects/iTunesConnect.woa/ra/ng/app/1383301830/osx/versioninfo
+
+Add new version
+
+Before uploading to App Store
+
+Optional now since JUCE has these options:
+    project / general
+      Increase build count 
+
+    project / Signing & Cap...
+      [x] Automatically manage signing
+      Team: Vindor Music, Inc.
+
+
+    project / Build Settings / Installation Directory -> /Applications
+
+    project / "+ Capability" / App Sandbox
+
+    project / Capabilities / App Sandbox -> USB
+
+    project / Capabilities / App Sandbox -> File Access
+      User Seleced Files - R/W
+      Downloads - Read
+
+    add to file: ./Builds/MacOSX/Info-App.plist
+        <key>LSMinimumSystemVersion</key>
+        <string>10.11.00</string>
+
+menu Product / Archive
+
+menu Window / Organizer
+
+Archives dialog box should come up
+
+Choose last build
+
+Click Validate, follow all prompts
+
+Click Distribute
+
+Go to web page, click on App
+Click on new version
+Fill out info
+Go down to Build
+Select new upload
+SAVE and SUBMIT
+
+Possible errors:
+
+App Store Connect Operation Error
+ERROR ITMS-90266: "Your application bundle must install to '/Applications'."
+
+App Store Connect Operation Error
+ERROR ITMS-90296: "App sandbox not enabled. The following executables must include the "com.apple.security.app-sandbox" entitlement with a Boolean value of true in the entitlements property list: [( "com.vindormusic.vindores1.pkg/Payload/Vindor.app/Contents/MacOS/Vindor" )] Refer to App Sandbox page at https://developer.apple.com/devcenter/mac/app-sandbox/ for more information on sandboxing your app."
+
+*** IOS
+
+TARGETS / Vindor
+    Automatically manage signing
+    Team: Vindor Music, Inc.
+
+TARGETS / Vindor - App / General
+    make sure Bundle id is "com.vindormusic.vindores1app"
+
+menu Product / Archive
+
+Go top web sit and submit same as MacOS
+
+*** ANDROID
+
+Android key password: Wind4@ll
+
+Change AndroidManifest.xml
+  Update versionCode
+
+Build / Generate Signed Bundle / APK
+
+App Bundle
+
+Select Release
+
+On the info popup click _locate_
+or find in ...Builds/Android/app/release_/release/*.aab
+
+Go to web site and add new release
+
+
+*** WINDOWS
+
+user = ftrias@vindormusic.com
+pwd = Wind@everyone
+https://developer.microsoft.com/en-us/
+https://partner.microsoft.com/en-us/dashboard/windows/overview
+
+Azure: vindormusic.onmicrosoft.com
+pwd = Wind@everyone
+
+open Dist/Vindor WAP solution in VS
+
+right click Vindor WAP > Publish > Associate...
+
+right click Vindor WAP > Publish... > Create App Packages... > [Next]
+Set version
+[Create]
+- will compile everything
+
+If expired cert: 
+https://stackoverflow.com/questions/23748071/how-do-i-renew-my-expired-windows-store-app-certificate
+https://docs.microsoft.com/en-us/windows/msix/package/create-certificate-package-signing#create-a-self-signed-certificate
+
+Go to partner web site
+Click Products in left bar
+Click Vindor
+Click Submissions
+Drag appxupload
+
+
+

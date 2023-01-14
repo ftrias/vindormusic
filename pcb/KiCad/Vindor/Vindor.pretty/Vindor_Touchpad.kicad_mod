@@ -1,0 +1,17 @@
+(module Vindor_Touchpad (layer F.Cu) (tedit 5D8E38DE)
+  (fp_text reference REF** (at 0 -5.08) (layer F.SilkS) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_text value Vindor_Touchpad (at 0 -6.8) (layer F.Fab) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_circle (center 0 0) (end 4.5 0) (layer F.CrtYd) (width 0.15))
+  (pad 1 smd custom (at 3.5 0) (size 1 1) (layers F.Cu)
+    (clearance 1.5) (zone_connect 2) (thermal_gap 1.3)
+    (options (clearance convexhull) (anchor circle))
+    (primitives
+      (gr_circle (center -3.5 0) (end 0 0) (width 1.5))
+    ))
+  (pad "" np_thru_hole circle (at 0 0) (size 5.0546 5.0546) (drill 5.0546) (layers *.Cu *.Mask)
+    (clearance 0.1) (thermal_gap 1.3))
+)

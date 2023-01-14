@@ -1,0 +1,13 @@
+(fp_lib_table
+  (lib (name digikey-footprints)(type KiCad)(uri /Users/ftrias/Documents/Source/kicad/digikey-kicad-library/digikey-footprints.pretty)(options "")(descr ""))
+  (lib (name MF_Aesthetics)(type KiCad)(uri /Users/ftrias/Documents/Source/kicad/EDALibraries/KiCad/Footprints/MF_Aesthetics.pretty)(options "")(descr ""))
+  (lib (name MF_Connectors)(type KiCad)(uri /Users/ftrias/Documents/Source/kicad/EDALibraries/KiCad/Footprints/MF_Connectors.pretty)(options "")(descr ""))
+  (lib (name MF_Discrete_Semiconductor)(type KiCad)(uri /Users/ftrias/Documents/Source/kicad/EDALibraries/KiCad/Footprints/MF_Discrete_Semiconductor.pretty)(options "")(descr ""))
+  (lib (name MF_Displays)(type KiCad)(uri /Users/ftrias/Documents/Source/kicad/EDALibraries/KiCad/Footprints/MF_Displays.pretty)(options "")(descr ""))
+  (lib (name MF_Frequency_Control)(type KiCad)(uri /Users/ftrias/Documents/Source/kicad/EDALibraries/KiCad/Footprints/MF_Frequency_Control.pretty)(options "")(descr ""))
+  (lib (name MF_IC_Digital)(type KiCad)(uri /Users/ftrias/Documents/Source/kicad/EDALibraries/KiCad/Footprints/MF_IC_Digital.pretty)(options "")(descr ""))
+  (lib (name MF_IC_Power)(type KiCad)(uri /Users/ftrias/Documents/Source/kicad/EDALibraries/KiCad/Footprints/MF_IC_Power.pretty)(options "")(descr ""))
+  (lib (name MF_LEDs)(type KiCad)(uri /Users/ftrias/Documents/Source/kicad/EDALibraries/KiCad/Footprints/MF_LEDs.pretty)(options "")(descr ""))
+  (lib (name MF_Passives)(type KiCad)(uri /Users/ftrias/Documents/Source/kicad/EDALibraries/KiCad/Footprints/MF_Passives.pretty)(options "")(descr ""))
+  (lib (name MF_Switches)(type KiCad)(uri /Users/ftrias/Documents/Source/kicad/EDALibraries/KiCad/Footprints/MF_Switches.pretty)(options "")(descr ""))
+)

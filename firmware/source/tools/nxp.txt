@@ -1,0 +1,8 @@
+Apply 4PID <apply4pid@nxp.com>
+Mar 9 2017
+
+to ftrias 
+
+With reference to your PID application submitted online (Feb 11), the assigned PIDs are 0x818C, 0x818D.
+Note NXP VID is 0x1FC9 .
+Thank you 

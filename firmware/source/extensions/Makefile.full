@@ -1,0 +1,284 @@
+# Vindor Firmware Makefile
+#
+
+PLATFORM=3.2
+
+ifeq ($(PLATFORM),3.0)
+MCU=mk20dx128
+MCUDEF=-D__MK20DX128__
+else ifeq ($(PLATFORM),3.2) 
+MCU=mk20dx256
+MCUDEF=-D__MK20DX256__
+else ifeq ($(PLATFORM),3.3)
+MCU=mk20dx256
+MCUDEF=-D__MK20DX256__ -D__MK20DX256VLL10__
+endif
+
+GPROF=0
+
+BOOT=dfu
+
+# The name of your project (used to name the compiled .hex file)
+TARGET = $(notdir $(CURDIR))
+
+CLI_LOADER=../teensy_loader_cli/teensy_loader_cli --mcu $(MCU) -w -v
+DFU_DIR=../../external/dfu-util/src/
+DFU_SUFFIX = $(DFU_DIR)/dfu-suffix
+DFU_UTIL = $(DFU_DIR)/dfu-util
+MIDI_UTIL = ../cmdline/midicmd
+
+CPUSPEED=96000000
+# CPUSPEED=72000000
+
+USB=-DUSB_AUDIO_MIDI
+# USB=-DUSB_AUDIO_MIDI -DUSB_ALTERNATE_PRODUCT_ID
+# USB=-DUSB_AUDIO_MIDI_SEREMU
+# USB=-DUSB_AUDIO_MIDI_KEYBOARD_SERIAL
+
+# configurable options
+OPTIONS = -DF_CPU=$(CPUSPEED) $(USB) -DLAYOUT_US_ENGLISH
+
+# options needed by many Arduino libraries to configure for Teensy 3.x
+OPTIONS += $(MCUDEF) -DARDUINO=10613 -DTEENSYDUINO=132 -DUSE_HIBERNATE -DI2S_ALT_CHANNEL -DCORE_XTRA_PINS
+
+# use faster read-only SD card interface
+# OPTIONS += -DUSE_TEENSY3_OPTIMIZED_CODE
+
+# for buggy boards where VBAT is not connected to power
+OPTIONS += -DSKIP_RTC_OSC
+
+ifdef FIRMWAREREV
+OPTIONS += -DFIRMWAREREV=$(FIRMWAREREV) -DPCB_R1_$(FIRMWAREREV)
+endif
+
+BUILDDIR = build
+SOURCE = .
+
+ifdef COMSPEC
+cygpath-win    = $(shell cygpath -w "$1")
+else
+cygpath-win    = $1
+endif
+
+#************************************************************************
+# Location of Teensyduino utilities, Toolchain, and Arduino Libraries.
+# To use this makefile without Arduino, copy the resources from these
+# locations and edit the pathnames.  The rest of Arduino is not needed.
+#************************************************************************
+
+ARDUINO ?= /Applications/Arduino.app/Contents/Java
+
+# path location for Teensy Loader, teensy_post_compile and teensy_reboot
+TOOLS_PATH = $(ARDUINO)/hardware/tools
+
+# path location for Teensy 3 core
+#CORE_PARENT = $(ARDUINO)/hardware/teensy/avr/cores
+CORE_PARENT = $(realpath ../../external/fork/cores)
+CORE_PATH = $(CORE_PARENT)/teensy3
+
+# path location for Arduino libraries
+SYS_LIBRARY_PATH = $(ARDUINO)/hardware/teensy/avr/libraries
+USER_LIBRARY_PATH = $(realpath ../../external/PJRC)
+CUSTOM_LIBRARY_PATH = $(realpath ../../external/fork)
+
+ifeq ($(PLATFORM),3.0)
+SYS_LIBS = 
+USER_LIBS = SPI EEPROM i2c_t3
+CUSTOM_LIBS = Audio Audio/utility
+OPTIONS += -DSMALL_FOOTPRINT
+else
+SYS_LIBS = 
+USER_LIBS = SPI SD SD/utility EEPROM i2c_t3 SerialFlash Snooze Snooze/utility Adafruit_SSD1306 Adafruit_GFX ADXL362
+CUSTOM_LIBS = Audio Audio/utility MCP4551
+OPTIONS += -DUSE_SDCARD
+endif
+
+# path location for the arm-none-eabi compiler
+ifeq ($(wildcard /usr/bin/arm-none-eabi-gcc),) 
+	COMPILER_PATH = $(TOOLS_PATH)/arm/bin
+else 
+	COMPILER_PATH = /usr/bin
+endif 
+
+#************************************************************************
+# Settings below this point usually do not need to be edited
+#************************************************************************
+
+# DFLAGS = -g -Og
+# -fstack-protector -DUSE_STACK_GUARD
+DFLAGS = -O2
+# DFLAGS = -O3 -flto 
+# -fno-fat-lto-objects
+
+ifeq ($(GPROF),1)
+# LIBS += -Lgprof -lgprof
+DFLAGS = -pg -DGPROF -Og -g
+CUSTOM_LIBS += gprof
+endif
+
+# CPPFLAGS = compiler options for C and C++
+CPPFLAGS = -Wall -MMD -mcpu=cortex-m4 -mthumb -fsingle-precision-constant -ffast-math -nostdlib -ffunction-sections -fdata-sections
+CPPFLAGS += $(DFLAGS) $(OPTIONS) -I$(SOURCE) -I$(CORE_PATH) 
+
+# compiler options for C++ only
+CXXFLAGS = -std=gnu++0x -felide-constructors -fno-exceptions -fno-rtti
+
+# compiler options for C only
+CFLAGS = $(DBG)
+
+#LDSCRIPT = $(CORE_PATH)/$(MCU)$(BOOT).ld
+LDSCRIPT = $(MCU)$(BOOT).ld
+
+# linker options
+LDFLAGS = -dead_strip -Wl,--gc-sections,--defsym=__rtc_localtime=0 --specs=nano.specs -mcpu=cortex-m4 -mthumb -mcpu=cortex-m4 -mthumb -T$(LDSCRIPT)
+
+# additional libraries to link
+LIBS = -lm -larm_cortexM4l_math
+#LIBS = -lm 
+
+# names for the compiler programs
+CC = $(COMPILER_PATH)/arm-none-eabi-gcc
+CXX = $(COMPILER_PATH)/arm-none-eabi-g++
+OBJCOPY = $(COMPILER_PATH)/arm-none-eabi-objcopy
+SIZE = $(COMPILER_PATH)/arm-none-eabi-size
+#NM = $(COMPILER_PATH)/arm-none-eabi-nm
+OBJDUMP = $(COMPILER_PATH)/arm-none-eabi-objdump
+GPROFX=$(COMPILER_PATH)/arm-none-eabi-gprof
+
+L_INC := -I$(SOURCE) -I$(CORE_PATH)
+L_INC += $(foreach lib,$(SYS_LIBS), -I$(SYS_LIBRARY_PATH)/$(lib))
+L_INC += $(foreach lib,$(USER_LIBS), -I$(USER_LIBRARY_PATH)/$(lib))
+L_INC += $(foreach lib,$(CUSTOM_LIBS), -I$(CUSTOM_LIBRARY_PATH)/$(lib))
+
+GET_LIB = $(foreach lib, $(2), $(filter %.c %.cpp %.S %.ino, $(wildcard $(firstword $(1))/$(lib)/*)))
+
+LC_FILES := $(filter %.c %.cpp %.S, $(wildcard $(SOURCE)/*))
+# LC_FILES += firmware.ino
+LC_FILES += $(call GET_LIB, $(CORE_PARENT), teensy3)
+LC_FILES += $(call GET_LIB, $(SYS_LIBRARY_PATH), $(SYS_LIBS))
+LC_FILES += $(call GET_LIB, $(USER_LIBRARY_PATH), $(USER_LIBS))
+LC_FILES += $(call GET_LIB, $(CUSTOM_LIBRARY_PATH), $(CUSTOM_LIBS))
+
+OBJS_FILES := \
+$(patsubst %.ino, %.o, $(filter %.ino, $(LC_FILES))) \
+$(patsubst %.c, %.o, $(filter %.c, $(LC_FILES))) \
+$(patsubst %.cpp, %.o, $(filter %.cpp, $(LC_FILES))) \
+$(patsubst %.S, %.o, $(filter %.S, $(LC_FILES))) 
+
+OBJS := $(foreach obj, $(OBJS_FILES), $(BUILDDIR)/$(obj))
+
+COMPILETIME=$(shell date '+%Y%m%d')
+
+all: dfu dump
+
+# build: $(TARGET).elf
+
+hex: $(TARGET).hex
+
+dfu: $(TARGET).dfu
+
+# nm: $(TARGET).nm
+
+dump: $(TARGET).dump
+
+post_compile: $(TARGET).hex
+	$(Q)$(TOOLS_PATH)/teensy_post_compile -file="$(basename $<)" -path="$(call cygpath-win,$(CURDIR))" -tools="$(TOOLS_PATH)"
+
+reboot:
+	$(Q)-$(TOOLS_PATH)/teensy_reboot
+
+gdb: upload
+	sleep 2
+
+upload: $(TARGET).dfu
+	$(MIDI_UTIL) -r
+	sleep 1
+	$(DFU_UTIL) -d 15a2:0500 -D "$<"
+	#$(DFU_UTIL) -d 1d50:6082 -D "$<"
+	
+uploadgui: post_compile reboot
+
+upload-cli: $(TARGET).hex
+	$(CLI_LOADER) "$<"
+
+uploadx: $(TARGET).hex
+	$(CLI_LOADER) -r --device-id=0x0486 "$<"
+
+gmon: gmon.out
+	$(Q)$(GPROFX) $(TARGET).elf > $(TARGET).gprof
+        
+$(BUILDDIR)/%.o: %.c
+	@echo "[CC]\t$<"
+	$(Q)mkdir -p "$(dir $@)"
+	$(Q)$(CC) $(CPPFLAGS) $(CFLAGS) $(L_INC) -o "$@" -c "$<"
+
+$(BUILDDIR)/%.o: %.ino
+	@echo "[CXX]\t$<"
+	$(Q)mkdir -p "$(dir $@)"
+	$(Q)$(CC) $(CPPFLAGS) $(CXXFLAGS) $(L_INC) -o "$@" -c -x c++ -include Arduino.h "$<"
+
+$(BUILDDIR)/%.o: %.cpp
+	@echo "[CXX]\t$<"
+	@mkdir -p "$(dir $@)"
+	$(Q)$(CXX) $(CPPFLAGS) $(CXXFLAGS) $(L_INC) -o "$@" -c "$<"
+
+$(BUILDDIR)/%.o: %.S
+	@echo "[CC]\t$<"
+	$(Q)mkdir -p "$(dir $@)"
+	$(Q)$(CC) $(CPPFLAGS) $(CFLAGS) $(L_INC) -o "$@" -c "$<"
+	
+$(TARGET).elf: $(OBJS) $(LDSCRIPT)
+	@echo "[LD]\t$@"
+	$(Q)$(CC) $(LDFLAGS) -o "$@" -Wl,-Map,$(TARGET).map $(OBJS) $(LIBS)
+
+%.nm: %.elf
+	$(Q)$(NM) -t d --print-size --size-sort "$<" >"$@"
+
+%.dump: %.elf
+	$(Q)$(OBJDUMP) -x -d -S "$<" >"$@"
+	
+%.hex: %.elf
+	@echo "[HEX]\t$@"
+	$(Q)$(SIZE) "$<"
+	$(Q)$(OBJCOPY) -O ihex -R .eeprom "$<" "$@"
+
+%.bin: %.elf
+	@echo "[BIN]\t$@"
+	$(Q)$(SIZE) "$<"
+	$(Q)$(OBJCOPY) -O binary -R .eeprom "$<" "$@"
+
+%.dfu: %.elf
+	@echo "[DFU]\t$@"
+	$(Q)$(SIZE) "$<"
+	$(Q)$(OBJCOPY) -O binary "$<" "$@"
+	$(DFU_SUFFIX) -a $@
+	
+%.zip: %.hex
+	zip $@ $<
+
+.PHONY: web clean cleanall
+
+web: $(TARGET).zip
+	cp $(TARGET).zip ../../Web
+
+rev_dfu: $(TARGET).dfu
+	cp $(TARGET).dfu $(TARGET)-R$(FIRMWAREREV).dfu
+
+zdf:
+	for rev in 42 44 45 47 51 52 53; do \
+		make clean ; \
+		make FIRMWAREREV=$$rev rev_dfu ; \
+	done
+	zip $(TARGET)-$(COMPILETIME).zdf $(TARGET)-R*.dfu
+	mv $(TARGET)-$(COMPILETIME).zdf archive
+
+# compiler generated dependency info
+-include $(OBJS:.o=.d)
+
+cleanall: clean
+	$(Q)rm -rf "$(BUILDDIR)"
+
+clean:
+	@echo Cleaning...
+	$(Q)rm -rf "$(BUILDDIR)"/*
+	$(Q)rm -f "$(TARGET).elf"* "$(TARGET).hex" "$(TARGET).nm" "$(TARGET).map" "$(TARGET).dump" "$(TARGET).dfu" "$(TARGET).bin"

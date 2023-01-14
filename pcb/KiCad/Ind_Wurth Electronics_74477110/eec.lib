@@ -1,0 +1,39 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# Wurth Electronics 74477110
+#
+DEF 74477110 L 0 40 Y Y 1 L N
+F0 "L" 0 200 50 H V L CNN 
+F1 "74477110" 0 300 50 H V L CNN 
+F2 "Wurth_Electronics-74477110-*" 0 400 50 H I L CNN 
+F3 "http://www.we-online.de/katalog/media/pdf/74477110.pdf" 0 500 50 H I L CNN 
+F4 "Manufacturer Link" 0 600 50 H I L CNN "Component Link 1 Description"
+F5 "http://www.we-online.com" 0 700 50 H I L CNN "Component Link 1 URL"
+F6 "ver 7, Sep-2006" 0 800 50 H I L CNN "Datasheet Version"
+F7 "SMD Inductor, 2-Leads, Body 12.0 x 12.0 mm" 0 900 50 H I L CNN "Package Description"
+F8 "2006" 0 1000 50 H I L CNN "Package Version"
+F9 "Ind" 0 1100 50 H I L CNN "category"
+F10 "912551" 0 1200 50 H I L CNN "ciiva ids"
+F11 "10.0 ÂμH" 0 1300 50 H I L CNN "inductance"
+F12 "559b888335e3b96c" 0 1400 50 H I L CNN "library id"
+F13 "Wurth Electronics" 0 1500 50 H I L CNN "manufacturer"
+F14 "WE-PD-L" 0 1600 50 H I L CNN "package"
+F15 "1312445622" 0 1700 50 H I L CNN "release date"
+F16 "C4762655-EB6A-4F2E-8B7C-57A81AB868AF" 0 1800 50 H I L CNN "vault revision"
+F17 "yes" 0 1900 50 H I L CNN "imported"
+DRAW
+X 1 1 100 0 100 R 40 0 1 1 P 
+X 2 2 700 0 100 L 40 0 1 1 P 
+A 250 0 50 900 1800 1 1 0 N 250 50 200 0
+A 250 0 50 0 900 1 1 0 N 300 0 250 50
+A 350 0 50 900 1800 1 1 0 N 350 50 300 0
+A 350 0 50 0 900 1 1 0 N 400 0 350 50
+A 450 0 50 900 1800 1 1 0 N 450 50 400 0
+A 450 0 50 0 900 1 1 0 N 500 0 450 50
+A 550 0 50 900 1800 1 1 0 N 550 50 500 0
+A 550 0 50 0 900 1 1 0 N 600 0 550 50
+ENDDRAW
+ENDDEF
+#
+# End Library

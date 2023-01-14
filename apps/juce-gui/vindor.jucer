@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT name="Vindor" projectType="guiapp" companyName="Vindor Music, Inc."
+              companyCopyright="Copyright 2013-2020 by Vindor Music, Inc."
+              companyWebsite="www.vindormusic.com" companyEmail="info@vindormusic.com"
+              headerPath="../../../../hardware/firmware&#10;../../../../hardware/firmware/comm&#10;../../../../hardware/firmware/sound"
+              bundleIdentifier="com.vindormusic.vindores1" id="Y0aYus" version="1.2.4"
+              displaySplashScreen="1" jucerFormatVersion="1">
+  <MAINGROUP id="LVi6A7" name="Vindor">
+    <GROUP id="{D6427127-1742-7DE5-5E9A-76D61309E72C}" name="Source">
+      <FILE id="QBOXg6" name="WaveSF2Layout.cpp" compile="1" resource="0"
+            file="Source/WaveSF2Layout.cpp"/>
+      <FILE id="crh60l" name="WaveSF2Layout.h" compile="0" resource="0" file="Source/WaveSF2Layout.h"/>
+      <FILE id="HM9i0k" name="GestureTab.cpp" compile="1" resource="0" file="Source/GestureTab.cpp"/>
+      <FILE id="f3IUO2" name="GestureTab.h" compile="0" resource="0" file="Source/GestureTab.h"/>
+      <FILE id="B1HA4A" name="PhysicalLayout.cpp" compile="1" resource="0"
+            file="Source/PhysicalLayout.cpp"/>
+      <FILE id="aVYk3l" name="PhysicalLayout.h" compile="0" resource="0"
+            file="Source/PhysicalLayout.h"/>
+      <FILE id="i2xH6a" name="SoundChooser.cpp" compile="1" resource="0"
+            file="Source/SoundChooser.cpp"/>
+      <FILE id="gJphCq" name="SoundChooser.h" compile="0" resource="0" file="Source/SoundChooser.h"/>
+      <FILE id="cz910p" name="ConvertFiles.cpp" compile="1" resource="0"
+            file="Source/ConvertFiles.cpp"/>
+      <FILE id="lYxRri" name="ConvertFiles.h" compile="0" resource="0" file="Source/ConvertFiles.h"/>
+      <GROUP id="{66101A85-1B5D-AFF0-0DCD-4CE9EDB70F2F}" name="Core">
+        <FILE id="kLvOta" name="VindorWrap.cpp" compile="1" resource="0" file="Source/VindorWrap.cpp"/>
+        <FILE id="wZu0HU" name="VindorWrap.h" compile="0" resource="0" file="Source/VindorWrap.h"/>
+        <FILE id="ZpDJDL" name="VindorControl.cpp" compile="1" resource="0"
+              file="Source/VindorControl.cpp"/>
+        <FILE id="M9GNsz" name="VindorControl.h" compile="0" resource="0" file="Source/VindorControl.h"/>
+        <FILE id="fqwhRH" name="MidiControl.cpp" compile="1" resource="0" file="Source/MidiControl.cpp"/>
+        <FILE id="LL3jY4" name="MidiControl.h" compile="0" resource="0" file="Source/MidiControl.h"/>
+      </GROUP>
+      <GROUP id="{20A97CC3-9CDA-19D4-A479-3DEFB0555545}" name="VindorFirmware">
+        <FILE id="oou7wV" name="Constants.h" compile="0" resource="0" file="../../hardware/firmware/Constants.h"/>
+        <FILE id="IrH1VV" name="MidiSer.cpp" compile="1" resource="0" file="../../hardware/firmware/comm/MidiSer.cpp"/>
+        <FILE id="in8uFg" name="MidiSer.h" compile="0" resource="0" file="../../hardware/firmware/comm/MidiSer.h"/>
+        <FILE id="kTCqNl" name="Settings.h" compile="0" resource="0" file="../../hardware/firmware/Settings.h"/>
+        <FILE id="jaB07V" name="SynthSettings.h" compile="0" resource="0" file="../../hardware/firmware/sound/SynthSettings.h"/>
+      </GROUP>
+      <GROUP id="{F0E3F0EE-B861-D4CE-E89A-69C2F5986A28}" name="Assets">
+        <FILE id="n2UFgY" name="arrowdown.png" compile="0" resource="1" file="Assets/arrowdown.png"/>
+        <FILE id="eOAm5R" name="arrowright.png" compile="0" resource="1" file="Assets/arrowright.png"/>
+        <FILE id="P3v2nH" name="arrowup.png" compile="0" resource="1" file="Assets/arrowup.png"/>
+        <FILE id="mXuoho" name="arrowleft.png" compile="0" resource="1" file="Assets/arrowleft.png"/>
+        <FILE id="wwDERv" name="keys.json" compile="0" resource="1" file="Source/keys.json"/>
+        <FILE id="q59cMu" name="knob_wave.png" compile="0" resource="1" file="Knob/knob_wave.png"/>
+        <FILE id="XIuv8g" name="knob_detune.png" compile="0" resource="1" file="Knob/knob_detune.png"/>
+        <FILE id="LPbFDU" name="knob_octave.png" compile="0" resource="1" file="Knob/knob_octave.png"/>
+        <FILE id="FYyjtv" name="knob_cutoff.png" compile="0" resource="1" file="Knob/knob_cutoff.png"/>
+        <FILE id="xSNph4" name="knob_lfo_freq.png" compile="0" resource="1"
+              file="Knob/knob_lfo_freq.png"/>
+        <FILE id="r55Afb" name="knob_resonance.png" compile="0" resource="1"
+              file="Knob/knob_resonance.png"/>
+        <FILE id="TWp8Nr" name="knob_delay.png" compile="0" resource="1" file="Knob/knob_delay.png"/>
+        <FILE id="CVbEhF" name="knob_chorus.png" compile="0" resource="1" file="Knob/knob_chorus.png"/>
+        <FILE id="QNckLP" name="icon-16x16.png" compile="0" resource="1" file="Assets/icon-16x16.png"/>
+        <FILE id="fu3H1P" name="icon-32x32.png" compile="0" resource="1" file="Assets/icon-32x32.png"
+              xcodeResource="0"/>
+        <FILE id="lf07X6" name="icon-64x64.png" compile="0" resource="1" file="Assets/icon-64x64.png"/>
+        <FILE id="hPpdTa" name="icon-128x128.png" compile="0" resource="1"
+              file="Assets/icon-128x128.png"/>
+        <FILE id="DTtWhJ" name="icon-256x256.png" compile="0" resource="1"
+              file="Assets/icon-256x256.png"/>
+        <FILE id="ozlfyb" name="icon-512x512.png" compile="0" resource="1"
+              file="Assets/icon-512x512.png"/>
+        <FILE id="bLwKFc" name="icon-1024x1024.png" compile="0" resource="1"
+              file="Assets/icon-1024x1024.png"/>
+        <FILE id="e4YAH9" name="knob_bipolar.png" compile="0" resource="1"
+              file="Assets/knob_bipolar.png"/>
+        <FILE id="YaAKcs" name="knob_unipolar.png" compile="0" resource="1"
+              file="Assets/knob_unipolar.png"/>
+        <FILE id="pFuVfd" name="refresh.png" compile="0" resource="1" file="Assets/refresh.png"/>
+        <FILE id="NbkfSW" name="slider1.png" compile="0" resource="1" file="Assets/slider1.png"/>
+        <FILE id="RgjGPS" name="knob_harmonic.png" compile="0" resource="1"
+              file="Knob/knob_harmonic.png"/>
+      </GROUP>
+      <FILE id="Sq24Mi" name="LookStyle.h" compile="0" resource="0" file="Source/LookStyle.h"/>
+      <FILE id="oAIkPz" name="StatusTab.cpp" compile="1" resource="0" file="Source/StatusTab.cpp"/>
+      <FILE id="B6cMyg" name="StatusTab.h" compile="0" resource="0" file="Source/StatusTab.h"/>
+      <FILE id="dGP0Vx" name="InfoTab.cpp" compile="1" resource="0" file="Source/InfoTab.cpp"/>
+      <FILE id="MJCEX1" name="InfoTab.h" compile="0" resource="0" file="Source/InfoTab.h"/>
+      <FILE id="pJkAkU" name="InfoTableModel.h" compile="0" resource="0"
+            file="Source/InfoTableModel.h"/>
+      <FILE id="xXnweB" name="DownloadBrowse.cpp" compile="1" resource="0"
+            file="Source/DownloadBrowse.cpp"/>
+      <FILE id="sR1IZ1" name="DownloadBrowse.h" compile="0" resource="0"
+            file="Source/DownloadBrowse.h"/>
+      <FILE id="J6zq86" name="OscillatorControl.cpp" compile="1" resource="0"
+            file="Source/OscillatorControl.cpp"/>
+      <FILE id="dixHnv" name="OscillatorControl.h" compile="0" resource="0"
+            file="Source/OscillatorControl.h"/>
+      <FILE id="wwj82l" name="OscComponent.cpp" compile="1" resource="0"
+            file="Source/OscComponent.cpp"/>
+      <FILE id="krAlIy" name="OscComponent.h" compile="0" resource="0" file="Source/OscComponent.h"/>
+      <FILE id="JXuXZV" name="SoundTab.cpp" compile="1" resource="0" file="Source/SoundTab.cpp"/>
+      <FILE id="yrnglR" name="SoundTab.h" compile="0" resource="0" file="Source/SoundTab.h"/>
+      <FILE id="VHKvLW" name="TuningTab.cpp" compile="1" resource="0" file="Source/TuningTab.cpp"/>
+      <FILE id="JEYC4Q" name="TuningTab.h" compile="0" resource="0" file="Source/TuningTab.h"/>
+      <FILE id="hN2rlB" name="SystemTab.cpp" compile="1" resource="0" file="Source/SystemTab.cpp"/>
+      <FILE id="ZeL1hU" name="SystemTab.h" compile="0" resource="0" file="Source/SystemTab.h"/>
+      <FILE id="JYQtDO" name="NewComponent.cpp" compile="1" resource="0"
+            file="Source/NewComponent.cpp"/>
+      <FILE id="oHSdyZ" name="NewComponent.h" compile="0" resource="0" file="Source/NewComponent.h"/>
+      <FILE id="SyT11d" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
+    </GROUP>
+  </MAINGROUP>
+  <EXPORTFORMATS>
+    <XCODE_MAC targetFolder="Builds/MacOSX" smallIcon="ozlfyb" bigIcon="bLwKFc"
+               externalLibraries="dfu&#10;usb-1.0" customPList="&lt;plist&gt;&#10;&lt;dict&gt;&#10;&lt;key&gt;LSApplicationCategoryType&lt;/key&gt;&#10;&lt;string&gt;public.app-category.music&lt;/string&gt;&#10;&lt;/dict&gt;&#10;&lt;/plist&gt;"
+               iosDevelopmentTeamID="KHPDG6UCU3" appSandbox="1" appSandboxOptions="com.apple.security.device.usb,com.apple.security.files.user-selected.read-write"
+               extraDefs="JUCE_MODAL_LOOPS_PERMITTED=1">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" libraryPath="../../../../external/libs/mac"/>
+        <CONFIGURATION isDebug="0" name="Release" customXcodeFlags="INSTALL_PATH = &quot;/Applications&quot;"
+                       libraryPath="../../../../external/libs/mac"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="../../../../../../../Applications/Develop/juce-huckleberry-osx/modules"/>
+        <MODULEPATH id="juce_events" path="../../../../../../../Applications/Develop/juce-huckleberry-osx/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../../../../../../Applications/Develop/juce-huckleberry-osx/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../../../../../Applications/Develop/juce-huckleberry-osx/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../../../../../../Applications/Develop/juce-huckleberry-osx/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../../../../../../Applications/Develop/juce-huckleberry-osx/modules"/>
+        <MODULEPATH id="juce_cryptography" path="../../../../../../../Applications/Develop/juce-huckleberry-osx/modules"/>
+        <MODULEPATH id="juce_video" path="../../../../../../../Applications/Develop/juce-huckleberry-osx/modules"/>
+        <MODULEPATH id="juce_opengl" path="../../../../../../../Applications/Develop/juce-huckleberry-osx/modules"/>
+        <MODULEPATH id="juce_audio_basics" path="../../../../../../../Applications/Develop/juce-huckleberry-osx/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../../../../../../Applications/Develop/juce-huckleberry-osx/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../../../../../../Applications/Develop/juce-huckleberry-osx/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../../../../../../Applications/Develop/juce-huckleberry-osx/modules"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+    <XCODE_IPHONE targetFolder="Builds/iOS" smallIcon="ozlfyb" bigIcon="bLwKFc"
+                  iosDevelopmentTeamID="KHPDG6UCU3" extraDefs="JUCE_MODAL_LOOPS_PERMITTED=1"
+                  bundleIdentifier="com.vindormusic.vindores1app">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug"/>
+        <CONFIGURATION isDebug="0" name="Release"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="../../../../../../../Applications/Develop/juce-huckleberry-osx/modules"/>
+        <MODULEPATH id="juce_events" path="../../../../../../../Applications/Develop/juce-huckleberry-osx/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../../../../../../Applications/Develop/juce-huckleberry-osx/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../../../../../Applications/Develop/juce-huckleberry-osx/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../../../../../../Applications/Develop/juce-huckleberry-osx/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../../../../../../Applications/Develop/juce-huckleberry-osx/modules"/>
+        <MODULEPATH id="juce_cryptography" path="../../../../../../../Applications/Develop/juce-huckleberry-osx/modules"/>
+        <MODULEPATH id="juce_video" path="../../../../../../../Applications/Develop/juce-huckleberry-osx/modules"/>
+        <MODULEPATH id="juce_opengl" path="../../../../../../../Applications/Develop/juce-huckleberry-osx/modules"/>
+        <MODULEPATH id="juce_audio_basics" path="../../../../../../../Applications/Develop/juce-huckleberry-osx/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../../../../../../Applications/Develop/juce-huckleberry-osx/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../../../../../../Applications/Develop/juce-huckleberry-osx/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../../../../../../Applications/Develop/juce-huckleberry-osx/modules"/>
+      </MODULEPATHS>
+    </XCODE_IPHONE>
+    <VS2019 targetFolder="Builds/VisualStudio2019" externalLibraries="libusb-1.0.lib&#10;libdfu.lib"
+            smallIcon="ozlfyb" bigIcon="bLwKFc" extraDefs="JUCE_MODAL_LOOPS_PERMITTED=1">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" libraryPath="../../../../external/libs/win"
+                       winArchitecture="Win32"/>
+        <CONFIGURATION isDebug="0" name="Release" libraryPath="../../../../external/libs/win"
+                       winArchitecture="Win32"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_video"/>
+        <MODULEPATH id="juce_opengl"/>
+        <MODULEPATH id="juce_gui_extra"/>
+        <MODULEPATH id="juce_gui_basics"/>
+        <MODULEPATH id="juce_graphics"/>
+        <MODULEPATH id="juce_events"/>
+        <MODULEPATH id="juce_data_structures"/>
+        <MODULEPATH id="juce_cryptography"/>
+        <MODULEPATH id="juce_core"/>
+        <MODULEPATH id="juce_audio_processors"/>
+        <MODULEPATH id="juce_audio_formats"/>
+        <MODULEPATH id="juce_audio_devices"/>
+        <MODULEPATH id="juce_audio_basics"/>
+      </MODULEPATHS>
+    </VS2019>
+    <LINUX_MAKE targetFolder="Builds/LinuxMakefile" externalLibraries="dfu&#10;usb-1.0"
+                extraDefs="JUCE_MODAL_LOOPS_PERMITTED=1">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" libraryPath="../../../../external/libs/linux"/>
+        <CONFIGURATION isDebug="0" name="Release" libraryPath="../../../../external/libs/linux"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="~/JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="~/JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="~/JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="~/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="~/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="~/JUCE/modules"/>
+        <MODULEPATH id="juce_cryptography" path="~/JUCE/modules"/>
+        <MODULEPATH id="juce_video" path="~/JUCE/modules"/>
+        <MODULEPATH id="juce_opengl" path="~/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_basics" path="~/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="~/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="~/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="~/JUCE/modules"/>
+      </MODULEPATHS>
+    </LINUX_MAKE>
+    <ANDROIDSTUDIO targetFolder="Builds/Android" androidSDKPath="" androidNDKPath=""
+                   androidMinimumSDK="24" androidActivityClass="com.vindor.controlapp"
+                   gradleVersion="4.6" androidBluetoothNeeded="0" androidExternalReadNeeded="0"
+                   androidExternalWriteNeeded="0" extraDefs="JUCE_MODAL_LOOPS_PERMITTED=1">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug"/>
+        <CONFIGURATION isDebug="0" name="Release"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="../../../../../../../Applications/Develop/juce-huckleberry-osx/modules"/>
+        <MODULEPATH id="juce_events" path="../../../../../../../Applications/Develop/juce-huckleberry-osx/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../../../../../../Applications/Develop/juce-huckleberry-osx/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../../../../../Applications/Develop/juce-huckleberry-osx/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../../../../../../Applications/Develop/juce-huckleberry-osx/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../../../../../../Applications/Develop/juce-huckleberry-osx/modules"/>
+        <MODULEPATH id="juce_cryptography" path="../../../../../../../Applications/Develop/juce-huckleberry-osx/modules"/>
+        <MODULEPATH id="juce_video" path="../../../../../../../Applications/Develop/juce-huckleberry-osx/modules"/>
+        <MODULEPATH id="juce_opengl" path="../../../../../../../Applications/Develop/juce-huckleberry-osx/modules"/>
+        <MODULEPATH id="juce_audio_basics" path="../../../../../../../Applications/Develop/juce-huckleberry-osx/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../../../../../../Applications/Develop/juce-huckleberry-osx/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../../../../../../Applications/Develop/juce-huckleberry-osx/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../../../../../../Applications/Develop/juce-huckleberry-osx/modules"/>
+      </MODULEPATHS>
+    </ANDROIDSTUDIO>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_cryptography" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_opengl" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_video" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+  <JUCEOPTIONS/>
+  <LIVE_SETTINGS>
+    <OSX/>
+    <WINDOWS/>
+  </LIVE_SETTINGS>
+</JUCERPROJECT>

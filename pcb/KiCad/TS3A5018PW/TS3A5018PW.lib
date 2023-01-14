@@ -1,0 +1,42 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#(c) SnapEDA 2016 (snapeda.com)
+#This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA) with Design Exception 1.0
+#
+# TS3A5018PW
+#
+DEF TS3A5018PW U 0 40 Y Y 1 L N
+F0 "U" -220 693 50 H V L BNN
+F1 "TS3A5018PW" -167 -1014 50 H V L BNN
+F2 "SOP65P640X120-16N" 0 0 50 H I L BNN
+F3 "Unavailable" 0 0 50 H I L BNN
+F4 "Texas Instruments" 0 0 50 H I L BNN
+F5 "Analogue Switch IC [Texas Instruments] TS3A5018PW Analogue Switch IC" 0 0 50 H I L BNN
+F6 "None" 0 0 50 H I L BNN
+F7 "TSSOP-16 Texas Instruments" 0 0 50 H I L BNN
+F8 "TS3A5018PW" 0 0 50 H I L BNN
+DRAW
+P 2 0 0 16 -500 600 -500 -900 N
+P 2 0 0 16 -500 -900 500 -900 N
+P 2 0 0 16 500 -900 500 600 N
+P 2 0 0 16 500 600 -500 600 N
+X V+ 16 -700 400 200 R 40 40 0 0 W 
+X ~EN 15 -700 200 200 R 40 40 0 0 I 
+X IN 1 -700 0 200 R 40 40 0 0 P 
+X COM1 4 -700 -200 200 R 40 40 0 0 P 
+X COM2 7 -700 -300 200 R 40 40 0 0 P 
+X COM3 9 -700 -400 200 R 40 40 0 0 P 
+X COM4 12 -700 -500 200 R 40 40 0 0 P 
+X GND 8 -700 -700 200 R 40 40 0 0 P 
+X NC1 2 700 400 200 L 40 40 0 0 P 
+X NC2 5 700 300 200 L 40 40 0 0 P 
+X NC3 11 700 200 200 L 40 40 0 0 P 
+X NC4 14 700 100 200 L 40 40 0 0 P 
+X NO1 3 700 -100 200 L 40 40 0 0 P 
+X NO2 6 700 -200 200 L 40 40 0 0 P 
+X NO3 10 700 -300 200 L 40 40 0 0 P 
+X NO4 13 700 -400 200 L 40 40 0 0 P 
+ENDDRAW
+ENDDEF
+#
+# End Library

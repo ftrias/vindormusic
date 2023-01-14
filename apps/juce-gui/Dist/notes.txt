@@ -1,0 +1,4 @@
+# npm install --global create-dmg
+cd Release
+create-dmg Vindor.app
+mv vindor*.dmg ..

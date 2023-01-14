@@ -1,0 +1,352 @@
+diff --git a/src/dfu.c b/src/dfu.c
+index 14d7673..f0522b6 100644
+--- a/src/dfu.c
++++ b/src/dfu.c
+@@ -340,17 +340,17 @@ int dfu_abort_to_idle(struct dfu_if *dif)
+ 
+ 	ret = dfu_abort(dif->dev_handle, dif->interface);
+ 	if (ret < 0) {
+-		errx(EX_IOERR, "Error sending dfu abort request");
+-		exit(1);
++		errxx(EX_IOERR, "Error sending dfu abort request");
++		return(1);
+ 	}
+ 	ret = dfu_get_status(dif, &dst);
+ 	if (ret < 0) {
+-		errx(EX_IOERR, "Error during abort get_status");
+-		exit(1);
++		errxx(EX_IOERR, "Error during abort get_status");
++		return(1);
+ 	}
+ 	if (dst.bState != DFU_STATE_dfuIDLE) {
+-		errx(EX_IOERR, "Failed to enter idle state on abort");
+-		exit(1);
++		errxx(EX_IOERR, "Failed to enter idle state on abort");
++		return(1);
+ 	}
+ 	milli_sleep(dst.bwPollTimeout);
+ 	return ret;
+diff --git a/src/dfu_file.c b/src/dfu_file.c
+index 7c897d4..d1e9c38 100644
+--- a/src/dfu_file.c
++++ b/src/dfu_file.c
+@@ -110,6 +110,7 @@ static int probe_prefix(struct dfu_file *file)
+ void dfu_progress_bar(const char *desc, unsigned long long curr,
+ 		unsigned long long max)
+ {
++	return; // FT
+ 	static char buf[PROGRESS_BAR_WIDTH + 1];
+ 	static unsigned long long last_progress = -1;
+ 	static time_t last_time;
+@@ -153,7 +154,7 @@ void *dfu_malloc(size_t size)
+ {
+ 	void *ptr = malloc(size);
+ 	if (ptr == NULL)
+-		errx(EX_SOFTWARE, "Cannot allocate memory of size %d bytes", (int)size);
++		errxx(EX_SOFTWARE, "Cannot allocate memory of size %d bytes", (int)size);
+ 	return (ptr);
+ }
+ 
+@@ -167,7 +168,7 @@ uint32_t dfu_file_write_crc(int f, uint32_t crc, const void *buf, int size)
+ 
+ 	/* write data */
+ 	if (write(f, buf, size) != size)
+-		err(EX_IOERR, "Could not write %d bytes to file %d", size, f);
++		errxx(EX_IOERR, "Could not write %d bytes to file %d", size, f);
+ 
+ 	return (crc);
+ }
+diff --git a/src/dfu_load.c b/src/dfu_load.c
+index 64f7009..d54a1f7 100644
+--- a/src/dfu_load.c
++++ b/src/dfu_load.c
+@@ -67,7 +67,7 @@ int dfuload_do_upload(struct dfu_if *dif, int xfer_size,
+ 		total_bytes += rc;
+ 
+ 		if (total_bytes < 0)
+-			errx(EX_SOFTWARE, "Received too many bytes (wraparound)");
++			errxx(EX_SOFTWARE, "Received too many bytes (wraparound)");
+ 
+ 		if (rc < xfer_size) {
+ 			/* last block, return */
+@@ -86,7 +86,7 @@ out_free:
+ 	if (verbose)
+ 		printf("Received a total of %i bytes\n", total_bytes);
+ 	if (expected_size != 0 && total_bytes != expected_size)
+-		errx(EX_SOFTWARE, "Unexpected number of bytes uploaded from device");
++		errxx(EX_SOFTWARE, "Unexpected number of bytes uploaded from device");
+ 	return ret;
+ }
+ 
+@@ -128,7 +128,7 @@ int dfuload_do_dnload(struct dfu_if *dif, int xfer_size, struct dfu_file *file)
+ 		do {
+ 			ret = dfu_get_status(dif, &dst);
+ 			if (ret < 0) {
+-				errx(EX_IOERR, "Error during download get_status");
++				errxx(EX_IOERR, "Error during download get_status");
+ 				goto out;
+ 			}
+ 
+@@ -155,7 +155,7 @@ int dfuload_do_dnload(struct dfu_if *dif, int xfer_size, struct dfu_file *file)
+ 	ret = dfu_download(dif->dev_handle, dif->interface,
+ 	    0, transaction, NULL);
+ 	if (ret < 0) {
+-		errx(EX_IOERR, "Error sending completion packet");
++		errxx(EX_IOERR, "Error sending completion packet");
+ 		goto out;
+ 	}
+ 
+diff --git a/src/dfuse.c b/src/dfuse.c
+index 4a02511..6b42b44 100644
+--- a/src/dfuse.c
++++ b/src/dfuse.c
+@@ -130,7 +130,7 @@ int dfuse_upload(struct dfu_if *dif, const unsigned short length,
+ 		 /* wLength       */	 length,
+ 					 DFU_TIMEOUT);
+ 	if (status < 0) {
+-		errx(EX_IOERR, "%s: libusb_control_msg returned %d",
++		errxx(EX_IOERR, "%s: libusb_control_msg returned %d",
+ 			__FUNCTION__, status);
+ 	}
+ 	return status;
+@@ -153,7 +153,7 @@ int dfuse_download(struct dfu_if *dif, const unsigned short length,
+ 		 /* wLength       */	 length,
+ 					 DFU_TIMEOUT);
+ 	if (status < 0) {
+-		errx(EX_IOERR, "%s: libusb_control_transfer returned %d",
++		errxx(EX_IOERR, "%s: libusb_control_transfer returned %d",
+ 			__FUNCTION__, status);
+ 	}
+ 	return status;
+@@ -178,7 +178,7 @@ int dfuse_special_command(struct dfu_if *dif, unsigned int address,
+ 
+ 		segment = find_segment(mem_layout, address);
+ 		if (!segment || !(segment->memtype & DFUSE_ERASABLE)) {
+-			errx(EX_IOERR, "Page at 0x%08x can not be erased",
++			errxx(EX_IOERR, "Page at 0x%08x can not be erased",
+ 				address);
+ 		}
+ 		page_size = segment->pagesize;
+@@ -202,7 +202,7 @@ int dfuse_special_command(struct dfu_if *dif, unsigned int address,
+ 		buf[0] = 0x92;
+ 		length = 1;
+ 	} else {
+-		errx(EX_IOERR, "Non-supported special command %d", command);
++		errxx(EX_IOERR, "Non-supported special command %d", command);
+ 	}
+ 	buf[1] = address & 0xff;
+ 	buf[2] = (address >> 8) & 0xff;
+@@ -211,13 +211,13 @@ int dfuse_special_command(struct dfu_if *dif, unsigned int address,
+ 
+ 	ret = dfuse_download(dif, length, buf, 0);
+ 	if (ret < 0) {
+-		errx(EX_IOERR, "Error during special command \"%s\" download",
++		errxx(EX_IOERR, "Error during special command \"%s\" download",
+ 			dfuse_command_name[command]);
+ 	}
+ 	do {
+ 		ret = dfu_get_status(dif, &dst);
+ 		if (ret < 0) {
+-			errx(EX_IOERR, "Error during special command \"%s\" get_status",
++			errxx(EX_IOERR, "Error during special command \"%s\" get_status",
+ 			     dfuse_command_name[command]);
+ 		}
+ 		if (firstpoll) {
+@@ -226,7 +226,7 @@ int dfuse_special_command(struct dfu_if *dif, unsigned int address,
+ 				printf("state(%u) = %s, status(%u) = %s\n", dst.bState,
+ 				       dfu_state_to_string(dst.bState), dst.bStatus,
+ 				       dfu_status_to_string(dst.bStatus));
+-				errx(EX_IOERR, "Wrong state after command \"%s\" download",
++				errxx(EX_IOERR, "Wrong state after command \"%s\" download",
+ 				     dfuse_command_name[command]);
+ 			}
+ 			/* STM32F405 lies about mass erase timeout */
+@@ -244,7 +244,7 @@ int dfuse_special_command(struct dfu_if *dif, unsigned int address,
+ 	} while (dst.bState == DFU_STATE_dfuDNBUSY);
+ 
+ 	if (dst.bStatus != DFU_STATUS_OK) {
+-		errx(EX_IOERR, "%s not correctly executed",
++		errxx(EX_IOERR, "%s not correctly executed",
+ 			dfuse_command_name[command]);
+ 	}
+ 	return ret;
+@@ -259,7 +259,7 @@ int dfuse_dnload_chunk(struct dfu_if *dif, unsigned char *data, int size,
+ 
+ 	ret = dfuse_download(dif, size, size ? data : NULL, transaction);
+ 	if (ret < 0) {
+-		errx(EX_IOERR, "Error during download");
++		errxx(EX_IOERR, "Error during download");
+ 		return ret;
+ 	}
+ 	bytes_sent = ret;
+@@ -267,7 +267,7 @@ int dfuse_dnload_chunk(struct dfu_if *dif, unsigned char *data, int size,
+ 	do {
+ 		ret = dfu_get_status(dif, &dst);
+ 		if (ret < 0) {
+-			errx(EX_IOERR, "Error during download get_status");
++			errxx(EX_IOERR, "Error during download get_status");
+ 			return ret;
+ 		}
+ 		milli_sleep(dst.bwPollTimeout);
+@@ -308,12 +308,12 @@ int dfuse_do_upload(struct dfu_if *dif, int xfer_size, int fd,
+ 
+ 		mem_layout = parse_memory_layout((char *)dif->alt_name);
+ 		if (!mem_layout)
+-			errx(EX_IOERR, "Failed to parse memory layout");
++			errxx(EX_IOERR, "Failed to parse memory layout");
+ 
+ 		segment = find_segment(mem_layout, dfuse_address);
+ 		if (!dfuse_force &&
+ 		    (!segment || !(segment->memtype & DFUSE_READABLE)))
+-			errx(EX_IOERR, "Page at 0x%08x is not readable",
++			errxx(EX_IOERR, "Page at 0x%08x is not readable",
+ 				dfuse_address);
+ 
+ 		if (!upload_limit) {
+@@ -350,7 +350,7 @@ int dfuse_do_upload(struct dfu_if *dif, int xfer_size, int fd,
+ 		total_bytes += rc;
+ 
+ 		if (total_bytes < 0)
+-			errx(EX_SOFTWARE, "Received too many bytes");
++			errxx(EX_SOFTWARE, "Received too many bytes");
+ 
+ 		if (rc < xfer_size || total_bytes >= upload_limit) {
+ 			/* last block, return successfully */
+@@ -388,7 +388,7 @@ int dfuse_dnload_element(struct dfu_if *dif, unsigned int dwElementAddress,
+ 	segment =
+ 	    find_segment(mem_layout, dwElementAddress + dwElementSize - 1);
+ 	if (!segment || !(segment->memtype & DFUSE_WRITEABLE)) {
+-		errx(EX_IOERR, "Last page at 0x%08x is not writeable",
++		errxx(EX_IOERR, "Last page at 0x%08x is not writeable",
+ 			dwElementAddress + dwElementSize - 1);
+ 	}
+ 
+@@ -402,7 +402,7 @@ int dfuse_dnload_element(struct dfu_if *dif, unsigned int dwElementAddress,
+ 
+ 		segment = find_segment(mem_layout, address);
+ 		if (!segment || !(segment->memtype & DFUSE_WRITEABLE)) {
+-			errx(EX_IOERR, "Page at 0x%08x is not writeable",
++			errxx(EX_IOERR, "Page at 0x%08x is not writeable",
+ 				address);
+ 		}
+ 		page_size = segment->pagesize;
+@@ -448,7 +448,7 @@ int dfuse_dnload_element(struct dfu_if *dif, unsigned int dwElementAddress,
+ 		/* transaction = 2 for no address offset */
+ 		ret = dfuse_dnload_chunk(dif, data + p, chunk_size, 2);
+ 		if (ret != chunk_size) {
+-			errx(EX_IOERR, "Failed to write whole chunk: "
++			errxx(EX_IOERR, "Failed to write whole chunk: "
+ 				"%i of %i bytes", ret, chunk_size);
+ 			return -EINVAL;
+ 		}
+@@ -526,17 +526,17 @@ int dfuse_do_dfuse_dnload(struct dfu_if *dif, int xfer_size,
+         /* Must be larger than a minimal DfuSe header and suffix */
+ 	if (rem < (int)(sizeof(dfuprefix) +
+ 	    sizeof(targetprefix) + sizeof(elementheader))) {
+-		errx(EX_SOFTWARE, "File too small for a DfuSe file");
++		errxx(EX_SOFTWARE, "File too small for a DfuSe file");
+         }
+ 
+ 	dfuse_memcpy(dfuprefix, &data, &rem, sizeof(dfuprefix));
+ 
+ 	if (strncmp((char *)dfuprefix, "DfuSe", 5)) {
+-		errx(EX_IOERR, "No valid DfuSe signature");
++		errxx(EX_IOERR, "No valid DfuSe signature");
+ 		return -EINVAL;
+ 	}
+ 	if (dfuprefix[5] != 0x01) {
+-		errx(EX_IOERR, "DFU format revision %i not supported",
++		errxx(EX_IOERR, "DFU format revision %i not supported",
+ 			dfuprefix[5]);
+ 		return -EINVAL;
+ 	}
+@@ -547,7 +547,7 @@ int dfuse_do_dfuse_dnload(struct dfu_if *dif, int xfer_size,
+ 		printf("parsing DFU image %i\n", image);
+ 		dfuse_memcpy(targetprefix, &data, &rem, sizeof(targetprefix));
+ 		if (strncmp((char *)targetprefix, "Target", 6)) {
+-			errx(EX_IOERR, "No valid target signature");
++			errxx(EX_IOERR, "No valid target signature");
+ 			return -EINVAL;
+ 		}
+ 		bAlternateSetting = targetprefix[6];
+@@ -577,7 +577,7 @@ int dfuse_do_dfuse_dnload(struct dfu_if *dif, int xfer_size,
+ 			}
+ 			/* sanity check */
+ 			if ((int)dwElementSize > rem)
+-				errx(EX_SOFTWARE, "File too small for element size");
++				errxx(EX_SOFTWARE, "File too small for element size");
+ 
+ 			if (bAlternateSetting == dif->altsetting) {
+ 				ret = dfuse_dnload_element(dif, dwElementAddress,
+@@ -611,11 +611,11 @@ int dfuse_do_dnload(struct dfu_if *dif, int xfer_size, struct dfu_file *file,
+ 		dfuse_parse_options(dfuse_options);
+ 	mem_layout = parse_memory_layout((char *)dif->alt_name);
+ 	if (!mem_layout) {
+-		errx(EX_IOERR, "Failed to parse memory layout");
++		errxx(EX_IOERR, "Failed to parse memory layout");
+ 	}
+ 	if (dfuse_unprotect) {
+ 		if (!dfuse_force) {
+-			errx(EX_IOERR, "The read unprotect command "
++			errxx(EX_IOERR, "The read unprotect command "
+ 				"will erase the flash memory"
+ 				"and can only be used with force\n");
+ 		}
+@@ -625,7 +625,7 @@ int dfuse_do_dnload(struct dfu_if *dif, int xfer_size, struct dfu_file *file,
+ 	}
+ 	if (dfuse_mass_erase) {
+ 		if (!dfuse_force) {
+-			errx(EX_IOERR, "The mass erase command "
++			errxx(EX_IOERR, "The mass erase command "
+ 				"can only be used with force");
+ 		}
+ 		printf("Performing mass erase, this can take a moment\n");
+@@ -633,14 +633,14 @@ int dfuse_do_dnload(struct dfu_if *dif, int xfer_size, struct dfu_file *file,
+ 	}
+ 	if (dfuse_address) {
+ 		if (file->bcdDFU == 0x11a) {
+-			errx(EX_IOERR, "This is a DfuSe file, not "
++			errxx(EX_IOERR, "This is a DfuSe file, not "
+ 				"meant for raw download");
+ 		}
+ 		ret = dfuse_do_bin_dnload(dif, xfer_size, file, dfuse_address);
+ 	} else {
+ 		if (file->bcdDFU != 0x11a) {
+ 			warnx("Only DfuSe file version 1.1a is supported");
+-			errx(EX_IOERR, "(for raw binary download, use the "
++			errxx(EX_IOERR, "(for raw binary download, use the "
+ 			     "--dfuse-address option)");
+ 		}
+ 		ret = dfuse_do_dfuse_dnload(dif, xfer_size, file);
+diff --git a/src/portable.h b/src/portable.h
+index 989cf51..77ab31e 100644
+--- a/src/portable.h
++++ b/src/portable.h
+@@ -3,7 +3,7 @@
+ #define PORTABLE_H
+ 
+ #ifdef HAVE_CONFIG_H
+-# include "config.h"
++# include "../config.h"
+ #else
+ # define PACKAGE "dfu-util"
+ # define PACKAGE_VERSION "0.9-msvc"
+@@ -42,13 +42,16 @@
+     fprintf(stderr, "\n"); } while (0)
+ # define errx(eval, ...) do {\
+     warnx(__VA_ARGS__);\
+-    exit(eval); } while (0)
++    return; } while (0)
++# define errxx(eval, ...) do {\
++    warnx(__VA_ARGS__);\
++    return(eval); } while (0)
+ # define warn(...) do {\
+     fprintf(stderr, "%s: ", strerror(errno));\
+     warnx(__VA_ARGS__); } while (0)
+ # define err(eval, ...) do {\
+     warn(__VA_ARGS__);\
+-    exit(eval); } while (0)
++    return; } while (0)
+ #endif /* HAVE_ERR */
+ 
+ #ifdef HAVE_SYSEXITS_H

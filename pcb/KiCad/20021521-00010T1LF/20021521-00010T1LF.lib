@@ -1,0 +1,36 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#(c) SnapEDA 2016 (snapeda.com)
+#This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA) with Design Exception 1.0
+#
+# 20021521-00010T1LF
+#
+DEF 20021521-00010T1LF JP 0 40 Y N 1 L N
+F0 "JP" -250 325 50 H V L BNN
+F1 "20021521-00010T1LF" -250 -401 50 H V L BNN
+F2 "20021521-00010T1LF" 0 0 50 H I L BNN
+F3 "20021521-00010T1LF" 0 0 50 H I L BNN
+F4 "609-4054-ND" 0 0 50 H I L BNN
+F5 "Amphenol ICC" 0 0 50 H I L BNN
+F6 "None" 0 0 50 H I L BNN
+F7 "20021521-00010T1LF CONN SHROUDED HEADER HDR 10 PO S DUAL 1.27x1.27MM SOLDER ST SMD RoHS" 0 0 50 H I L BNN
+F8 "https://www.digikey.com/product-detail/en/amphenol-icc-fci/20021521-00010T1LF/609-4054-ND/2414951?utm_source=snapeda&utm_medium=aggregator&utm_campaign=symbol" 0 0 50 H I L BNN
+DRAW
+P 2 0 0 16 -250 -300 350 -300 N
+P 2 0 0 16 350 -300 350 300 N
+P 2 0 0 16 350 300 -250 300 N
+P 2 0 0 16 -250 300 -250 -300 N
+X 1 1 -100 200 100 R 40 40 0 0 P I
+X 2 2 200 200 100 L 40 40 0 0 P I
+X 3 3 -100 100 100 R 40 40 0 0 P I
+X 4 4 200 100 100 L 40 40 0 0 P I
+X 5 5 -100 0 100 R 40 40 0 0 P I
+X 6 6 200 0 100 L 40 40 0 0 P I
+X 7 7 -100 -100 100 R 40 40 0 0 P I
+X 8 8 200 -100 100 L 40 40 0 0 P I
+X 9 9 -100 -200 100 R 40 40 0 0 P I
+X 10 10 200 -200 100 L 40 40 0 0 P I
+ENDDRAW
+ENDDEF
+#
+# End Library

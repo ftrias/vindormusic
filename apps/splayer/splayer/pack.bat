@@ -1,0 +1,1 @@
+copy ..\..\Builds\VisualStudio2017\Win32\Release\App\VindorPlayer.exe .

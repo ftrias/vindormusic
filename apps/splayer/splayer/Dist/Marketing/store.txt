@@ -1,0 +1,18 @@
+Name Vidor Player
+com.vindormusic.splayer
+Music/Entertainment
+
+Free synthesizer for Vindor ES1 electronic saxophone. This is not the control app.
+
+The Vindor ES1 electronic saxophone includes numerous built-in sounds. This app is a free synthesizer that provides additional MIDI-compatible instruments.
+
+* Process MIDI messages from any device
+* Supports Breath Controller messages
+* Suppors HiRes messages
+* 128 sampled instruments
+
+Note: This is not the control app for the ES1. If you wish to customize the settings and built-in sounds, search for Vindor Control.
+
+Synth, MIDI, Synthesizer, Vindor
+
+http://vindormusic.com/support

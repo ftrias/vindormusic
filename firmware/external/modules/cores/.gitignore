@@ -1,0 +1,13 @@
+teensy3.20170922
+teensy3.1
+*.elf
+*.d
+*.hex
+*.o
+nbproject
+*~
+*.bak
+*.BAK
+*.orig
+*.tmp
+*.TMP

@@ -1,0 +1,1 @@
+This directory includes the firmware for optional the ESP8266-based WiFi module.

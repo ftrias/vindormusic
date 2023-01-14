@@ -1,0 +1,120 @@
+ Notes on pin connections: R45
+
+ Pin = K20 pin designation
+ ##  = Teensy emulation pin number
+ Purpose = Notes on use
+
+ Pin   ## Purpose
+ ----- -- -------------
+ PTA0     SWD Clock
+ PTA1  34X T9 CH2
+ R44< PTA2  #? SET
+ R45> PTA2  35X Tb CH3
+ PTA2  #? SET
+ PTA3     SWD DIO
+ PTA4  33 T6 CH5
+ R44< PTA5  24 SD card det
+ R45> PTA5  24 SET
+ PTA12  3 SG I2S DIN (I2S0_TXD0)
+ PTA13  4 SG I2S LRCLK
+ PTA18  X Clock
+ PTA19  X Clock
+ PTB0  16 T4 CH0
+ PTB1  17 T5 CH6
+ PTB2  19 T8 CH7
+ PTB3  18 T7 CH8
+ PTB16  0 T1 CH9
+ PTB17  1 T2 CH10
+ PTB18 32 T3 CH11
+ PTB19 25 T11 CH12
+ PTC0  15 T10 CH13
+ PTC1  22 T_HI CH14
+ PTC2  23 T_LO CH15
+ PTC3   9 SG I2S_SCLK
+ PTC4  10 SD CD/DAT3
+ PTC5  13 SD CLK (SCK)
+ PTC6  11 SD CMD (DOUT MOSI)
+ PTC7  12 SD DAT0 (DIN MISO)
+ PTC8  28 SG MCLK
+ PTC9  27 LDO EN
+ PTC10 29 SG CTRL_CLK
+ PTC11 30 SG CTRL_DATA
+ PTD0   2 AMP SHDN
+ X18  A14 Air Pressure (K20 pin ADC_SE23)
+ PTD2   7 Serial3 RX
+ PTD3   8 Serial3 TX
+ PTD4   6 LED Red
+ PTD5  20 SG I2S DOUT? - should connect to I2S0_RXD0
+ PTD6  21 LED Green
+ PTD7   5 LED Blue
+ PTE0  31 HP Jack Det
+ PTE1  26 Line Jack Det
+ PTE4  38 Accelerometer CS
+ PTE5  39 Accelerometer control button
+
+ Free pin #14 PTD1
+ Possible changes to free more digital pins: move HP/Line jack detect to ADC_DP* and remove interrupt on those lines
+
+ Revision R53 w/ 64-pin chip
+ PTE0      31 Accel CS
+ PTE1      26 Accel button
+ ADC0_DM0 A11 Battery volt
+ ADC0_DP0 A10 HP_JACK HP Jack Det
+ PTD1      14 Line Jack Det
+
+ Why is VREF_OUT connected to ground via capacitor? High pass filter?
+
+
+Notes on pin connections: R57
+
+ Pin = K20 pin designation
+ ##  = Teensy emulation pin number
+ Purpose = Notes on use
+
+ Pin   ##   Purpose
+ ----- --   -------------
+ PTA0       SWDCLK SWD Clock
+ PTA1  34X  T8 CH2
+ PTA2  35X  Tb CH3
+ PTA3       SWDIO SWD DIO
+ PTA4  33   T5 CH5
+ PTA5  24   SET button
+ PTA12  3   SGTL5000 I2S DIN (I2S0_TXD0)
+ PTA13  4   SGTL5000 I2S LRCLK
+ PTA18  X   Clock
+ PTA19  X   Clock
+ PTB0  16   T3 CH0
+ PTB1  17   T4 CH6
+ PTB2  19   T7 CH7
+ PTB3  18   T6 CH8
+ PTB16  0   T11 CH9
+ PTB17  1   T1 CH10
+ PTB18 32   T2 CH11
+ PTB19 25   T10 CH12
+ PTC0  15   T9 CH13
+ PTC1  22   T_HI CH14
+ PTC2  23   T_LO CH15
+ PTC3   9   SGTL5000 I2S_SCLK
+ PTC4  10   SD CD/DAT3
+ PTC5  13   SD CLK (SCK) / Accl SCL
+ PTC6  11   SD CMD (DOUT MOSI) / Accel SDA
+ PTC7  12   SD DAT0 (DIN MISO) / Accel SDO
+ PTC8  28   SGTL5000 MCLK
+ PTC9  27   AUDIO SPEAKER LDO EN
+ PTC10 29   SGTL5000 CTRL_CLK / Var Pot SCL / Display
+ PTC11 30   SGTL5000 CTRL_DATA / Var Pot SDA / Display
+ PTD0   2   AMP SPEAKER SHDN
+ X18  A14   Air Pressure (K20 pin ADC_SE23)
+ PTD1  14   Amplifier Lineout Jack
+ PTD2   7   Serial3 RX / JESP01:RX
+ PTD3   8   Serial3 TX / JESP01/TX
+ PTD4   6   LED Red
+ PTD5  20   SGTL5000 I2S DOUT
+ PTD6  21   LED Green
+ PTD7   5   LED Blue
+ PTE0  31   Accelerometer CS
+ PTE1  26   Thumb switch
+ ADC0_DM0 A11 Battery volt reading
+ ADC0_DP0 A10 HP_JACK HP Jack Det
+ ADC0_DM3     -Free
+ ADC0_DP3     -Free

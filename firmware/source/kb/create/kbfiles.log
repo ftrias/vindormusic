@@ -1,0 +1,19 @@
+MODEL recorderva
+Mismatch mask 14 16383 6140
+
+MODEL clarinet2
+
+MODEL oboe
+Mismatch mask 14 16383 14335
+
+MODEL tuba
+Mismatch mask 9 511 487
+TABLE MISSING 111100101
+MODEL basic
+
+MODEL basic2
+Mismatch mask 11 2047 1919
+
+MODEL tinwhistle
+Mismatch mask 11 1023 1919
+

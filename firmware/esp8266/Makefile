@@ -1,0 +1,6 @@
+"/Users/ftrias/Library/Arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/1.20.0-26-gb404fb9-2/bin/xtensa-lx106-elf-g++" -D__ets__ -DICACHE_FLASH -U__STRICT_ANSI__ "-I/Users/ftrias/Library/Arduino15/packages/esp8266/hardware/esp8266/2.3.0/tools/sdk/include" "-I/Users/ftrias/Library/Arduino15/packages/esp8266/hardware/esp8266/2.3.0/tools/sdk/lwip/include" "-I/var/folders/s3/lcbhlhy129sc0kdjf2cs40jw0000gp/T/arduino_build_162076/core" -c -w -Os -g -mlongcalls -mtext-section-literals -fno-exceptions -fno-rtti -falign-functions=4 -std=c++11  -ffunction-sections -fdata-sections -w -x c++ -E -CC -DF_CPU=80000000L -DLWIP_OPEN_SRC   -DARDUINO=10800 -DARDUINO_ESP8266_ESP01 -DARDUINO_ARCH_ESP8266 -DARDUINO_BOARD="ESP8266_ESP01"  -DESP8266 "-I/Users/ftrias/Library/Arduino15/packages/esp8266/hardware/esp8266/2.3.0/cores/esp8266" "-I/Users/ftrias/Library/Arduino15/packages/esp8266/hardware/esp8266/2.3.0/variants/generic" "/var/folders/s3/lcbhlhy129sc0kdjf2cs40jw0000gp/T/arduino_build_162076/sketch/esp8266-forward.ino.cpp" -o "/dev/null"
+
+ESP_LIB_PATH=/Users/ftrias/Library/Arduino15/packages/esp8266/hardware/esp8266/2.3.0/
+APPLEMIDI_PATH=/Users/ftrias/Documents/Arduino/libraries/Arduino-AppleMidi-Library/src/
+COMPILER_PATH=/Users/ftrias/Library/Arduino15/packages/esp8266/tools/xtensa-lx106-elf-gcc/1.20.0-26-gb404fb9-2/bin
+CXX=$(COMPILER_PATH)/xtensa-lx106-elf-g++

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2015
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Vindor", "Vindor\Vindor.vdproj", "{72261D8E-6E61-4725-92A2-9FAB2591604A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{72261D8E-6E61-4725-92A2-9FAB2591604A}.Debug|Default.ActiveCfg = Debug
+		{72261D8E-6E61-4725-92A2-9FAB2591604A}.Debug|Default.Build.0 = Debug
+		{72261D8E-6E61-4725-92A2-9FAB2591604A}.Release|Default.ActiveCfg = Release
+		{72261D8E-6E61-4725-92A2-9FAB2591604A}.Release|Default.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E0C511E7-A50A-4866-AEF8-29CDFD3F73D7}
+	EndGlobalSection
+EndGlobal
